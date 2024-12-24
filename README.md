@@ -9,3 +9,20 @@
   <li>Paragraph Tag</li>
   <li>Footer Tag</li>
 </ul>
+<h6>Task : Basci Tags</h6>
+
+
+<h4>DAY 2: </h4>
+<h6>Tags </h6>
+<ul>
+ <li> HTML elements </li>
+<li>Diff html tag vs element </li> 
+<li>Nested html </li>
+<li>HTML attributes </li>
+<li>HTML images </li>
+<li>HTML list</li>
+<li>Text  Links</li>
+<li>Email links </li>
+<li>Iframe</li>
+</ul>
+<h6>Task : Portfolio</h6>
