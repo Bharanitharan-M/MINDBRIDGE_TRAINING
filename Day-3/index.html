@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Task Tracker</title>
+
+    <style>
+        form {
+            border: 2px solid crimson;
+            padding: 1%;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 20px;
+        }
+
+        form>label {
+            text-align: center;
+            color: cadetblue;
+        }
+
+        form>input,
+        textarea {
+            border-radius: 10px;
+            height: 25px;
+            border-color: antiquewhite;
+        }
+
+        form>center>button {
+            color: white;
+            background-color: maroon;
+            width: fit-content;
+        }
+
+        .Form_css {
+            display: flex;
+            justify-content: center;
+        }
+
+        .table-1 {
+            margin-top: 50px;
+            
+        }
+
+        table  th{
+            background-color: blanchedalmond;
+            border: 1px solid black;
+        }
+        table td {
+            border: 1px solid;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1 style="text-align: center;color: indianred;">Employee Task Tracker</h1>
+    <section class="Form_css">
+        <form action="">
+            <label for="Name">Name</label>
+            <input type="text" id="Name" name="name" placeholder="Name" required><br>
+            <label for="task_title">Enter the Task Title</label>
+            <input type="text" id="task_title" name="title" placeholder="Project Pahse-1"><br>
+            <label for="contnet">Task Description</label>
+            <textarea name="Description" id="content" placeholder="Enter the Description of the task" required></textarea><br>
+            <label for="date">Due Date</label>
+            <input type="date" id="date" name="date" ><br>
+            <center><button onclick=add_task(event)>Add Task</button></center>
+        </form>
+    </section>
+
+
+    <section class="table-1">
+        <table border="0" cellpadding="5" cellspacing="0" width=100%>
+            <thead>
+                <tr>
+                    <th rowspan="2">Employee Name</th>
+                    <th colspan="2">Task Details</th>
+                    <th rowspan="2">Due Date</th>
+                </tr>
+                <tr>
+                    <th>Task title</th>
+                    <th>Task Description</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+
+            </tbody>
+        </table>
+    </section>
+
+    <script>
+        function add_task(event) {
+            event.preventDefault();
+            let append_element = document.getElementById("table_body");
+            let emp_name = document.getElementsByName("name")[0].value;
+            let task_title = document.getElementsByName("title")[0].value;
+            let task_des = document.getElementsByName("Description")[0].value;
+            let due_date = document.getElementsByName("date")[0].value;
+            let arr = [emp_name,task_title,task_des,due_date];
+           
+            let create_row = document.createElement("tr");
+            append_element.appendChild(create_row);
+            console.log(due_date);
+            for (let i = 0; i < 4; i++) {
+                let create_cell = document.createElement("td");
+                create_row.appendChild(create_cell);
+                if(arr[i] != "")
+                  create_cell.textContent = `${arr[i]}`;
+                else
+                 create_cell.textContent = "-";
+            }
+        }
+    </script>
+</body>
+
+</html>
