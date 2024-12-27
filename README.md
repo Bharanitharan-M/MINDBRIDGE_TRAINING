@@ -26,3 +26,12 @@
 <li>Iframe</li>
 </ul>
 <h6>Task : Portfolio</h6>
+
+
+<h4>DAY 3: </h4>
+<h6>Table and Forms</h6>
+<ul>
+  <li>Table attributes</li>
+  <li>Form types</li>
+</ul>
+<h6>Task: Employee Task Tracker</h6>
