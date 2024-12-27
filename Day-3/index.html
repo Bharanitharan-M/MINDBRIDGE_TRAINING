@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Task Tracker</title>
 
+
     <style>
         form {
             border: 2px solid crimson;
@@ -41,17 +42,17 @@
 
         .table-1 {
             margin-top: 50px;
-            
+
         }
 
-        table  th{
+        table th {
             background-color: blanchedalmond;
             border: 1px solid black;
         }
+
         table td {
             border: 1px solid;
         }
-
     </style>
 
 </head>
@@ -65,9 +66,10 @@
             <label for="task_title">Enter the Task Title</label>
             <input type="text" id="task_title" name="title" placeholder="Project Pahse-1"><br>
             <label for="contnet">Task Description</label>
-            <textarea name="Description" id="content" placeholder="Enter the Description of the task" required></textarea><br>
+            <textarea name="Description" id="content" placeholder="Enter the Description of the task"
+                required></textarea><br>
             <label for="date">Due Date</label>
-            <input type="date" id="date" name="date" ><br>
+            <input type="date" id="date" name="date"><br>
             <center><button onclick=add_task(event)>Add Task</button></center>
         </form>
     </section>
@@ -93,6 +95,7 @@
     </section>
 
     <script>
+        let name_set = new Set();
         function add_task(event) {
             event.preventDefault();
             let append_element = document.getElementById("table_body");
@@ -100,19 +103,66 @@
             let task_title = document.getElementsByName("title")[0].value;
             let task_des = document.getElementsByName("Description")[0].value;
             let due_date = document.getElementsByName("date")[0].value;
-            let arr = [emp_name,task_title,task_des,due_date];
-           
-            let create_row = document.createElement("tr");
-            append_element.appendChild(create_row);
-            console.log(due_date);
-            for (let i = 0; i < 4; i++) {
-                let create_cell = document.createElement("td");
-                create_row.appendChild(create_cell);
-                if(arr[i] != "")
-                  create_cell.textContent = `${arr[i]}`;
-                else
-                 create_cell.textContent = "-";
+            let arr = [emp_name, task_title, task_des, due_date, 0];
+            let task_obj = {
+                name
+            };
+            task_obj.name = emp_name;
+
+            if (!name_set.has(emp_name)) {
+                name_set.add(emp_name);
+                let create_row = document.createElement("tr");
+                create_row.id = task_obj.name;
+                append_element.appendChild(create_row);
+                for (let i = 0; i < 4; i++) {
+                    let create_cell = document.createElement("td");
+                    create_row.appendChild(create_cell);
+                    if (arr[i] != "")
+                        create_cell.textContent = `${arr[i]}`;
+                    else
+                        create_cell.textContent = "-";
+                    arr[4] = 1;
+                }
             }
+            else {
+                let create_row = document.createElement("tr");
+                let row = document.getElementById(`${emp_name}`);
+                for (let i = 0; i <= 3; i++) {
+                    if (i == 0)
+                        row.firstElementChild.setAttribute("rowspan", arr[4]++);
+                    else {
+                        let create_cell = document.createElement("td");
+                        create_row.appendChild(create_cell);
+                        if (arr[i] != "")
+                            create_cell.textContent = `${arr[i]}`;
+                        else
+                            create_cell.textContent = "-";
+                    }
+                    append_element.appendChild(create_row);
+
+                }
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+            // console.log(due_date);
+            // for (let i = 0; i < 4; i++) {
+            //     let create_cell = document.createElement("td");
+            //     create_row.appendChild(create_cell);
+            //     if(arr[i] != "")
+            //       create_cell.textContent = `${arr[i]}`;
+            //     else
+            //      create_cell.textContent = "-";
+            // }
         }
     </script>
 </body>
