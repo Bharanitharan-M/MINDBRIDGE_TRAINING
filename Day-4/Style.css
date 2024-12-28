@@ -1,0 +1,216 @@
+* {
+    font-family: f37e5dc3c01fa76842b02bf6f10609174;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Nav bar styling */
+.top {
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+}
+.top nav {
+
+    display: flex;
+    gap: 150px;
+    flex-wrap: wrap;
+
+}
+nav a {
+
+    text-decoration: none;
+    color: #FFFFF0;
+    font-size: larger;
+    font-weight: bold;
+}
+nav a:hover {
+    background-color: chocolate;
+    color: black;
+}
+
+
+/* Icon styling */
+.icon {
+
+    position: absolute;
+    margin-top: 300px;
+
+}
+.icon button {
+    background-color: cadetblue;
+    border-color: cadetblue;
+
+    cursor: pointer;
+
+    border-width: 0px;
+
+}
+.icon i {
+    font-size: xx-large;
+}
+.fa-chevron-right {
+
+    margin-left: 1450px;
+}
+
+
+/* table, Para, image, unorder, list, footer */
+td {
+    padding-left: 2px;
+    padding-right: 0;
+}
+table tr td {
+    border: 1px solid;
+}
+p {
+    text-align: justify;
+}
+img {
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+}
+ul {
+    padding: 0px 0px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: double;
+    padding-bottom: 10px;
+}
+li {
+    list-style-type: none;
+}
+footer {
+    position: absolute;
+    margin-right: 10px;
+    bottom: 10px;
+}
+
+
+
+/* full Newspaper design styling */
+.newsPaper {
+
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* full Paper styling */
+.paper {
+    display: none;
+    position: relative;
+    width: 520px;
+    height: 730px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 15px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+
+/* paper-1 styling */
+.paper h2 {
+    border-style: double;
+    font-weight: lighter;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#heading_image {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    text-align: justify;
+    text-align-last: center;
+}
+#heading_image p {
+    margin-right: 10px
+}
+#article {
+    display: flex;
+}
+
+
+/* paper-2 styling */
+#gallery h2 {
+    text-align: center;
+    border-style: double;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    padding-bottom: 10px;
+}
+.gallery_paper {
+    display: flex;
+    justify-content: space-evenly;
+}
+.gallery_image {
+    padding: 5px;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.gallery_image img {
+    height: 140.600px;
+    width: 238.863px;
+}
+
+
+/* paper-3 styling */
+.all_msg {
+    position: relative;
+    margin: 5px 0px;
+}
+.all_msg img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+.draw_masg {
+    position: absolute;
+    border: 1px solid;
+    position: relative;
+    border-radius: 10px;
+}
+.draw_masg p {
+    padding: 5px;
+    text-indent: 10px;
+    font-family: 'Dancing Script', cursive;
+}
+.draw_masg::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 15px;
+    width: 0;
+    height: 0;
+    border: 15px dotted transparent;
+    border-top-color: #333;
+    border-bottom: 0;
+    margin-left: -15px;
+}
+
+
+/* paper-4 styling */
+.event_section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.event_section p {
+    padding-right: 15px;
+}
