@@ -35,3 +35,13 @@
   <li>Form types</li>
 </ul>
 <h6>Task: Employee Task Tracker</h6>
+
+
+<h4>DAY 4: </h4>
+<h6>Some Tags</h6>
+<ul>
+  <li>Marquee Tag</li>
+  <li>How to add icon in web page</li>
+  <li>Q/A session</li>
+</ul>
+<h6>Task: Classic Birthday Newspaper webpage</h6>
