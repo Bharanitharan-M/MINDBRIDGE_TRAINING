@@ -45,3 +45,13 @@
   <li>Q/A session</li>
 </ul>
 <h6>Task: Classic Birthday Newspaper webpage</h6>
+
+
+<h4>DAY 5: </h4>
+<h6>CSS</h6>
+<ul>
+  <li>Box Model</li>
+  <li>Display: flex</li>
+  <li>Some Css properties</li>
+</ul>
+<h6>Task: Design the given template</h6>
