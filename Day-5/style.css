@@ -91,7 +91,7 @@ nav section button a:hover{
 }
 
 .home_page h2{
-    color: #87CEEB;
+    color: white;
     opacity: 1000;
 }
 .home_page iframe{
@@ -108,9 +108,23 @@ nav section button a:hover{
     
     border-width: 0px;
 }
-.home_page_left :nth-child(3){
+.home_page_left button{
     background-color: #FF4500;
 }
+.inline_change h2,.next_change{
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+.home_page_left .rem{
+    display: none;
+}
+.home_page_left .act {
+    
+    display: block;
+    color: #f2cc8f;
+}
+
+
 .home_page_left button a{
     text-decoration: none;
     color: white;
@@ -134,6 +148,7 @@ nav section button a:hover{
 .about_page{
     margin: 2% 0px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 5%;
@@ -240,6 +255,12 @@ nav section button a:hover{
     color: black;
     padding-left: 7%;
 }
+.place_inside_input input{
+    padding: 20px;
+}
+.place_inside_input input:placeholder-shown{
+    color: black;
+}
 .place_inside_input{
     position: relative;
     width: 100%;
@@ -247,12 +268,12 @@ nav section button a:hover{
 .about_page_newsletter i{
     position: absolute;
     left: 10px; 
-    top: 40%;
+    top: 43%;
       color: black;
       font-size: large; 
 }
 .place_inside_input button{
-    padding: 2% 3%;
+    padding: 2% 5%;
     background-color: #ff440084;
     border-color: #ff440084;
     border-radius: 20px;
@@ -260,7 +281,7 @@ nav section button a:hover{
     position: absolute;
     float: right;
     right: 0.5%;
-    top: 28%;
+    top: 32%;
 }
 .place_inside_input button:hover{
     background-color: #FF4500;
@@ -276,6 +297,7 @@ nav section button a:hover{
 }
 .mem_page{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 3%;
 }
@@ -287,13 +309,22 @@ nav section button a:hover{
 .mem_page table th{
     background-color: #3d405b;
     color: white;
+   
     
 }
 .fa-xmark{
-    color: red;
+    color: white;
+    background-color: #e07a5f;
+    padding: 2px;
+    font-size: small;
+    border-radius: 50%;
 }
 .fa-check{
-    color: green;
+    color: white;
+    background-color: #81b29a;
+    padding: 2px;
+    font-size: small;
+    border-radius: 50%;
 }
 .mem_page table td{
     text-align: center;
@@ -325,7 +356,7 @@ th:last-child{
     padding: 10px;
 }
 .mem_page .border_mem input{
-    padding: 10px;
+    padding: 12px;
     margin: 15px;
     width: 100%;
     border-radius: 20px;
@@ -364,6 +395,7 @@ th:last-child{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 50px;
     padding: 70px 0px 70px 100px;
     padding-right: 100px;
