@@ -31,6 +31,7 @@
 
 
     <div id="content">
+
         <div class="home_page" id="home">
             <div class="home_page_left">
                 <b>
@@ -48,7 +49,7 @@
                 </b>
             </div>
             <div class="home_page_right">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/AUzzBuQdz_I?si=aV3R_1LES4wQBBZG"
+                <iframe width="636" height="357" src="https://www.youtube.com/embed/AUzzBuQdz_I?si=aV3R_1LES4wQBBZG"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -60,7 +61,7 @@
             <div class="about_page">
                 <div class="about_page_left">
                     <h3>About VS Cricket Academic</h3>
-                    <p><span>Since 1999, </span> Victory Strikers Cricket Academy, where passion meets performance!
+                    <p><strong>Since 1999, </strong> Victory Strikers Cricket Academy, where passion meets performance!
                         Established witr tre vision to nurture budding cricketers and elevate treir game to tre highest
                         level, we are more tran just an academy—we are a cricketing family.</p>
                     <br>
@@ -109,8 +110,8 @@
                     <p>Don’t miss out on tre latest news, updates, and events from Victory Strikers Cricket Academy!
                         Subscribe to our newsletter</p>
                     <div class="place_inside_input">
-                        <input type="search" name="" id="" placeholder="Enter your Email">
-                        <i class="fa-solid fa-envelope"></i>
+                        <input type="search" name="" id="" placeholder="Enter address">
+                        <i class="fa-regular fa-envelope"></i>
                         <button onclick="">Subscribe</button>
                     </div>
                 </div>
@@ -254,13 +255,11 @@
 
         </div>
 
-        <div class="contact_page" id="contact">
-
-            <section class="form_style">
-                <h2>Contact VS</h2>
-                <section class="child">
+        <div class="contact_pages" id="contact">
+            <div class="contact_page">
+                <section class="form_style">
+                    <h2>Contact VS</h2>
                     <form action="">
-
                         <input type="text" placeholder="Enter Your Name">
                         <input type="text" placeholder="Mail address" style="margin-left: 30px;">
                         <br>
@@ -268,14 +267,9 @@
                         <button>Submit Form</button>
                     </form>
                 </section>
-                <section style="display: flex;" class="child">
-                    <img src="./Image/footer.jpeg" alt="icon_page" width="50px">
-                    <h4 style="text-align: center;">VS <br><span>Cricket Academic</span></h4>
-                </section>
-            </section>
 
-            <section class="back_image">
-                <section style="position: relative;" class="contact_page_last">
+                <section style="position: relative;">
+                    <img src="./Image/map.png" alt="" width="600px">
                     <address>
                         <h3>London, United Kingdom</h3>
                         <h4>(020) 010-020-0340</h4>
@@ -283,28 +277,38 @@
                         <button>Directions</button>
                     </address>
                 </section>
-                <section class="contact_page_last">
-                    <h3>Join Us</h3>
-                    <ul>
-                        <li>Mon-Fri 6:00 AM - 6:00 PM</li>
-                        <li>Sat-Sun 6:30 AM - 8:30 PM</li>
-                    </ul>
-                    <footer>Copyrights @ 2048 VS Cricket Academic</footer>
+
+            </div>
+            <div class="contact_pag">
+                <section style="display: flex;" class="child">
+                    <img src="./Image/footer.jpeg" alt="icon_page" width="50px">
+                    <h4 style="text-align: center;">VS <br>Cricket Academic</h4>
                 </section>
-            </section>
+                <section class="contact_page_last">
+                    <section>
+                        <h3>Join Us</h3>
+                        <div class="contact_dates">
+                            <h4>Mon-Fri <span>6:00 AM - 6:00 PM</span></h4>
+                            <h4>Sat-Sun <span>6:30 AM - 8:30 PM</span></h4>
+                        </div>
+                        <footer>
+                            <p>Copyrights @ 2048 VS Cricket Academic</p>
+                        </footer>
+                    </section>
+                    <section class="icon">
+                        <a href="https://www.instagram.com/bharani_.tharan/?igsh=MXNtcTR5aGF3MDgxNA%3D%3D"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a
+                            href="https://api.whatsapp.com/send/?phone=9677323935&text&type=phone_number&app_absent=0"></a><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+
+                    </section>
+
+                </section>
 
 
-            <section class="icon">
-                <a href="https://www.instagram.com/bharani_.tharan/?igsh=MXNtcTR5aGF3MDgxNA%3D%3D"><i
-                        class="fa-brands fa-instagram"></i></a>
-                <a href="https://api.whatsapp.com/send/?phone=9677323935&text&type=phone_number&app_absent=0"></a><i
-                    class="fa-brands fa-x-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-
-            </section>
-
-
-
+            </div>
         </div>
     </div>
 
@@ -316,7 +320,7 @@
         setInterval(function () {
             if (i == 3)
                 i = 0;
-            
+
             for (let j = 0; j < one_change.length; j++) {
                 if (i == j) {
                     one_change[j].classList.add("act");
@@ -327,7 +331,7 @@
                     one_change[j].classList.remove("act");
                 }
             }
-            
+
             i++;
         }, 2000)
 
