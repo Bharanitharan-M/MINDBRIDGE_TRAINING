@@ -25,11 +25,11 @@ nav section{
     
 }
 nav section img{
-    width: 70px;
+    width: 13%;
     background-color: #3d405b;
 }
 nav h2{
-    padding-top: 10px;
+    padding-top: 2%;
     color: whitesmoke;
     line-height: 15px;
 }
@@ -72,7 +72,7 @@ nav section button a:hover{
 
 /* Full Content Styling */
 #content{
-    margin-top: 70px;
+    margin-top: 5%;
 }
 
 
@@ -129,28 +129,28 @@ nav section button a:hover{
 
 /* About page design */
 .About{
-    margin-top: 20px;
+    margin-top: 2%;
 }
 .about_page{
-    margin: 20px 0px;
+    margin: 2% 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 5%;
   
 }
 .About{
-    padding-top: 20px;
+    padding-top: 2%;
     
 }
 .About h2{
     text-align: center;
     font-weight: bold;
     line-height: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 2%;
 }
 .about_page_left{
-    max-width: 600px;
+    max-width: 35%;
     line-height: 25px;
     text-align: justify;
 }
@@ -210,25 +210,27 @@ nav section button a:hover{
     opacity: 0.8;
 }
 .about_page_newsletter{
-    
+    line-height: 30px;
     margin-left: 4%;
-    padding: 10px 20px;
+    padding: 1% 3%;
     border-radius: 20px;
     max-width: 40%;
+    max-height: 100%;
     border: 1px solid rgba(160, 136, 0, 0.3);
     background-color: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(5px) saturate(180%)
 }
 .about_page_newsletter p{
+
     font-weight: lighter;
     opacity: 0.6;
-    margin-top: 10px;
+    margin-top: 5%;
 }
 .about_page_newsletter input{
     margin: 20px 0px;
     width: 100%;
     border-radius: 20px;
-    padding: 10px 20px;
+    padding: 2% 3%;
     border-color: white;
     height:20%;
     
@@ -236,7 +238,7 @@ nav section button a:hover{
 .about_page_newsletter :placeholder-shown{
     font-size: larger;
     color: black;
-    padding-left: 30px;
+    padding-left: 7%;
 }
 .place_inside_input{
     position: relative;
@@ -250,14 +252,14 @@ nav section button a:hover{
       font-size: large; 
 }
 .place_inside_input button{
-    padding: 10px 20px;
+    padding: 2% 3%;
     background-color: #ff440084;
     border-color: #ff440084;
     border-radius: 20px;
     color: white;
     position: absolute;
     float: right;
-    right: 10px;
+    right: 0.5%;
     top: 28%;
 }
 .place_inside_input button:hover{
@@ -267,7 +269,7 @@ nav section button a:hover{
 
 /* Membership styling */
 .Membership{
-    margin-top: 30px;
+    margin-top: 3%;
 }
 .Membership h2{
     text-align: center;
@@ -275,10 +277,11 @@ nav section button a:hover{
 .mem_page{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 3%;
 }
 .mem_page table{
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 4%;
     width: 650px;
 }
 .mem_page table th{
