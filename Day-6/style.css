@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+
+}
+
+
+/* header styleing */
+header{
+    background-image: url(./image/banner_img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}

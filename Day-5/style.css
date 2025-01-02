@@ -136,6 +136,7 @@ nav section button:hover {
 
 /* home page styling */
 .home_page {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -144,12 +145,13 @@ nav section button:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 100vh;
+    height: 90vh;
 }
-.conta{
-  z-index: -1;
-    background-color: #333d3356;
+.home_page::before{
+    background-color: #333d33c9; 
+    z-index: 1; 
 }
+
 
 .home_page h2 {
     font-weight: 700;
@@ -166,6 +168,7 @@ nav section button:hover {
     padding-top: 10%;
     align-self: flex-start;
     line-height: 300%;
+    z-index: 2; 
 }
 
 .home_page_left button {
@@ -224,6 +227,17 @@ nav section button:hover {
 .home_page_left a:hover {
     color: white;
     
+}
+.home_page_right{
+    z-index: 2; 
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -406,8 +420,7 @@ nav section button:hover {
 }
 .border_mem textarea::placeholder {
     color: #717275;
-    /* padding-top: 22px;
-    padding-left: 50px; */
+    
     font-size: 16px;
 
 }
