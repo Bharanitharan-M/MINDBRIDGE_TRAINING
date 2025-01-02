@@ -16,7 +16,7 @@
     <nav>
         <section>
             <img src="./Image/icon.png" alt="icon_page">
-            <h2 style="text-align: center;">VS <br><span>Cricket Academic</span></h2>
+            <h2 style="text-align: center;">Tiya <br><span>GOLF CLUB</span></h2>
         </section>
 
         <section id="navigation">
@@ -25,19 +25,51 @@
             <a href="#memberShip">Membership</a>
             <a href="#events">Events</a>
             <a href="#contact">Contact Us</a>
-            <button><a href="">Member Login</a></button>
+            <a href="" style="position: relative;" onmouseover="show_drop()" onmouseout="hide_drop()">Pages <i class="fa-solid fa-chevron-down"></i></a>
+            <div class="drop" onmouseover="show_drop()" onmouseout="hide_drop()">
+                <i class="fa-solid fa-caret-up"></i>
+                <a href="" >Event Listing</a>
+                <a href="">Event Details</a>
+            </div>
+            
+            <button onclick="show_member_login()">Member Login</button>
+            <div class="Member_login">
+                <div class="login_content">
+                    <div class="close">
+                    <h2>Member Login</h2>
+                   <button onclick="hide_mem_login()"><i class="fa-solid fa-xmark"></i></button> 
+                    </div>
+                    
+                    <form action="">
+                        <label for="number">Membership No.</label>
+                        
+                        <input type="text" id="number" name="number" placeholder="11002560"><br>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <div>
+                            <input type="checkbox" name="rem_me" id="rem_me"> 
+                            <label for="rem_me">Remember&nbsp;me</label>
+                           
+                        </div> 
+                            
+                        <center><button>Login</button><br></center>
+                        <a href="">Forgotten password?</a>
+                    </form>
+                    <footer><h4>Any Questions? <span> 010-020-0340</span></h4></footer>
+                </div>
+            </div>
         </section>
     </nav>
 
 
     <div id="content">
-
+        <div class="conta">
         <div class="home_page" id="home">
             <div class="home_page_left">
                 <b>
-                    <h2>Welcome to the club</h2>
+                    <h2 >Welcome to the club</h2>
                     <div class="inline_change">
-                        <h2>VS is</h2>
+                        <h2>Tiya is</h2>
                         <div class="next_change">
                             <h2 class="rem">Creative</h2>
                             <h2 class="rem">Modern</h2>
@@ -49,18 +81,16 @@
                 </b>
             </div>
             <div class="home_page_right">
-                <iframe width="636" height="357" src="https://www.youtube.com/embed/AUzzBuQdz_I?si=aV3R_1LES4wQBBZG"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MGNgbNGOzh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
             </div>
+        </div>
         </div>
 
         <div class="About" id="about">
-            <h2>About VS</h2>
+            <h2>About Tiya</h2>
             <div class="about_page">
                 <div class="about_page_left">
-                    <h3>About VS Cricket Academic</h3>
+                    <h3>About Tiya Club History</h3>
                     <p><strong>Since 1999, </strong> Victory Strikers Cricket Academy, where passion meets performance!
                         Established witr tre vision to nurture budding cricketers and elevate treir game to tre highest
                         level, we are more tran just an academy—we are a cricketing family.</p>
@@ -79,7 +109,7 @@
                             <a href="https://x.com/imVkohli?mx=2"><i class="fa-brands fa-x-twitter"></i></a>
                         </div>
                         <div class="inline_style">
-                            <h3>Virat</h3>
+                            <h3>Michael</h3>
                             <h4>Founder</h4>
 
                         </div>
@@ -95,7 +125,7 @@
                             <a href="https://x.com/AnushkaSharma"><i class="fa-brands fa-x-twitter"></i></a>
                         </div>
                         <div class="inline_style">
-                            <h3>Anushka</h3>
+                            <h3>Sandy</h3>
                             <h4>Co-Founder</h4>
                         </div>
 
@@ -119,7 +149,7 @@
         </div>
 
         <div class="Membership" id="memberShip">
-            <h2>Membership at VS</h2>
+            <h2>Membership at Tiya</h2>
             <div class="mem_page">
                 <div class="mem_page_left">
                     <h3>Membership Fees</h3>
@@ -156,7 +186,6 @@
                                 <td><i class="fa-solid fa-check"></i></td>
 
                             </tr>
-
                             <tr>
                                 <td>Weekend Seasonal</td>
                                 <td><i class="fa-solid fa-xmark"></i></td>
@@ -209,15 +238,19 @@
                     <img src="./Image/event-1.jpg" alt="">
                 </div>
                 <div class="event_content">
-                    <a href="">ODI activities</a>
-                    <p>Join us for the Victory Strikers Cricket Carnival 2024, a celebration of cricketing excellence,
+                    <a href="">Private activities</a>
+                    <p>Join us for the Tiya Golf Club Carnival Carnival 2048, a celebration of cricketing excellence,
                         passion, and sportsmanship.</p>
                     <div class="location">
-                        <section>
-                            <h4>Location: &nbsp;&nbsp; <span style="color: rgba(0, 0, 0, 0.322);">National Center, NYC
-                                </span></h4>
-                            <h4>Ticket: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span
-                                    style="color: rgba(0, 0, 0, 0.322);">$350</span></h4>
+                        <section style="display: flex;  flex-direction: column; justify-content:space-around; width: fit-content;">
+                            <section>
+                            <span>Location:</span> &nbsp;&nbsp;
+                            <span style="color: #717275;font-weight: 400;">National Center, NYC</span>
+                            </section>
+                            <section>
+                            <span>Ticket: </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span style="color: #717275;font-weight: 400;">$250</span>
+                            </section>
                         </section>
                         <section>
                             <button>Buy Ticket</button>
@@ -235,15 +268,19 @@
                     <img src="./Image/event-2.jpeg" alt="">
                 </div>
                 <div class="event_content">
-                    <a href="">T20 Tournament Activities</a>
-                    <p>Join us for the Victory Strikers Cricket Carnival 2024, a celebration of cricketing excellence,
+                    <a href="">Group Tournament Activities</a>
+                    <p>Join us for the Tiya Golf Club Carnival 2048, a celebration of cricketing excellence,
                         passion, and sportsmanship.</p>
                     <div class="location">
-                        <section>
-                            <h4>Location: &nbsp;&nbsp; <span style="color: rgba(0, 0, 0, 0.322);">National Center, NYC
-                                </span></h4>
-                            <h4>Ticket: &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <span
-                                    style="color: rgba(0, 0, 0, 0.322);">$350</span></h4>
+                        <section style="display: flex; flex-direction: column; justify-content:space-around; width: fit-content;">
+                            <section>
+                            <span>Location:</span> &nbsp;&nbsp;&nbsp;
+                            <span style="color: #717275;font-weight: 400;">National Center, NYC</span>
+                            </section>
+                            <section>
+                            <span>Ticket: </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span style="color: #717275;font-weight: 400;">$350</span>
+                            </section>
                         </section>
                         <section>
                             <button>Buy Ticket</button>
@@ -258,7 +295,7 @@
         <div class="contact_pages" id="contact">
             <div class="contact_page">
                 <section class="form_style">
-                    <h2>Contact VS</h2>
+                    <h2>Contact Tiya</h2>
                     <form action="">
                         <input type="text" placeholder="Enter Your Name">
                         <input type="text" placeholder="Mail address" style="margin-left: 30px;">
@@ -269,20 +306,20 @@
                 </section>
 
                 <section style="position: relative;">
-                    <img src="./Image/map.png" alt="" width="600px">
+                    <img src="./Image/map.jpg" alt="" width="700px">
                     <address>
                         <h3>London, United Kingdom</h3>
                         <h4>(020) 010-020-0340</h4>
-                        <h5>info@company.in</h5>
+                        <h4>info@company.in</h4>
                         <button>Directions</button>
                     </address>
                 </section>
 
             </div>
             <div class="contact_pag">
-                <section style="display: flex;" class="child">
-                    <img src="./Image/footer.jpeg" alt="icon_page" width="50px">
-                    <h4 style="text-align: center;">VS <br>Cricket Academic</h4>
+                <section style="display: flex;">
+                    <img src="./Image/icon.png" alt="icon_page" width="50px" height="40px" style="text-align: center;">
+                    <h4 style="text-align: center; justify-content: flex-start;">Tiya <br>GOLF CLUB</h4>
                 </section>
                 <section class="contact_page_last">
                     <section>
@@ -292,7 +329,7 @@
                             <h4>Sat-Sun <span>6:30 AM - 8:30 PM</span></h4>
                         </div>
                         <footer>
-                            <p>Copyrights @ 2048 VS Cricket Academic</p>
+                            <p>Copyrights @ 2048 Tiya Cricket Academic</p>
                         </footer>
                     </section>
                     <section class="icon">
@@ -302,15 +339,17 @@
                             href="https://api.whatsapp.com/send/?phone=9677323935&text&type=phone_number&app_absent=0"></a><i
                             class="fa-brands fa-x-twitter"></i></a>
                         <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-
                     </section>
-
                 </section>
-
-
             </div>
         </div>
+        <div class="footer_color">
+    
+        </div>
     </div>
+    
+
+   
 
 
     <script>
@@ -340,8 +379,8 @@
             let icon_over = document.getElementsByClassName("inside_img");
             icon_over[n].classList.add("active");
             let image_over = document.getElementsByClassName("relative")
-            image_over[n].style.widtr = "230px";
-            image_over[n].style.height = "180px";
+            // image_over[n].style.widtr = "320px";
+            // image_over[n].style.height = "210px";
 
             console.log(1);
         }
@@ -349,8 +388,28 @@
             let icon_out = document.getElementsByClassName("inside_img");
             icon_out[n].classList.remove("active");
             let image_out = document.getElementsByClassName("relative")
-            image_out[n].style.widtr = "217px";
-            image_out[n].style.height = "175px";
+            // image_out[n].style.width = "306px";
+            // image_out[n].style.height = "204px";
+        }
+        function show_drop()
+        {
+            let drop = document.getElementsByClassName("drop");
+            drop[0].style.display = "flex";
+        }
+        function hide_drop()
+        {
+            let drop = document.getElementsByClassName("drop");
+            drop[0].style.display = "none";
+        }
+        function show_member_login()
+        {
+            let mem_page = document.getElementsByClassName("Member_login");
+            mem_page[0].style.display = 'block';
+        }
+        function hide_mem_login()
+        {
+            let mem_page = document.getElementsByClassName("Member_login");
+            mem_page[0].style.display = 'none';
         }
     </script>
 </body>
