@@ -54,4 +54,26 @@
   <li>Display: flex</li>
   <li>Some Css properties</li>
 </ul>
-<h6>Task: Design the given template</h6>
+<h6>Task: Design the given template - 1</h6>
+
+
+<h4>DAY 6: </h4>
+<h6>CSS</h6>
+<ul>
+  <li>Pseudo-classes</li>
+  <li>Opacity</li>
+  <li>Forms</li>
+  <li>z-index</li>
+  <li>Float</li>
+  <li>Overflow</li>
+</ul>
+<h6>Task: Design the given template - 1</h6>
+
+
+<h4>DAY 7: </h4>
+<h6>CSS</h6>
+<ul>
+  <li>Review Task</li>
+ 
+</ul>
+<h6>Task: Design the given template - 2</h6>
