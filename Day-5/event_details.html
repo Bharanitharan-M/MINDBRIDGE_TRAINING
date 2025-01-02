@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widtr=device-widtr, initial-scale=1.0">
+    <title>Tiya GOLF Club</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="event_style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <nav>
+        <section>
+            <img src="./Image/icon.png" alt="icon_page">
+            <h2 style="text-align: center;">Tiya <br><span>GOLF CLUB</span></h2>
+        </section>
+
+        <section id="navigation">
+            <a href="./index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#memberShip">Membership</a>
+            <a href="index.html#events">Events</a>
+            <a href="index.html#contact">Contact Us</a>
+            <a href="" style="position: relative;" onmouseover="show_drop()" onmouseout="hide_drop()">Pages <i
+                    class="fa-solid fa-chevron-down"></i></a>
+            <div class="drop" onmouseover="show_drop()" onmouseout="hide_drop()">
+                <i class="fa-solid fa-caret-up"></i>
+                <a href="">Event Listing</a>
+                <a href="">Event Details</a>
+            </div>
+
+            <button onclick="show_member_login()">Member Login</button>
+            <div class="Member_login">
+                <div class="login_content">
+                    <div class="close">
+                        <h2>Member Login</h2>
+                        <button onclick="hide_mem_login()"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+
+                    <form action="">
+                        <label for="number">Membership No.</label>
+
+                        <input type="text" id="number" name="number" placeholder="11002560"><br>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <div>
+                            <input type="checkbox" name="rem_me" id="rem_me">
+                            <label for="rem_me">Remember&nbsp;me</label>
+
+                        </div>
+
+                        <center><button>Login</button><br></center>
+                        <a href="">Forgotten password?</a>
+                    </form>
+                    <footer>
+                        <h4>Any Questions? <span> 010-020-0340</span></h4>
+                    </footer>
+                </div>
+            </div>
+        </section>
+    </nav>
+
+    <div id="content">
+        <div class="home_page" id="home" style="height: 45vh;">
+            <div class="overlay"></div>
+            <div class="event_home">
+                <h1>Event Listing</h1>
+                <button>Explore Events</button>
+            </div>
+        </div>
+        <div class="event_details">
+            <h1>Tiya Club's Group tournaments</h1>
+            <img src="./Image/event-1.jpg" alt="">
+            <div class="details_content">
+                <h2>Golf Club based in Orlando</h2>
+                <p>Tiya Golf Club is Bootstrap v5.3.0 HTML CSS template for your golf related websites. Anyone can
+                    download,
+                    edit and use this layout for commercial purposes.</p>
+
+                <p>Tiya is 100% free CSS template provided by TemplateMo website. Please tell your friends about our
+                    website. Thank you for visiting.</p>
+                <div class="details">
+                    <h3>Event Detail</h3>
+                    <div>
+                        <span>Date:</span>
+                        <p>18 Mar 2048</p>
+                    </div>
+                    <div>
+                        <span>Location:</span>
+                        <p>Tiya Golf Club</p>
+                    </div>
+                    <div>
+                        <span>Ticket:</span>
+                        <p>$150</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="contact_pages" id="contact">
+            <div class="contact_page">
+
+
+                <section style="position: relative;">
+                    <img src="./Image/map.jpg" alt="" width="500px">
+                    <address style="left: 140px;">
+                        <h3>London, United Kingdom</h3>
+                        <h4>(020) 010-020-0340</h4>
+                        <h4>info@company.in</h4>
+                        <button>Directions</button>
+                    </address>
+                </section>
+
+            </div>
+            <div class="contact_pag">
+                <section style="display: flex;">
+                    <img src="./Image/icon.png" alt="icon_page" width="50px" height="40px" style="text-align: center;">
+                    <h4 style="text-align: center; justify-content: flex-start;">Tiya <br>GOLF CLUB</h4>
+                </section>
+                <section class="contact_page_last">
+                    <section>
+                        <h3>Join Us</h3>
+                        <div class="contact_dates">
+                            <h4>Mon-Fri <span>6:00 AM - 6:00 PM</span></h4>
+                            <h4>Sat-Sun <span>6:30 AM - 8:30 PM</span></h4>
+                        </div>
+                        <footer>
+                            <p>Copyrights @ 2048 Tiya Cricket Academic</p>
+                        </footer>
+                    </section>
+                    <section class="icon">
+                        <a href="https://www.instagram.com/bharani_.tharan/?igsh=MXNtcTR5aGF3MDgxNA%3D%3D"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a
+                            href="https://api.whatsapp.com/send/?phone=9677323935&text&type=phone_number&app_absent=0"></a><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+    <script>
+        let change = document.querySelectorAll(".next_change");
+        let i = 0;
+        let one_change = change[0].children;
+        setInterval(function () {
+            if (i == 3)
+                i = 0;
+
+            for (let j = 0; j < one_change.length; j++) {
+                if (i == j) {
+                    one_change[j].classList.add("act");
+                    one_change[j].classList.remove("rem");
+                }
+                else {
+                    one_change[j].classList.add("rem");
+                    one_change[j].classList.remove("act");
+                }
+            }
+
+            i++;
+        }, 2000)
+
+
+        function show_drop() {
+            let drop = document.getElementsByClassName("drop");
+            drop[0].style.display = "flex";
+        }
+        function hide_drop() {
+            let drop = document.getElementsByClassName("drop");
+            drop[0].style.display = "none";
+        }
+        function show_member_login() {
+            let mem_page = document.getElementsByClassName("Member_login");
+            mem_page[0].style.display = 'block';
+        }
+        function hide_mem_login() {
+            let mem_page = document.getElementsByClassName("Member_login");
+            mem_page[0].style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>

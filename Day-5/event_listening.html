@@ -6,6 +6,8 @@
     <meta name="viewport" content="widtr=device-widtr, initial-scale=1.0">
     <title>Tiya GOLF Club</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="event_style.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,16 +22,16 @@
         </section>
 
         <section id="navigation">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#memberShip">Membership</a>
-            <a href="#events">Events</a>
-            <a href="#contact">Contact Us</a>
+            <a href="./index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#memberShip">Membership</a>
+            <a href="index.html#events">Events</a>
+            <a href="index.html#contact">Contact Us</a>
             <a href="" style="position: relative;" onmouseover="show_drop()" onmouseout="hide_drop()">Pages <i
                     class="fa-solid fa-chevron-down"></i></a>
             <div class="drop" onmouseover="show_drop()" onmouseout="hide_drop()">
                 <i class="fa-solid fa-caret-up"></i>
-                <a href="./event_listening.html">Event Listing</a>
+                <a href="">Event Listing</a>
                 <a href="./event_details.html">Event Details</a>
             </div>
 
@@ -64,175 +66,66 @@
         </section>
     </nav>
 
-
     <div id="content">
-        <div class="home_page" id="home">
+        <div class="home_page" id="home" style="height: 45vh;">
             <div class="overlay"></div>
-            <div class="home_page_left">
-                <b>
-                    <h2>Welcome to the club</h2>
-                    <div class="inline_change">
-                        <h2>Tiya is</h2>
-                        <div class="next_change">
-                            <h2 class="rem">Creative</h2>
-                            <h2 class="rem">Modern</h2>
-                            <h2 class="rem">Lifestyle<h2>
-                        </div>
-                    </div>
-                    <button><a href="">Our Story</a></button>
-                    <a href="">Become Member</a>
-                </b>
-            </div>
-            <div class="home_page_right">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/MGNgbNGOzh8"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""></iframe>
+            <div class="event_home">
+                <h1>Event Listing</h1>
+                <button>Explore Events</button>
             </div>
         </div>
 
-
-        <div class="About" id="about">
-            <h2>About Tiya</h2>
-            <div class="about_page">
-                <div class="about_page_left">
-                    <h3>About Tiya Club History</h3>
-                    <p><strong>Since 1999, </strong> Victory Strikers Cricket Academy, where passion meets performance!
-                        Established witr tre vision to nurture budding cricketers and elevate treir game to tre highest
-                        level, we are more tran just an academy—we are a cricketing family.</p>
-                    <br>
-                    <h3>Our Mission</h3>
-                    <p>To provide a world-class cricketing environment, combining expert coaching, state-of-tre-art
-                        facilities, and personalized training to groom tre next generation of cricketing stars.</p>
-                </div>
-
-                <div class="about_page_right">
-                    <div class="relative">
-                        <img src="./Image/founder.jpeg" alt="founder" onmouseover="icon_show(0)"
-                            onmouseout="icon_hide(0)">
-                        <div class="inside_img" onmouseover="icon_show(0)" onmouseout="icon_hide(0)">
-                            <a href="https://www.instagram.com/virat.kohli/"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://x.com/imVkohli?mx=2"><i class="fa-brands fa-x-twitter"></i></a>
+        <div class="latest_event">
+            <h1>Latest events</h1>
+            <div class="img_flex">
+                <div class="img_rel">
+                    <img src="./Image/event_listing-1.jpg" alt="">
+                    <div class="img_content">
+                        <div class="date">
+                            <strong>18 Feb 2023</strong>
                         </div>
-                        <div class="inline_style">
-                            <h3>Michael</h3>
-                            <h4>Founder</h4>
-
+                        <div class="ticket">
+                            <strong>Buy Ticket</strong>
                         </div>
-
-
                     </div>
-                    <div class="relative">
-                        <img src="./Image/co-founder.jpg" alt="co-founder" onmouseover="icon_show(1)"
-                            onmouseout="icon_hide(1)">
-                        <div class="inside_img" onmouseover="icon_show(1)" onmouseout="icon_hide(1)">
-                            <a href="https://www.instagram.com/anushkasharma/"><i
-                                    class="fa-brands fa-instagram"></i></a>
-                            <a href="https://x.com/AnushkaSharma"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="img_rel">
+                    <img src="./Image/event_listing-2.jpg" alt="">
+                    <div class="img_content">
+                        <div class="date">
+                            <strong>34 Feb 2023</strong>
                         </div>
-                        <div class="inline_style">
-                            <h3>Sandy</h3>
-                            <h4>Co-Founder</h4>
+                        <div class="ticket">
+                            <strong>Buy Ticket</strong>
                         </div>
-
-
                     </div>
                 </div>
             </div>
-
-            <div class="about_page_img">
-
-                <div class="about_page_newsletter">
-                    <h1>Get Our newsletter</h1>
-                    <p>Don’t miss out on tre latest news, updates, and events from Victory Strikers Cricket Academy!
-                        Subscribe to our newsletter</p>
-                    <div class="place_inside_input">
-                        <input type="search" name="" id="" placeholder="Enter address">
-                        <i class="fa-regular fa-envelope"></i>
-                        <button onclick="">Subscribe</button>
+            <div class="event_content">
+                <div>
+                    <a href="">Single Tournament</a>
+                    <p>Tiya golf club single tournament helded on 18 feb 2023. </p>
+                    <hr>
+                    <div class="event_dates">
+                        <span>Location:</span>
+                        <p>National Center, NYC</p>
+                        <span>Ticket:</span>
+                        <p>$150</p>
+                    </div>
+                </div>
+                <div>
+                    <a href="">Group Tournaments</a>
+                    <p>Tiya golf club group tournaments helded on 18 feb 2023.</p>
+                    <hr>
+                    <div class="event_dates">
+                        <span>Location:</span>
+                        <p>National Center, NYC</p>
+                        <span>Ticket:</span>
+                        <p>$250</p>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="Membership" id="memberShip">
-            <h2>Membership at Tiya</h2>
-            <div class="mem_page">
-                <div class="mem_page_left">
-                    <h3>Membership Fees</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Yearly Access</th>
-                                <th>T1 $420</th>
-                                <th>T2 $640</th>
-                                <th>T3 $860</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Cricket Insurance</td>
-                                <td><i class="fa-solid fa-check"></i></td>
-                                <td><i class="fa-solid fa-check"></i></td>
-                                <td><i class="fa-solid fa-check"></i></td>
-
-                            </tr>
-
-                            <tr>
-                                <td>Academic Facilities</td>
-                                <td><i class="fa-solid fa-check"></i></td>
-                                <td><i class="fa-solid fa-check"></i></td>
-                                <td><i class="fa-solid fa-check"></i></td>
-
-                            </tr>
-
-                            <tr>
-                                <td>Country Club</td>
-                                <td><i class="fa-solid fa-xmark"></i></td>
-                                <td><i class="fa-solid fa-check"></i></td>
-                                <td><i class="fa-solid fa-check"></i></td>
-
-                            </tr>
-                            <tr>
-                                <td>Weekend Seasonal</td>
-                                <td><i class="fa-solid fa-xmark"></i></td>
-                                <td><i class="fa-solid fa-check"></i></td>
-                                <td><i class="fa-solid fa-check"></i></td>
-
-                            </tr>
-
-                            <tr>
-                                <td>Premium Courses</td>
-                                <td><i class="fa-solid fa-xmark"></i></td>
-                                <td><i class="fa-solid fa-xmark"></i></td>
-                                <td><i class="fa-solid fa-check"></i></td>
-
-                            </tr>
-
-                            <tr>
-                                <td>Pro's Networking</td>
-                                <td><i class="fa-solid fa-xmark"></i></td>
-                                <td><i class="fa-solid fa-xmark"></i></td>
-                                <td><i class="fa-solid fa-check"></i></td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="mem_page_right">
-                    <h3>Please Join us!</h3>
-                    <div class="border_mem">
-                        <h4>Become a member</h4>
-                        <input name="" id="" type="text" placeholder="Enter your name"><br>
-                        <input type="text" placeholder="Eneter your Email"><br>
-                        <textarea name="" id="" placeholder="Comments"></textarea><br>
-                        <button>Submit</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="event_page" id="events">
             <h2>Upcoming Events</h2>
 
@@ -357,10 +250,6 @@
         </div>
     </div>
 
-
-
-
-
     <script>
         let change = document.querySelectorAll(".next_change");
         let i = 0;
@@ -384,22 +273,6 @@
         }, 2000)
 
 
-        function icon_show(n) {
-            let icon_over = document.getElementsByClassName("inside_img");
-            icon_over[n].classList.add("active");
-            let image_over = document.getElementsByClassName("relative")
-            // image_over[n].style.widtr = "320px";
-            // image_over[n].style.height = "210px";
-
-            console.log(1);
-        }
-        function icon_hide(n) {
-            let icon_out = document.getElementsByClassName("inside_img");
-            icon_out[n].classList.remove("active");
-            let image_out = document.getElementsByClassName("relative")
-            // image_out[n].style.width = "306px";
-            // image_out[n].style.height = "204px";
-        }
         function show_drop() {
             let drop = document.getElementsByClassName("drop");
             drop[0].style.display = "flex";

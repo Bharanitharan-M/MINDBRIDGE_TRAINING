@@ -6,7 +6,7 @@
 }
 
 body {
-    
+
     overflow-x: hidden;
     background-color: #ffffff;
     font-size: 16px;
@@ -23,7 +23,7 @@ button {
 nav {
     display: flex;
     flex-direction: row;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     background-color: #3d405b;
     position: fixed;
@@ -65,39 +65,43 @@ nav #navigation {
     font-size: 16px;
     font-weight: 500;
 }
-.drop{
+
+.drop {
     display: none;
     border-radius: 20px !important;
     color: black;
     border-radius: 20px;
     position: absolute;
-   flex-direction: column;
-   right: 190px;
-   top: 54px;
-   
+    flex-direction: column;
+    right: 190px;
+    top: 54px;
+
 }
-.drop a{
+
+.drop a {
     border: solid white;
     background-color: white;
     color: black;
     padding: 5px 15px;
     position: relative;
-    top:18px;
+    top: 18px;
 }
 
-.drop i{
+.drop i {
     color: white;
     font-size: xx-large;
     position: absolute;
     left: 10px;
     font-weight: bolder;
 }
+
 nav section a {
     font-size: medium;
     text-decoration: none;
     color: whitesmoke;
 }
-nav section a:hover{
+
+nav section a:hover {
     color: #f2cc8f;
 }
 
@@ -105,10 +109,10 @@ nav section>button {
     border: solid;
     border-width: 1px;
     border-radius: 20px;
-    background-color: #3d405b;
+    background-color: #f2cc8f;
     border-color: #f2cc8f;
     padding: 10px;
-    color: #f2cc8f;
+    color: white;
     text-align: center;
 }
 
@@ -116,7 +120,7 @@ nav section button:hover {
     color: #f2cc8f;
 }
 
-nav section a .active {
+nav section a:active {
     color: #f2cc8f;
 }
 
@@ -130,7 +134,7 @@ nav section button:hover {
 
 /* Full Content Styling */
 #content {
-    padding-top:6%;
+    padding-top: 6%;
 }
 
 
@@ -147,9 +151,10 @@ nav section button:hover {
     background-size: 100% 100%;
     height: 90vh;
 }
-.home_page::before{
-    background-color: #333d33c9; 
-    z-index: 1; 
+
+.home_page::before {
+    background-color: #333d33c9;
+    z-index: 1;
 }
 
 
@@ -168,14 +173,14 @@ nav section button:hover {
     padding-top: 10%;
     align-self: flex-start;
     line-height: 300%;
-    z-index: 2; 
+    z-index: 2;
 }
 
 .home_page_left button {
     font-weight: 700;
     border-radius: 100px;
     /* padding: 10px 20px; */
-    background-color:#f2cc8f;
+    background-color: #f2cc8f;
     font-size: 14px;
     box-sizing: border-box;
     margin: auto;
@@ -185,7 +190,7 @@ nav section button:hover {
     display: inline-block;
     font-size: 16px;
     padding: 10px 15px;
-    
+
 }
 
 .inline_change h2,
@@ -214,7 +219,8 @@ nav section button:hover {
     font-size: 14px;
     font-weight: 700;
 }
-.home_page_left button:hover{
+
+.home_page_left button:hover {
     background-color: #e07a5f;
 }
 
@@ -226,12 +232,14 @@ nav section button:hover {
 
 .home_page_left a:hover {
     color: white;
-    
+
 }
-.home_page_right{
-    z-index: 2; 
+
+.home_page_right {
+    z-index: 2;
 }
-.overlay{
+
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -302,7 +310,7 @@ nav section button:hover {
 }
 
 .about_page_right img {
-    
+
     width: 306px;
     height: 204px;
     border-radius: 10px;
@@ -320,7 +328,8 @@ nav section button:hover {
     font-size: 24px;
     font-weight: 500;
 }
-.about_page_right .inline_style h4{
+
+.about_page_right .inline_style h4 {
     color: #7c7e83;
     font-size: 18px;
     font-weight: 400;
@@ -361,7 +370,7 @@ nav section button:hover {
     height: 70vh;
     display: flex;
     align-items: center;
-    
+
 }
 
 .about_page_newsletter {
@@ -377,7 +386,8 @@ nav section button:hover {
     padding: 20px;
     padding-top: 40px;
 }
-.about_page_newsletter h1{
+
+.about_page_newsletter h1 {
     font-size: 36px;
     font-weight: 700;
 }
@@ -416,11 +426,12 @@ nav section button:hover {
     padding-top: 22px;
     padding-left: 50px;
     font-size: 20px;
-   
+
 }
+
 .border_mem textarea::placeholder {
     color: #717275;
-    
+
     font-size: 16px;
 
 }
@@ -446,7 +457,7 @@ nav section button:hover {
     height: 50px;
     width: 150px;
     text-align: center;
-    
+
     background-color: #f2cc8f;
     border: none;
     border-radius: 100px;
@@ -455,7 +466,9 @@ nav section button:hover {
     right: 1%;
     top: 26.5%;
 }
-.place_inside_input button, a {
+
+.place_inside_input button,
+a {
     font-size: 18px;
     font-weight: bolder;
 }
@@ -597,14 +610,17 @@ th:last-child {
     padding: 70px 0px 70px 100px;
     padding-right: 100px;
 }
-.event_page>h2{
+
+.event_page>h2 {
     font-size: 36px;
     font-weight: 700;
 }
-.event_page .date_color h2{
+
+.event_page .date_color h2 {
     font-size: 42px;
     font-weight: 400;
 }
+
 .event_page .events_upcoming {
     display: flex;
     justify-content: space-evenly;
@@ -664,10 +680,12 @@ th:last-child {
     line-height: 30px;
     justify-content: space-between;
 }
-.event_page .location  span{
+
+.event_page .location span {
     font-size: 16px;
     font-weight: 700;
 }
+
 .event_page .location button {
     align-content: center;
     font-size: 14px;
@@ -676,7 +694,7 @@ th:last-child {
     background-color: #f2cc8f;
     color: white;
     border-color: #f2cc8f;
-   font-weight: 700;
+    font-weight: 700;
 }
 
 /* contact page styling */
@@ -700,8 +718,7 @@ th:last-child {
 
 }
 
-.contact_page .form_style
-textarea {
+.contact_page .form_style textarea {
     margin-top: 30px;
     border-color: rgb(179, 176, 176);
 
@@ -714,7 +731,9 @@ textarea {
     width: 100%;
     height: 100px;
 }
-.contact_page .form_style input:placeholder-shown,textarea:placeholder-shown{
+
+.contact_page .form_style input:placeholder-shown,
+textarea:placeholder-shown {
     font-size: 16px;
     font-weight: 400;
     color: #717275;
@@ -743,17 +762,20 @@ textarea {
     position: absolute;
     top: 1px;
     left: 210px;
-    
+
 }
-.contact_page address h3{
+
+.contact_page address h3 {
     font-size: 16px;
     font-weight: 700;
 }
-.contact_page address h4{
+
+.contact_page address h4 {
     font-size: 18px;
     font-weight: 400;
 }
-.contact_page address:last-child{
+
+.contact_page address:last-child {
     padding-bottom: 50px;
 }
 
@@ -774,7 +796,7 @@ textarea {
 .contact_pag h4 {
     color: #717275;
     font-weight: 500;
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .contact_pag h4>span {
@@ -787,7 +809,8 @@ textarea {
     width: fit-content;
     padding-bottom: 20px;
 }
-.contact_dates h4:last-child{
+
+.contact_dates h4:last-child {
     padding-top: 20px;
 }
 
@@ -839,7 +862,7 @@ footer p {
 
 
 /* Member_login */
-.Member_login{
+.Member_login {
     display: none;
     position: absolute;
     top: 0;
@@ -849,60 +872,68 @@ footer p {
     z-index: 2000;
     height: 100vh;
     width: 400px;
-    
+
 }
-.login_content{
+
+.login_content {
     position: relative;
     height: 90vh;
-    
+
 }
-.Member_login h2{
+
+.Member_login h2 {
     font-size: 22px;
     font-weight: 500;
     color: black;
     letter-spacing: -1px;
 }
-.Member_login form{
+
+.Member_login form {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
 }
-.Member_login form label{
+
+.Member_login form label {
     font-size: 16px;
     font-weight: 400;
     color: #212529;
-    
+
 }
 
-.Member_login form input{
+.Member_login form input {
     border-radius: 100px;
     padding: 10px;
-    border-color:  white;
+    border-color: white;
     outline: #717275;
     width: 100%;
     margin: 10px 0px;
-    
+
 }
-.Member_login form input:placeholder-shown{
+
+.Member_login form input:placeholder-shown {
     font-size: 16px;
     font-family: inherit;
     font-weight: 400;
 }
 
-.Member_login form div{
-    margin-top: 10px; 
+.Member_login form div {
+    margin-top: 10px;
 }
-.Member_login form div label{
+
+.Member_login form div label {
     font-size: 16px;
     padding-left: 1px;
-    
+
 }
-.Member_login label{
+
+.Member_login label {
     display: inline-block;
 }
-.Member_login form #rem_me{
+
+.Member_login form #rem_me {
     border-radius: .25rem;
-    border:1px solid black;
+    border: 1px solid black;
     width: 1.2em;
     margin-top: 10px;
     margin-left: 10px;
@@ -912,60 +943,69 @@ footer p {
     box-shadow: whitesmoke;
 }
 
-.Member_login form button{
+.Member_login form button {
     background-color: #f2cc8f;
     color: white;
-   margin-top: 20px;
+    margin-top: 20px;
     font-size: 16px;
     font-weight: 500;
     padding: 10px 20px;
     border-radius: 20px;
-    align-items:end;
-    width: fit-content;  
+    align-items: end;
+    width: fit-content;
 }
-.login_content form a{
+
+.login_content form a {
     font-size: 16px;
     font-weight: 400;
     margin: 0 auto;
     margin-top: 30px;
-    color:  #3D405B !important;
+    color: #3D405B !important;
     text-decoration: none;
 }
-.login_content footer{
+
+.login_content footer {
     position: absolute;
     bottom: 0px;
-    font-size: 18px;   
+    font-size: 18px;
     margin-left: 40px;
 }
-.login_content h4{
+
+.login_content h4 {
 
     font-size: 18px;
     font-weight: 400;
 }
-.login_content span{
+
+.login_content span {
     color: #3D405B;
     font-size: 18px;
 }
-.close{
+
+.close {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.close button{
-cursor: pointer;
+
+.close button {
+    cursor: pointer;
     align-items: flex-start;
     background-color: transparent;
-    
+
 }
-.close button i{
-    
+
+.close button i {
+
     font-size: xx-large;
 }
-.close button:hover{
+
+.close button:hover {
     background-color: transparent;
     color: black;
 }
-.footer_color{
+
+.footer_color {
     margin-top: 30px;
     left: 0;
     right: 0;
