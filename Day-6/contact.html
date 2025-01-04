@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugx gaming</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./ourshop_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbars">
+            <div class="navbar_left">
+                <img src="./image/icon_img.png" alt="">
+            </div>
+            <div class="navbar_right">
+                <ul class="nav_list">
+                    <li onclick="active_add(event,this)"><a href="./index.html#home">Home</a></li>
+                    <li onclick="active_add(event,this)"><a href="./OurShop.html">Our Shop</a></li>
+                    <li onclick="active_add(event,this)"><a href="./product.html">Product Details </a></li>
+                    <li onclick="active_add(event,this)" class="active"><a href="#">Contact Us</a></li>
+                    <li onclick="active_add(event,this)"><a href="">Sign in</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="ourshop single_product">
+        <div class="ourshop_content single_product_content">
+            <div class="ourshop_home single_product_home">
+                <div class="container-fluid">
+                    <h3>Contact Us</h3>
+                    <a href="">Home</a><span><span> > </span>Contact Us</span>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="section cta">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 align-self-center">
+                            <div class="shop">
+                                <div class="row left-text">
+                                    <div class="col-lg-12">
+                                        <div class="section-heading">
+                                            <h6>Contact us</h6>
+                                            <h2>Say Hello!</h2>
+                                        </div>
+                                        <p>LUGX Gaming Template is based on the latest Bootstrap 5 CSS framework. This
+                                            template is provided by TemplateMo and it is suitable for your gaming shop
+                                            ecommerce websites. Feel free to use this for any purpose. Thank you.</p>
+                                        <ul>
+                                            <li><span>Address </span><br>Sunny isles Beach, FL 33160, United States</li>
+                                            <li><span>Phone </span><br>+123 456 7890</li>
+                                            <li><span>Email </span><br>lugx@conatct.com</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="subscribe right-content">
+                                <div class="row">
+                                    <div class="col-lg-12 map">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12469.776493332698!2d-80.14036379941481!3d25.907788681148624!2m3!1f357.26927939317244!2f20.870722720054623!3f0!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1642869952544!5m2!1sen!2sth"
+                                            width="100%" height="325px" frameborder="0"
+                                            style="border:0; border-radius: 23px;" allowfullscreen=""></iframe>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="search-input">
+                                            <form id="subscribe" action="#">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <input type="text" name="name" placeholder="your Name...">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <input type="text" name="surname"
+                                                            placeholder="Your Surname....">
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <input type="email" name="email" placeholder="Your E-mail...">
+                                                    </div>
+
+                                                    <div class="col-lg-6">
+                                                        <input type="text" name="subject" placeholder="Subject..."><br>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <textarea name="message" placeholder="Your Message"></textarea>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <button> Send Message Now</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. Design: TemplateMo</p>
+    </div>
+    <script>
+        const navbar = document.getElementsByClassName('navbars');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 350) {
+                navbar[0].classList.add('scrolled');
+            } else {
+                navbar[0].classList.remove('scrolled');
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

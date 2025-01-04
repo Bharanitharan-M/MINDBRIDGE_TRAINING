@@ -198,6 +198,9 @@ color: #008af8;
     border: none;
     padding: 0px 25px;
     border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+
 }
 .product_contents ul{
     padding-left: 0px;
@@ -319,4 +322,99 @@ color: #008af8;
 }
 .description .row .cont{
     margin-top: 50px;
+}
+
+
+
+/* conatct page */
+.shop{
+    margin-top: 60px;
+}
+.news .section{
+    padding-top: 0;
+}
+.news .shop, .subscribe{
+    padding: 40px;
+}
+.news .cta{
+    position: static;
+}
+.news .shop p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #4a4a4a;
+    padding: 10px 0px;
+    margin-bottom: 50px;
+}
+.news .shop ul{
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0;
+}
+
+.news .shop li{
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #aaaaaa;
+    line-height: 21px;
+}
+.news .shop span{
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+.subscribe{
+    --bs-gutter-x: 0rem;
+    background-color: transparent;
+}
+.map{
+    margin-bottom: 60px;
+}
+.right_content{
+    padding: 0;
+}
+.subscribe .search-input {
+    position: static;
+}
+#subscribe input{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    padding: 0px 20px;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(231, 231, 231);
+    font-size: 14px;
+    color: rgb(74, 74, 74);
+    margin-bottom: 30px;
+}
+#subscribe textarea{
+    width: 100%;
+    height: 130px;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(231, 231, 231);
+    font-size: 14px;
+    color: rgb(74, 74, 74);
+    margin-bottom: 30px;
+}
+#subscribe a{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(238, 98, 107);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0px 25px;
+    border: none;
+    border-radius: 25px;
+}
+.subscribe .search-input{
+    position: static;
+}
+.subscribe .search-input button{
+    position: static;
 }
