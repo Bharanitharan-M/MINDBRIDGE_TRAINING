@@ -5,24 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lugx gaming</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="navbars">
             <div class="navbar_left">
                 <img src="./image/icon_img.png" alt="">
             </div>
             <div class="navbar_right">
                 <ul class="nav_list">
-                    <li onclick="active_add(event,this)"><a href="#home">Home</a></li>
-                    <li onclick="active_add(event,this)"><a href="">Our Shop</a></li>
-                    <li onclick="active_add(event,this)"><a href="">Product Details </a></li>
+                    <li onclick="active_add(event,this)" class="active"><a href="#home">Home</a></li>
+                    <li onclick="active_add(event,this)"><a href="./OurShop.html">Our Shop</a></li>
+                    <li onclick="active_add(event,this)"><a href="./product.html">Product Details </a></li>
                     <li onclick="active_add(event,this)"><a href="">Contact Us</a></li>
                     <li onclick="active_add(event,this)"><a href="">Sign in</a></li>
                 </ul>
@@ -53,30 +56,34 @@
             </div>
             <div class="home_footer">
                 <div class="footer_content">
-                    <section class="icon">
-                        <img src="./image/home_icon-1.png" alt="">
-
+                    <section class="icons">
+                        <a href="">
+                            <img src="./image/home_icon-1.png" alt="">
+                        </a>
                     </section>
                     <h4>Free storage</h4>
                 </div>
                 <div class="footer_content">
-                    <section class="icon">
-                        <img src="./image/home_icon-2.png" alt="">
-
+                    <section class="icons">
+                        <a href="">
+                            <img src="./image/home_icon-2.png" alt="">
+                        </a>
                     </section>
                     <h4>user more</h4>
                 </div>
                 <div class="footer_content">
-                    <section class="icon">
-                        <img src="./image/home_icon-3.png" alt="">
-
+                    <section class="icons">
+                        <a href="">
+                            <img src="./image/home_icon-3.png" alt="">
+                        </a>
                     </section>
                     <h4>reply ready</h4>
                 </div>
                 <div class="footer_content">
-                    <section class="icon">
-                        <img src="./image/home_icon-4.png" alt="">
-
+                    <section class="icons">
+                        <a href="">
+                            <img src="./image/home_icon-4.png" alt="">
+                        </a>
                     </section>
                     <h4>easy layout</h4>
                 </div>
@@ -166,106 +173,219 @@
                 <div class="most_played">
                     <div class="most_played_container">
                         <div class="most_played_row">
-                        <h6>tops games</h6>
-                        <div class="most_played_content">
-                            <h2> Most Played</h2>
-                            <a href="">View all</a>
-                        </div>
-                        <div class="most_played_row">
-                            <div class="trending_games">
-                                <div class="trending_game_section">
-                                    <div class="product_links">
-                                        <a href=""><img src="./image/most_played-1.jpg" alt=""></a>
-                                    </div>
-                                    <div class="product_content">
-                                        <span>Action</span>
-                                        <h4>Assasin Creed</h4>
-                                        <a href="">Explore</a>
-                                    </div>
-                                </div>
-    
-                                <div class="trending_game_section">
-                                    <div class="product_links">
-                                        <a href=""><img src="./image/most_played-2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="product_content">
-                                        <span>Action</span>
-                                            <h4>Assasin Creed</h4>
-                                            <a href="">Explore</a>
-                                    </div>
-                                </div>
-    
-                                <div class="trending_game_section">
-                                    <div class="product_links">
-                                        <a href=""><img src="./image/most_played-3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="product_content">
-                                        <span>Action</span>
-                                        <h4>Assasin Creed</h4> 
-                                        <a href="">Explore</a>
-                                    </div>
-                                </div>
-    
-                                <div class="trending_game_section">
-                                    <div class="product_links">
-                                        <a href=""><img src="./image/most_played-4.jpg" alt=""></a>
-                                    </div>
-                                    <div class="product_content">
-                                        <span>Action</span>
-                                            <h4>Assasin Creed</h4>
-                                            <a href="">Explore</a>
-                                    </div>
-                                </div>
-                                <div class="trending_game_section">
-                                    <div class="product_links">
-                                        <a href=""><img src="./image/most_played-5.jpg" alt=""></a>
-                                    </div>
-                                    <div class="product_content">
-                                        <span>Action</span>
-                                            <h4>Assasin Creed</h4>
-                                            <a href="">Explore</a>
-                                    </div>
-                                </div>
-                                <div class="trending_game_section">
-                                    <div class="product_links">
-                                        <a href=""><img src="./image/most_played-6.jpg" alt=""></a>
-                                    </div>
-                                    <div class="product_content">
-                                        <span>Action</span>
-                                            <h4>Assasin Creed</h4>
-                                            <a href="">Explore</a>
-                                    </div>
-                                </div>
+                            <h6>tops games</h6>
+                            <div class="most_played_content">
+                                <h2> Most Played</h2>
+                                <a href="">View all</a>
                             </div>
-                                
+                            <div class="most_played_row">
+                                <div class="trending_games">
+                                    <div class="trending_game_section">
+                                        <div class="product_links">
+                                            <a href=""><img src="./image/most_played-1.jpg" alt=""></a>
+                                        </div>
+                                        <div class="product_content">
+                                            <span>Action</span>
+                                            <h4>Assasin Creed</h4>
+                                            <a href="">Explore</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="trending_game_section">
+                                        <div class="product_links">
+                                            <a href=""><img src="./image/most_played-2.jpg" alt=""></a>
+                                        </div>
+                                        <div class="product_content">
+                                            <span>Action</span>
+                                            <h4>Assasin Creed</h4>
+                                            <a href="">Explore</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="trending_game_section">
+                                        <div class="product_links">
+                                            <a href=""><img src="./image/most_played-3.jpg" alt=""></a>
+                                        </div>
+                                        <div class="product_content">
+                                            <span>Action</span>
+                                            <h4>Assasin Creed</h4>
+                                            <a href="">Explore</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="trending_game_section">
+                                        <div class="product_links">
+                                            <a href=""><img src="./image/most_played-4.jpg" alt=""></a>
+                                        </div>
+                                        <div class="product_content">
+                                            <span>Action</span>
+                                            <h4>Assasin Creed</h4>
+                                            <a href="">Explore</a>
+                                        </div>
+                                    </div>
+                                    <div class="trending_game_section">
+                                        <div class="product_links">
+                                            <a href=""><img src="./image/most_played-5.jpg" alt=""></a>
+                                        </div>
+                                        <div class="product_content">
+                                            <span>Action</span>
+                                            <h4>Assasin Creed</h4>
+                                            <a href="">Explore</a>
+                                        </div>
+                                    </div>
+                                    <div class="trending_game_section">
+                                        <div class="product_links">
+                                            <a href=""><img src="./image/most_played-6.jpg" alt=""></a>
+                                        </div>
+                                        <div class="product_content">
+                                            <span>Action</span>
+                                            <h4>Assasin Creed</h4>
+                                            <a href="">Explore</a>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
 
 
                         </div>
                     </div>
-                    </div>
+                </div>
 
-                    <div class="categories">
-                        <div class="trending_section">
-                            <div class="trending_row">
-                                <h6>Categories</h6>
-                                <div class="trending_heading">
-                                    <h2>Top Categories</h2>
+                <div class="categories">
+                    <div class="trending_section">
+                        <div class="trending_row">
+                            <h6>Categories</h6>
+                            <div class="trending_heading">
+                                <h2>Top Categories</h2>
+                            </div>
+                            <div class="cat_list">
+                                <div class="container">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="">
+                                            <div class="item">
+                                                <h4>Action</h4>
+                                                <div class="thumb">
+                                                    <a href="product-details.html"><img src="./image/cat_img-1.jpg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div class="item">
+                                                <h4>Action</h4>
+                                                <div class="thumb">
+                                                    <a href="product-details.html"><img src="./image/cat_img-2.jpg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div class="item">
+                                                <h4>Action</h4>
+                                                <div class="thumb">
+                                                    <a href="product-details.html"><img src="./image/cat_img-3.jpg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div class="item">
+                                                <h4>Action</h4>
+                                                <div class="thumb">
+                                                    <a href="product-details.html"><img src="./image/cat_img-4.jpg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <div class="item">
+                                                <h4>Action</h4>
+                                                <div class="thumb">
+                                                    <a href="product-details.html"><img src="./image/cat_img-5.jpg"
+                                                            alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="news">
+                    <div class="section cta">
+                        <div class="container">
+                            <div class="row" style="z-index: 1;">
+                                <div class="col-lg-5">
+                                    <div class="shop">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="section-heading">
+                                                    <h6>Our Shop</h6>
+                                                    <h2>Go Pre-Order Buy &amp; Get Best <em>Prices</em> For You!</h2>
+                                                </div>
+                                                <p>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor
+                                                    incididunt.</p>
+                                                <div class="main-button">
+                                                    <a href="shop.html">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 offset-lg-2 align-self-end">
+                                    <div class="subscribe">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="section-heading">
+                                                    <h6>NEWSLETTER</h6>
+                                                    <h2>Get Up To $100 Off Just Buy <em>Subscribe</em> Newsletter!</h2>
+                                                </div>
+                                                <div class="search-input">
+                                                    <form id="subscribe" action="#">
+                                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                                            aria-describedby="emailHelp" placeholder="Your email...">
+                                                        <button type="submit">Subscribe Now</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg_image">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. Design: TemplateMo</p>
+                </div>
             </div>
 
         </div>
 
+    </div>
 
-    
+
+
 
     <script>
+        const navbar = document.getElementsByClassName('navbars');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 350) {
+                navbar[0].classList.add('scrolled');
+            } else {
+                navbar[0].classList.remove('scrolled');
+            }
+        });
         function active_add(event, e) {
             event.preventDefault();
             let navbar = document.querySelectorAll(".nav_list");
@@ -276,6 +396,10 @@
                 console.log("after", nav.classList);
             });
             e.classList.add("active");
+            let link = e.querySelector('a');
+            if (link) {
+                window.location.href = link.href;
+            } 
 
         }
     </script>

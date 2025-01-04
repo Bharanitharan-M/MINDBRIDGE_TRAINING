@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugx gaming</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./ourshop_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbars">
+            <div class="navbar_left">
+                <img src="./image/icon_img.png" alt="">
+            </div>
+            <div class="navbar_right">
+                <ul class="nav_list">
+                    <li onclick="active_add(event,this)"><a href="./index.html#home">Home</a></li>
+                    <li onclick="active_add(event,this)"><a href="./OurShop.html">Our Shop</a></li>
+                    <li onclick="active_add(event,this)" class="active"><a href="#">Product Details </a></li>
+                    <li onclick="active_add(event,this)"><a href="">Contact Us</a></li>
+                    <li onclick="active_add(event,this)"><a href="">Sign in</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="ourshop single_product">
+        <div class="ourshop_content single_product_content">
+            <div class="ourshop_home single_product_home">
+                <div class="container-fluid">
+                    <h3>Modern Warfare<sup>®</sup> II</h3>
+                    <a href="">Home</a><span><span> > </span> shop <span> > </span> Assasin Creed</span>
+                </div>
+            </div>
+        </div>
+        <div class="product_content">
+            <div class="single_product_section">
+                <div class="d-flex  ">
+                    <div class="product_img col-6">
+                        <img src="./image/single_product.jpg" alt="">
+                    </div>
+                    <div class="product_contents">
+                        <div class="conatiner">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h4>Call of Duty<sup>®</sup>: Modern Warfare<sup>®</sup> II</h4>
+                                </div>
+                                <div class="col-12 prices">
+                                    <span><del>$28</del> $22</span>
+                                </div>
+                                <div class="col-12">
+                                    <p>LUGX Gaming Template is based on the latest Bootstrap 5 CSS framework. This
+                                        template is provided by TemplateMo and it is suitable for your gaming shop
+                                        ecommerce websites. Feel free to use this for any purpose. Thank you.</p>
+                                </div>
+                                <div class="col-12">
+                                    <form action="">
+                                        <input type="qty" aria-describedby="quantity" step="1" value="1" maxlength="1"
+                                            oninput="change_qty(this)">
+                                        <button><i class="fa fa-shopping-bag"></i> Add to cart</button>
+                                    </form>
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li><span>Game ID: </span>COD MMII</li>
+                                        <li><span>Genre: </span>Action, Team, Single</li>
+                                        <li><span>Multi-tags:</span>War, Battle, Royal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <div class="description_content">
+                    <div class="d-flex description_top">
+                        <ul>
+                            <li><button class="active" onclick="des_show(0)">Description</button></li>
+                            <li><button onclick="des_show(1)">Reviews (3)</button></li>
+                        </ul>
+                    </div>
+                    <div class="description_cont show">
+                        <p>You can search for more templates on Google Search using keywords such as "templatemo digital
+                            marketing", "templatemo one-page", "templatemo gallery", etc. Please tell your friends about
+                            our website. If you need a variety of HTML templates, you may visit Tooplate and Too CSS
+                            websites.</p>
+                        <p>Coloring book air plant shabby chic, crucifix normcore raclette cred swag artisan activated
+                            charcoal. PBR&B fanny pack pok pok gentrify truffaut kitsch helvetica jean shorts edison
+                            bulb poutine next level humblebrag la croix adaptogen. Hashtag poke literally locavore,
+                            beard marfa kogi bruh artisan succulents seitan tonx waistcoat chambray taxidermy. Same cred
+                            meggings 3 wolf moon lomo irony cray hell of bitters asymmetrical gluten-free art party raw
+                            denim chillwave tousled try-hard succulents street art.</p>
+                    </div>
+                    <div class="description_cont">
+                        <p>Coloring book air plant shabby chic, crucifix normcore raclette cred swag artisan activated
+                            charcoal. PBR&B fanny pack pok pok gentrify truffaut kitsch helvetica jean shorts edison
+                            bulb poutine next level humblebrag la croix adaptogen.</p>
+                        <p>Hashtag poke literally locavore, beard marfa kogi bruh artisan succulents seitan tonx
+                            waistcoat chambray taxidermy. Same cred meggings 3 wolf moon lomo irony cray hell of bitters
+                            asymmetrical gluten-free art party raw denim chillwave tousled try-hard succulents street
+                            art.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="description">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <h6>Action</h6>
+                            <h2>Related Games</h2>
+                        </div>
+                        <div class="col-6 button" style="text-align: right; margin-top: 32px;">
+                            <a href="">View All</a>
+                        </div>
+                        <div class="d-flex justify-content-between mt-5 pe-4">
+                            <div class="col-2">
+                                    <div class="item">
+                                        <h4>Action</h4>
+                                        <div class="thumb">
+                                            <a href="product-details.html"><img src="./image/cat_img-1.jpg" alt=""></a>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                            <div class="col-2">
+                                <div class="item">
+                                    <h4>Action</h4>
+                                    <div class="thumb">
+                                        <a href="product-details.html"><img src="./image/cat_img-2.jpg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="item">
+                                    <h4>Action</h4>
+                                    <div class="thumb">
+                                        <a href="product-details.html"><img src="./image/cat_img-3.jpg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="item">
+                                    <h4>Action</h4>
+                                    <div class="thumb">
+                                        <a href="product-details.html"><img src="./image/cat_img-4.jpg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="item">
+                                    <h4>Action</h4>
+                                    <div class="thumb">
+                                        <a href="product-details.html"><img src="./image/cat_img-5.jpg"
+                                                alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. Design: TemplateMo</p>
+    </div>
+    <script>
+        const navbar = document.getElementsByClassName('navbars');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 350) {
+                navbar[0].classList.add('scrolled');
+            } else {
+                navbar[0].classList.remove('scrolled');
+            }
+        });
+        function des_show(n) {
+            let des_content = document.getElementsByClassName("description_cont");
+            Array.from(des_content).forEach(des => {
+                des.classList.remove("show");
+            });
+            des_content[n].classList.add("show");
+
+        }
+    </script>
+</body>
+
+</html>

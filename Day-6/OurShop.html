@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lugx gaming</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./ourshop_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbars">
+            <div class="navbar_left">
+                <img src="./image/icon_img.png" alt="">
+            </div>
+            <div class="navbar_right">
+                <ul class="nav_list">
+                    <li onclick="active_add(event,this)" ><a href="./index.html#home">Home</a></li>
+                    <li onclick="active_add(event,this)" class="active"><a href="#">Our Shop</a></li>
+                    <li onclick="active_add(event,this)"><a href="./OurShop.html">Product Details </a></li>
+                    <li onclick="active_add(event,this)"><a href="">Contact Us</a></li>
+                    <li onclick="active_add(event,this)"><a href="">Sign in</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="ourshop">
+        <div class="ourshop_content">
+            <div class="ourshop_home">
+                <div class="container-fluid">
+                    <h3>Our shop</h3>
+                    <a href="">Home</a><span><span> ></span> our shop</span>
+                </div>
+            </div>
+        </div>
+        <div class="ourshop_lists">
+            <div class="d-flex justify-content-evenly shop_nav add_active">
+                <a href="" onclick="add_active(event,this); show_all()" class="active">Show all</a>
+                <a href="" onclick="add_active(event,this); adventure()">Adventure</a>
+                <a href="" onclick="add_active(event,this); strategy()">strategy</a>
+                <a href="" onclick="add_active(event,this); racing()">Racing</a>
+            </div>
+            <div class="container">
+                <div class="home_page_content">
+                    <div class="row">
+                        <div class="col-3 adventure racing">
+                            <div class="trending_game_section ">
+                                <div class="product_links">
+                                    <a href=""><img src="./image/product-1.jpg" alt=""></a>
+                                    <span class="prices">
+                                        <del><em>$28</em></del>
+                                        <strong>$20</strong>
+                                    </span>
+                                </div>
+                                <div class="product_content">
+                                    <span>Action</span>
+                                    <div class="buy_link">
+                                        <h4>Assasin Creed</h4>
+                                        <a href=""><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 strategy">
+                            <div class="trending_game_section ">
+                                <div class="product_links">
+                                    <a href=""><img src="./image/product-2.jpg" alt=""></a>
+                                    <span class="prices">
+                                        <del><em>$28</em></del>
+                                        <strong>$20</strong>
+                                    </span>
+                                </div>
+                                <div class="product_content">
+                                    <span>Action</span>
+                                    <div class="buy_link">
+                                        <h4>Assasin Creed</h4>
+                                        <a href=""><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 strategy">
+                            <div class="trending_game_section ">
+                                <div class="product_links">
+                                    <a href=""><img src="./image/product-3.jpg" alt=""></a>
+                                    <span class="prices">
+                                        <del><em>$28</em></del>
+                                        <strong>$20</strong>
+                                    </span>
+                                </div>
+                                <div class="product_content">
+                                    <span>Action</span>
+                                    <div class="buy_link">
+                                        <h4>Assasin Creed</h4>
+                                        <a href=""><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 adventure">
+                            <div class="trending_game_section adventure">
+                                <div class="product_links">
+                                    <a href=""><img src="./image/product-4.jpg" alt=""></a>
+                                    <span class="prices">
+                                        <del><em>$28</em></del>
+                                        <strong>$20</strong>
+                                    </span>
+                                </div>
+                                <div class="product_content">
+                                    <span>Action</span>
+                                    <div class="buy_link">
+                                        <h4>Assasin Creed</h4>
+                                        <a href=""><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3  adventure">
+                            <div class="trending_game_section">
+                                <div class="product_links">
+                                    <a href=""><img src="./image/product-3.jpg" alt=""></a>
+                                    <span class="prices">
+                                        <del><em>$28</em></del>
+                                        <strong>$20</strong>
+                                    </span>
+                                </div>
+                                <div class="product_content">
+                                    <span>Action</span>
+                                    <div class="buy_link">
+                                        <h4>Assasin Creed</h4>
+                                        <a href=""><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 strategy racing">
+                            <div class="trending_game_section ">
+                                <div class="product_links">
+                                    <a href=""><img src="./image/product-4.jpg" alt=""></a>
+                                    <span class="prices">
+                                        <del><em>$28</em></del>
+                                        <strong>$20</strong>
+                                    </span>
+                                </div>
+                                <div class="product_content">
+                                    <span>Action</span>
+                                    <div class="buy_link">
+                                        <h4>Assasin Creed</h4>
+                                        <a href=""><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 adventure racing">
+                            <div class="trending_game_section ">
+                                <div class="product_links">
+                                    <a href=""><img src="./image/product-1.jpg" alt=""></a>
+                                    <span class="prices">
+                                        <del><em>$28</em></del>
+                                        <strong>$20</strong>
+                                    </span>
+                                </div>
+                                <div class="product_content">
+                                    <span>Action</span>
+                                    <div class="buy_link">
+                                        <h4>Assasin Creed</h4>
+                                        <a href=""><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 strategy racing">
+                            <div class="trending_game_section ">
+                                <div class="product_links">
+                                    <a href=""><img src="./image/product-2.jpg" alt=""></a>
+                                    <span class="prices">
+                                        <del><em>$28</em></del>
+                                        <strong>$20</strong>
+                                    </span>
+                                </div>
+                                <div class="product_content">
+                                    <span>Action</span>
+                                    <div class="buy_link">
+                                        <h4>Assasin Creed</h4>
+                                        <a href=""><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3 strategy">
+                            <div class="trending_game_section ">
+                                <div class="product_links">
+                                    <a href=""><img src="./image/product-4.jpg" alt=""></a>
+                                    <span class="prices">
+                                        <del><em>$28</em></del>
+                                        <strong>$20</strong>
+                                    </span>
+                                </div>
+                                <div class="product_content">
+                                    <span>Action</span>
+                                    <div class="buy_link">
+                                        <h4>Assasin Creed</h4>
+                                        <a href=""><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 adventure racing">
+                            <div class="trending_game_section ">
+                                <div class="product_links">
+                                    <a href=""><img src="./image/product-3.jpg" alt=""></a>
+                                    <span class="prices">
+                                        <del><em>$28</em></del>
+                                        <strong>$20</strong>
+                                    </span>
+                                </div>
+                                <div class="product_content">
+                                    <span>Action</span>
+                                    <div class="buy_link">
+                                        <h4>Assasin Creed</h4>
+                                        <a href=""><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 strategy racing">
+                            <div class="trending_game_section ">
+                                <div class="product_links">
+                                    <a href=""><img src="./image/product-2.jpg" alt=""></a>
+                                    <span class="prices">
+                                        <del><em>$28</em></del>
+                                        <strong>$20</strong>
+                                    </span>
+                                </div>
+                                <div class="product_content">
+                                    <span>Action</span>
+                                    <div class="buy_link">
+                                        <h4>Assasin Creed</h4>
+                                        <a href=""><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 adventure racing">
+                            <div class="trending_game_section ">
+                                <div class="product_links">
+                                    <a href=""><img src="./image/product-1.jpg" alt=""></a>
+                                    <span class="prices">
+                                        <del><em>$28</em></del>
+                                        <strong>$20</strong>
+                                    </span>
+                                </div>
+                                <div class="product_content">
+                                    <span>Action</span>
+                                    <div class="buy_link">
+                                        <h4>Assasin Creed</h4>
+                                        <a href=""><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="add_active">
+                                <li><a href="#" onclick="add_active(event,this)"><i
+                                            class="fa-solid fa-chevron-left"></i> </a></li>
+                                <li><a href="#" onclick="add_active(event,this)">1</a></li>
+                                <li><a href="#" onclick="add_active(event,this)" class="active">2</a></li>
+                                <li><a href="#" onclick="add_active(event,this)">3</a></li>
+                                <li><a href="#" onclick="add_active(event,this)"><i
+                                            class="fa-solid fa-chevron-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. Design: TemplateMo</p>
+        </div>
+    </div>
+
+    <script>
+        const navbar = document.getElementsByClassName('navbars');
+        const show_list = document.querySelectorAll(".col-3");
+           show_list.forEach(list =>{
+               list.style.display = "block"
+           })
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= 350) {
+                navbar[0].classList.add('scrolled');
+            } else {
+                navbar[0].classList.remove('scrolled');
+            }
+        });
+        function add_active(event, element) {
+            event.preventDefault();
+
+            let get_class = document.querySelectorAll(".add_active");
+            get_class.forEach(convt_class => {
+                let links = convt_class.querySelectorAll('a');
+                links.forEach(link => {
+                    link.classList.remove('active');
+                });
+            });
+            element.classList.add("active");
+            let link = element.querySelector('a');
+            if (link) {
+                window.location.href = link.href;
+            }
+
+        }
+        function show_all()
+        {
+            const show_list = document.querySelectorAll(".col-3");
+           show_list.forEach(list =>{
+               list.style.display = "block"
+           })
+        }
+        function adventure()
+        {
+            const show_list = document.querySelectorAll(".col-3");
+            show_list.forEach(list => {
+                if(list.classList.contains("adventure"))
+                   list.style.display = "block"
+                else
+                  list.style.display = "none";
+            })
+        }
+        function racing()
+        {
+            const show_list = document.querySelectorAll(".col-3");
+            show_list.forEach(list => {
+                if(list.classList.contains("racing"))
+                   list.style.display = "block"
+                else
+                  list.style.display = "none";
+            })
+        }
+        function strategy()
+        {
+            const show_list = document.querySelectorAll(".col-3");
+            show_list.forEach(list => {
+                if(list.classList.contains("strategy"))
+                   list.style.display = "block"
+                else
+                  list.style.display = "none";
+            })
+        }
+
+    </script>
+</body>
+
+</html>

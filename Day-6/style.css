@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    margin-left: 1px;
+    
     box-sizing: 0;
     
 
@@ -24,6 +24,16 @@ header{
     background-position-x: 50%;
       background-size: cover;
     padding: 40px 0px;
+    
+}
+.scrolled{
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-image: none;
+    background-color: #0071f8;
 }
 nav{
    width: 100%;
@@ -32,10 +42,19 @@ nav{
     padding-left: calc(var(--bs-gutter-x)* .5);
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
     max-width: 1490px;
     margin-left: auto;
     margin-right: auto;   
+}
+.scrolled{
+    padding: 20px 0px 10px 0px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.scrolled img{
+    width: 110px;
+    height: 42px;
 }
 nav img{
     width: 158px;
@@ -45,19 +64,20 @@ nav img{
     margin-left: 200px;
 }
 .navbar_right ul{
-    
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 .navbar_right li{
     list-style-type: none;
     padding: 0px 10px;    
 }
 .navbar_right li a{
+   
     text-decoration: none;
     color: white;
     font-size: 15px;
     font-weight: 300;
+    align-self: flex-end;
     padding: 0px 20px;
     letter-spacing: .25px;
 }
@@ -71,6 +91,11 @@ nav img{
     font-weight: 500;
     color: white;
 }
+.navbar_right a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
 .navbar_right .active a{
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
@@ -80,6 +105,7 @@ nav img{
 
 /* Home page styling */
 .home{
+   
     background-image: url(./image/banner_img.jpg);
     height: 100vh;
     background-repeat: no-repeat;
@@ -88,7 +114,10 @@ nav img{
     position: relative;
     border-bottom-right-radius: 150px;
     border-bottom-left-radius: 150px;
+    padding-top: 10px;
+
 }
+
 .home_content .home_content_left{
     max-width: 50%;
 }
@@ -107,7 +136,7 @@ nav img{
    
 }
 .home_content h6{
-    
+    text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
 }
@@ -195,15 +224,16 @@ nav img{
 .home_footer{
     display: flex;
     position: absolute;
-    bottom: -80px;
+    bottom: -120px;
     width: 89%;
     margin-left: 80px;
    flex-wrap: wrap;
     align-content: flex-end;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .home_footer .footer_content{
     display: flex;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -212,14 +242,19 @@ nav img{
    border-radius: 25px;
    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
 }
-
-.home_footer .icon>img{
-    padding: 20px ;
-    max-width: 44px;
-    max-height: 44px;
+.home_footer .icons{
     background-color: #008af8;
     border-radius: 50%;
     margin: 0;
+    padding: 20px;
+}
+.footer_content:hover .icons{
+    background-color: #ee626b;
+}
+.home_footer .icons img{
+    max-width: 44px !important;
+    max-height: 44px !important;
+   
     
 }
 
@@ -233,20 +268,24 @@ nav img{
 
 
 .home_page_content{
-    margin-top: 280px;
+    margin-top: 350px;
 }
 
 
 /* trending section styling */
 .trending_section{
-    margin-left: 110px;
-    margin-right: 120px;
+    margin-left: 70px;
+    margin-right: 100px;
 }
 .trending_row h6 ,.most_played h6{
+    padding-left: 20px;
     text-transform: uppercase;
     color: #ee626b;
     font-size: 15px;
     font-weight: 700;
+}
+.trending_row .trending_heading a:hover{
+    background-color: #0071f8;
 }
 .trending_row .trending_heading, .most_played_content{
     display: flex;
@@ -256,6 +295,7 @@ nav img{
 }
 .trending_row .trending_heading h2 , .most_played_content h2{
     font-size: 36px;
+    padding-left: 20px;
     font-weight: 700;
     line-height: 44px;
 }
@@ -270,6 +310,9 @@ nav img{
     border-radius: 25px;
     text-transform: uppercase;
 }
+.trending_row .most_played_content a:hover{
+    background-color: #0071f8;
+}
 .home_page_content .trending_games{
     display: flex;
     justify-content: space-around;
@@ -278,7 +321,7 @@ nav img{
 }
 .home_page_content .trending_game_section{
     background-color: rgb(238, 238, 238);
-    
+
     border-radius: 25px;
     margin-bottom: 30px;
 }
@@ -326,9 +369,12 @@ nav img{
      align-items: flex-end;
      margin-top: -10px;
 }
-.home_page_content .trending_game_section .product_content .buy_link:hover{
+.home_page_content .trending_game_section .product_content .buy_link:hover h4 {
     color: #008af8;
     
+}
+.home_page_content .trending_game_section .product_content .buy_link:hover a{
+    background-color: #0071f8;
 }
 .home_page_content .trending_game_section .product_content h4{
     font-size: 17px;
@@ -359,12 +405,18 @@ nav img{
 }
 .most_played .most_played_container{
     padding-top: 88px;
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 75px;
+    margin-right: 100px;
 }
 .most_played_row .trending_games{
     
     padding-bottom: 100px ;
+}
+.most_played_row .trending_game_section:hover .product_content h4{
+    color: #0071f8;
+}
+.most_played_row .trending_game_section:hover .product_content a{
+    background-color: #0071f8;
 }
 .most_played_row .trending_game_section{
     background-color: white;
@@ -405,6 +457,7 @@ nav img{
 .categories{
     margin-top: 120px;
 }
+
 .categories .trending_row{
     text-align: center;
 }
@@ -412,10 +465,135 @@ nav img{
     display: block;
     text-align: center;
 }
-/* .categories .trending_game_section{
-    background-color: #008af8;
-} */
-.categories .trending_game_section a{
-    padding: 0;
+.categories .cat_list{
+    margin-top: 50px;
+}
+.categories .item h4{
+    color: white;
+    padding: 22px 0px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.categories .item{
+    
+    background-color: #0071f8;
+    width: fit-content;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+.categories .item .tumb{
+    margin-left: 0px;
+}
+.categories .item img{
     margin: 0;
+    border-radius: 25px;
+}
+
+
+/* .news  styling */
+.news{
+    margin-top: 120px;
+}
+.news .cta{
+    position: relative;
+}
+.news .section{
+    padding-top: 120px;
+}
+
+.news .shop,.subscribe{
+    background-color: rgb(247, 247, 247);
+    padding: 80px;
+    border-radius: 25px;
+}
+.news .shop h6 , .subscribe h6 {
+    color: #ee626b;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.news .shop h2, .subscribe h2{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 44px;
+    padding: 20px 0px;
+}
+.news .shop em{
+    color: #0071f8;
+}
+.news .shop p{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+.news .shop a{
+    margin-top: 20px;
+    text-decoration: none;
+    padding:  0px 30px;
+   display: inline-block;
+   line-height: 50px;
+    background-color: #ee626b;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.subscribe .search-input{
+    position: relative;
+}
+.subscribe .search-input input{
+    width: 100%;
+    border-radius: 25px;
+    padding: 0px 25px;
+    height: 50px;
+    color: #7a7a7a;
+    font-size: 14px;
+}
+.subscribe .search-input button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    padding: 0px 25px;
+    border: none;
+    background-color: #ee626b;
+    color: white;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.bg_image{
+    max-width: 550px;
+    max-height: 510px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+    border-radius: 25px;
+    left: 50%;
+    transform: translateX(-275px);
+    top: 10px;
+    z-index: -1;
+    background-image: url(./image/cat-log-img.jpg);
+}
+
+
+/* footer */
+.footer{
+    margin-top: 150px;
+    background-color: #0071f8;
+    border-top-right-radius: 150px;
+    border-top-left-radius: 150px;
+    min-height: 150px;
+}
+.footer p{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 90px;
+    text-align: center;
 }
