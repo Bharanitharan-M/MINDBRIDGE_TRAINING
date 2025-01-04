@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lugx gaming</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
     <header>
         <nav>
@@ -14,9 +19,266 @@
                 <img src="./image/icon_img.png" alt="">
             </div>
             <div class="navbar_right">
-                
+                <ul class="nav_list">
+                    <li onclick="active_add(event,this)"><a href="#home">Home</a></li>
+                    <li onclick="active_add(event,this)"><a href="">Our Shop</a></li>
+                    <li onclick="active_add(event,this)"><a href="">Product Details </a></li>
+                    <li onclick="active_add(event,this)"><a href="">Contact Us</a></li>
+                    <li onclick="active_add(event,this)"><a href="">Sign in</a></li>
+                </ul>
             </div>
         </nav>
     </header>
+    <div class="body_page">
+        <div class="home" id="home">
+            <div class="home_content">
+                <div class="home_content_left">
+                    <h6>Welcome To LUGX</h6>
+                    <h2>BEST GAMING SITE EVER!</h2>
+                    <p>
+                        LUGX Gaming is free Bootstrap 5 HTML CSS website template for your gaming websites. You can
+                        download and use this layout for commercial purposes. Please tell your friends about TemplateMo.
+                    </p>
+                    <div class="button_place">
+                        <input type="text" id="something" name="something" placeholder="Type Something">
+                        <button>Search now</button>
+                    </div>
+                </div>
+                <div class="home_content_img">
+                    <img src="./image/home_page_img.jpg" alt="">
+                    <span class="price">$22</span>
+                    <span class="offer">-40%</span>
+                </div>
+
+            </div>
+            <div class="home_footer">
+                <div class="footer_content">
+                    <section class="icon">
+                        <img src="./image/home_icon-1.png" alt="">
+
+                    </section>
+                    <h4>Free storage</h4>
+                </div>
+                <div class="footer_content">
+                    <section class="icon">
+                        <img src="./image/home_icon-2.png" alt="">
+
+                    </section>
+                    <h4>user more</h4>
+                </div>
+                <div class="footer_content">
+                    <section class="icon">
+                        <img src="./image/home_icon-3.png" alt="">
+
+                    </section>
+                    <h4>reply ready</h4>
+                </div>
+                <div class="footer_content">
+                    <section class="icon">
+                        <img src="./image/home_icon-4.png" alt="">
+
+                    </section>
+                    <h4>easy layout</h4>
+                </div>
+            </div>
+            <div class="home_page_content">
+                <div class="trending_section">
+                    <div class="trending_row">
+                        <h6>trending</h6>
+                        <div class="trending_heading">
+                            <h2>Trending Games</h2>
+                            <a href="">View all</a>
+                        </div>
+                        <div class="trending_games">
+                            <div class="trending_game_section">
+                                <div class="product_links">
+                                    <a href=""><img src="./image/product-1.jpg" alt=""></a>
+                                    <span class="prices">
+                                        <del><em>$28</em></del>
+                                        <strong>$20</strong>
+                                    </span>
+                                </div>
+                                <div class="product_content">
+                                    <span>Action</span>
+                                    <div class="buy_link">
+                                        <h4>Assasin Creed</h4>
+                                        <a href=""><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="trending_game_section">
+                                <div class="product_links">
+                                    <a href=""><img src="./image/product-2.jpg" alt=""></a>
+                                    <span class="prices">
+                                        <strong>$44</strong>
+                                    </span>
+                                </div>
+                                <div class="product_content">
+                                    <span>Action</span>
+                                    <div class="buy_link">
+                                        <h4>Assasin Creed</h4>
+                                        <a href=""><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="trending_game_section">
+                                <div class="product_links">
+                                    <a href=""><img src="./image/product-3.jpg" alt=""></a>
+                                    <span class="prices">
+                                        <del><em>$64</em></del>
+                                        <strong>$44</strong>
+                                    </span>
+                                </div>
+                                <div class="product_content">
+                                    <span>Action</span>
+                                    <div class="buy_link">
+                                        <h4>Assasin Creed</h4>
+                                        <a href=""><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="trending_game_section">
+                                <div class="product_links">
+                                    <a href=""><img src="./image/product-4.jpg" alt=""></a>
+                                    <span class="prices">
+
+                                        <strong>$32</strong>
+                                    </span>
+                                </div>
+                                <div class="product_content">
+                                    <span>Action</span>
+                                    <div class="buy_link">
+                                        <h4>Assasin Creed</h4>
+                                        <a href=""><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="most_played">
+                    <div class="most_played_container">
+                        <div class="most_played_row">
+                        <h6>tops games</h6>
+                        <div class="most_played_content">
+                            <h2> Most Played</h2>
+                            <a href="">View all</a>
+                        </div>
+                        <div class="most_played_row">
+                            <div class="trending_games">
+                                <div class="trending_game_section">
+                                    <div class="product_links">
+                                        <a href=""><img src="./image/most_played-1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product_content">
+                                        <span>Action</span>
+                                        <h4>Assasin Creed</h4>
+                                        <a href="">Explore</a>
+                                    </div>
+                                </div>
+    
+                                <div class="trending_game_section">
+                                    <div class="product_links">
+                                        <a href=""><img src="./image/most_played-2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product_content">
+                                        <span>Action</span>
+                                            <h4>Assasin Creed</h4>
+                                            <a href="">Explore</a>
+                                    </div>
+                                </div>
+    
+                                <div class="trending_game_section">
+                                    <div class="product_links">
+                                        <a href=""><img src="./image/most_played-3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product_content">
+                                        <span>Action</span>
+                                        <h4>Assasin Creed</h4> 
+                                        <a href="">Explore</a>
+                                    </div>
+                                </div>
+    
+                                <div class="trending_game_section">
+                                    <div class="product_links">
+                                        <a href=""><img src="./image/most_played-4.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product_content">
+                                        <span>Action</span>
+                                            <h4>Assasin Creed</h4>
+                                            <a href="">Explore</a>
+                                    </div>
+                                </div>
+                                <div class="trending_game_section">
+                                    <div class="product_links">
+                                        <a href=""><img src="./image/most_played-5.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product_content">
+                                        <span>Action</span>
+                                            <h4>Assasin Creed</h4>
+                                            <a href="">Explore</a>
+                                    </div>
+                                </div>
+                                <div class="trending_game_section">
+                                    <div class="product_links">
+                                        <a href=""><img src="./image/most_played-6.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product_content">
+                                        <span>Action</span>
+                                            <h4>Assasin Creed</h4>
+                                            <a href="">Explore</a>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            </div>
+
+
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="categories">
+                        <div class="trending_section">
+                            <div class="trending_row">
+                                <h6>Categories</h6>
+                                <div class="trending_heading">
+                                    <h2>Top Categories</h2>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    
+
+    <script>
+        function active_add(event, e) {
+            event.preventDefault();
+            let navbar = document.querySelectorAll(".nav_list");
+            let navbar_copy = navbar[0].children;
+            Array.from(navbar_copy).forEach(nav => {
+                console.log("before", nav);
+                nav.classList.remove("active");
+                console.log("after", nav.classList);
+            });
+            e.classList.add("active");
+
+        }
+    </script>
 </body>
+
 </html>

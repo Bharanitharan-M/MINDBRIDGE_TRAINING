@@ -24,6 +24,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
     justify-content: space-between;
     background-color: #3d405b;
     position: fixed;
@@ -428,12 +429,15 @@ nav section button:hover {
     font-size: 20px;
 
 }
-
+.place_inside_input input:focus{
+    outline: 1px solid black;
+}
+.place_inside_input textarea:focus{
+    outline: 1px solid black;
+}
 .border_mem textarea::placeholder {
     color: #717275;
-
     font-size: 16px;
-
 }
 
 .place_inside_input {
@@ -554,6 +558,7 @@ th:last-child {
     width: 500px;
     border-radius: 20px;
     padding: 20px;
+    
 }
 
 .mem_page .border_mem h4 {
@@ -564,7 +569,7 @@ th:last-child {
 .mem_page .border_mem input {
     padding: 12px;
     margin: 15px;
-    width: 100%;
+    width: 92%;
     border-radius: 20px;
     height: max-content;
 }
@@ -573,7 +578,7 @@ th:last-child {
     height: 110px;
     padding: 20px;
     margin: 10px;
-    width: 100%;
+    width: 92%;
     border-radius: 20px;
 
 }
@@ -592,7 +597,7 @@ th:last-child {
     color: white;
     padding: 12px;
     margin: 10px;
-    width: 100%;
+    width: 92%;
     border-radius: 20px;
     height: max-content;
     font-size: 18px;
@@ -992,11 +997,9 @@ footer p {
     cursor: pointer;
     align-items: flex-start;
     background-color: transparent;
-
 }
 
 .close button i {
-
     font-size: xx-large;
 }
 
