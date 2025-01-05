@@ -91,8 +91,8 @@
                 <div class="description_content">
                     <div class="d-flex description_top">
                         <ul>
-                            <li><button class="active" onclick="des_show(0)">Description</button></li>
-                            <li><button onclick="des_show(1)">Reviews (3)</button></li>
+                            <li><button class="check active" onclick="des_show(0,this)">Description</button></li>
+                            <li><button class="check" onclick="des_show(1,this)">Reviews (3)</button></li>
                         </ul>
                     </div>
                     <div class="description_cont show">
@@ -190,10 +190,14 @@
                 navbar[0].classList.remove('scrolled');
             }
         });
-        function des_show(n) {
+        function des_show(n,e) {
+            let check = document.querySelectorAll(".check");
+            check[0].classList.remove("active");
+            check[1].classList.remove("active");
             let des_content = document.getElementsByClassName("description_cont");
             Array.from(des_content).forEach(des => {
                 des.classList.remove("show");
+                e.classList.add("active");
             });
             des_content[n].classList.add("show");
 
