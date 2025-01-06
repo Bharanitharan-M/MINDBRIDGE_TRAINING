@@ -163,7 +163,7 @@ for(let i = 0;i<5;i++){
 }
 
 
-
+//task-9
 console.log("\n");
 console.log("TASK-9 -- Fizz Buzz")
 console.log("\n");
@@ -180,7 +180,7 @@ for(let i = 1;i <= 50;i++){
 }
 
 
-
+//task-10
 console.log("\n");
 console.log("TASK-10 -- Reverse a String")
 console.log("\n");
@@ -205,5 +205,5 @@ add_element.append(create_element);
 console.log("Reverse String "+rev_str);
 
 create_element = document.createElement("h1");
-create_element.textContent = "Task-8";
+create_element.textContent = "Task-8"; 
 add_element.appendChild(create_element);
