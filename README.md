@@ -77,3 +77,34 @@
  
 </ul>
 <h6>Task: Design the given template - 2</h6>
+
+<h4>DAY 8: </h4>
+<h6>CSS</h6>
+<ul>
+  <li>Bootstrap</li>
+  <li>Grid</li>
+ 
+</ul>
+<h6>Task: Design the given template - 2</h6>
+
+
+<h4>DAY 9: </h4>
+<h6>CSS</h6>
+<ul>
+  <li>Review</li>
+
+</ul>
+<h6>Task: Design the given template - 2</h6>
+
+
+<h4>DAY 10: </h4>
+<h6>Java Script</h6>
+<ul>
+  <li>Intro</li>
+  <li>Data Types</li>
+  <li>variable declaration</li>
+  <li>For loop</li>
+  <li>Conditions</li>
+
+</ul>
+<h6>Task: some program in js</h6>
