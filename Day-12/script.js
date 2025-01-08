@@ -44,23 +44,23 @@ console.log(even_index(str_3.split(" ")).join(" "));
 
 
 
-// task -4 
+// task - 4 
 function remove_repeat(str_4) {
     let duplicate_find = new Set();
-
     for (let i = 0; i < str_4.length; i++) {
-        for (let j = 0; j < str_4[i].length; j++) {
-            if (duplicate_find.has(str_4[i].charAt(j))) {
-              str_4[i] = str_4[i].substring(0,j)+""+str_4[i].substring(j+1);
-              j--;
-            }
-            else
-                duplicate_find.add(str_4[i].charAt(j));
+        if(duplicate_find.has(str_4.charAt(i)))
+        {
+           str_4 = str_4.substring(0,i)+str_4.substring(i+1);
+           i--;
         }
+        else
+          duplicate_find.add(str_4.charAt(i));
     }
     console.log(duplicate_find);
     return str_4;
-
 }
 let str_4 = "Hello World"
-console.log(remove_repeat(str_4.split(" ")).join(" "));
+console.log(remove_repeat(str_4));
+
+
+
