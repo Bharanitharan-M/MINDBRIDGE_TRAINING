@@ -168,7 +168,12 @@ console.log(letter_count.length);
 
 
 
-
+let names= "Bharani";
+let sum = 0;
+for(let i = 0;i<names.length;i++){
+    sum+= names.charCodeAt(i);
+}
+console.log(sum);
 
 
 
