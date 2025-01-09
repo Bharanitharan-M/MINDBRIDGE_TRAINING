@@ -91,10 +91,11 @@ console.log(filterobj)
 
 
 // task - 10
-const arr_10 = [1, 2, 3, 5];
+let arr_10 = [1, 2, 3, 5];
 const b = [4, 7];
 const c = 6;
-arr_10.push(...b, c);
-let uniqueArray = arr_10.filter((item, index) => arr_10.indexOf(item) === index);
+arr_10 = [arr_10,b,c];
+let arr_11 = arr_10.flat();
+let uniqueArray = arr_11.filter((item, index) => arr_11.indexOf(item) === index);
 uniqueArray.sort((a,b) => a- b);
 console.log(uniqueArray);
