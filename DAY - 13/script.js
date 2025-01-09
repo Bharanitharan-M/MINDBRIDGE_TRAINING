@@ -29,10 +29,13 @@ console.log(result);
 
 // task -4
 const arr_3 = [1,2,2,3,3,3];
-const find_freq = arr_3.reduce((item, index) => {
-    item[index] = (item[index] || 0) + 1;
+const find_freq = arr_3.reduce((item, value) => {
+    item[value] = (item[value] || 0) + 1;
+    console.log(item);
     return item;
+  
 },{});
+console.log(find_freq);
 const freq_arr = Object.entries(find_freq);
 freq_arr.sort((a, b) => b[1] - a[1]);
 console.log(freq_arr[0][0]);
@@ -53,7 +56,7 @@ console.log(result_4);
 // task -6
 const arr_6 = [{ id: 1, name: 'A' }, { id: 2, name: 'B' }]
 let object_6 ={};
-arr_6.filter((item) => {
+arr_6.forEach((item) => {
     object_6[item.id] = item.name;
     
 })
@@ -65,7 +68,7 @@ console.log(object_6);
 const arr_7 = [1,2,2,3,4,4,5];
 let result_7 = [];
 result_7  = arr_7.reduce((index, item) => {
-    index[item] = (index[item] || 0) + 1; // Count occurrences of each item
+    index[item] = (index[item] || 0) + 1; 
     return index;
 }, {});
 const unique = Object.keys(result_7).filter(key => result_7[key] === 1);
