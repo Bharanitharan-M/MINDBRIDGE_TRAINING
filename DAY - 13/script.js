@@ -100,5 +100,4 @@ const c = 6;
 arr_10 = [arr_10,b,c];
 let arr_11 = arr_10.flat();
 let uniqueArray = arr_11.filter((item, index) => arr_11.indexOf(item) === index);
-uniqueArray.sort((a,b) => a- b);
 console.log(uniqueArray);
