@@ -115,7 +115,7 @@ function from_validate(event) {
     let user_subject_value = user_subject_validate(user_subject);
     let user_dob_value = user_dob_validate(user_DOB);
     let user_location_value = user_location_validate(user_location);
-
+    console.log(2);
     if (user_name_value && user_age_value && user_phone_num_value && user_gender_value && user_subject_value && user_dob_value && user_location_value) {
         let user_details = [user_name_value, user_age_value, user_phone_num_value, user_gender_value, user_subject_value, user_dob_value, user_location_value]
         user_obj[no_user] = user_details;
@@ -169,6 +169,7 @@ function delete_form(e) {
     let parent = e.parentNode.parentNode;
     parent.remove();
 }
+let btn_click = true;
 function edit_form(e) {
     let user_name = document.querySelector("input[name = 'Name']");
     let user_age = document.querySelector("input[name = 'age']");
@@ -192,7 +193,7 @@ function edit_form(e) {
     Array.from(user_subject).forEach(element => {
         if (subjects.some(item => item == element.value)) {
             element.checked = true;
-            console.log(1);
+          
         }
     });
     let location_value = parent[6].textContent.trim();
@@ -204,16 +205,14 @@ function edit_form(e) {
     let btn = document.getElementById("update");
     let btn_submit = document.getElementById("submit")
     btn_submit.style.display = 'none';
-    btn.style.display = "block"
+    btn.style.display = "block";
+   
+    if(btn_click){
+        
+
     btn.addEventListener('click',(event)=>{
         event.preventDefault();
-    let user_name = document.querySelector("input[name = 'Name']");
-    let user_age = document.querySelector("input[name = 'age']");
-    let user_phone_num = document.querySelector("input[name= 'phnum']");
-    let user_gender = document.querySelectorAll("input[name='gender']");
-    let user_subject = document.querySelectorAll("#Subject");
-    let user_DOB = document.querySelector("input[name = 'dob']");
-    let user_location = document.getElementById("location");
+        console.log(btn_click)
     let user_name_value = user_name_validate(user_name);
     let user_age_value = user_age_validate(user_age);
     let user_phone_num_value = user_phone_num_validate(user_phone_num);
@@ -233,9 +232,13 @@ function edit_form(e) {
         parent[5].textContent = user_dob_value;
         parent[6].textContent = user_location_value;
         e.textContent = "Updated";
-        btn.style.display = "none";
-        btn_submit.style.display = 'block';
-        form_clear.reset();
+        
+        
     }
+    btn_submit.style.display = 'block';
+    btn_click = false;
+    btn.style.display = "none";
+    form_clear.reset();
     })
+    }
 }
