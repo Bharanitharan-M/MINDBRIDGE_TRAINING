@@ -1,11 +1,9 @@
 // task -1
-const employee = [{ name: "John", age: 28 }, { name: "Anna", age: 22 }, { name: "Mike", age: 32 }];
+const employee = [{ name: "John", age: 28,id :1 }, { name: "Anna", age: 22 }, { name: "Mike", age: 32, id:0 }];
 employee.sort((a, b) => {
-   return a.age - b.age;
+   return a.age - b.age && a.id - b.id;
 });
-employee.forEach(element => {
-console.log(element);
-});
+console.log(employee);
 
 
 // task -2
@@ -18,11 +16,12 @@ console.log(object);
 
 
 // task-3
-const arr_2 =  [ { id: 1, name: 'A' }, { id: 2, name: 'B' }, { id: 1, name: 'C' }, ];
+const arr_2 =  [{ id: 1, name: 'A' }, { id: 2, name: 'B' }, { id: 1, name: 'C' }, ];
 let result = [];
-arr_2.filter(item => {
+arr_2.filter((item,id) => {
     if(!result.some(arr2_object => arr2_object.id == item.id))
         result.push(item);
+    
 })
 console.log(result);
 
