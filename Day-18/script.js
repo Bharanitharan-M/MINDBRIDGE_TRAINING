@@ -96,8 +96,19 @@ function user_dob_validate(user_dob) {
     }
 }
 function user_location_validate(user_location) {
+    let user_location_err = user_location.parentNode.lastElementChild;
+    console.log(user_location_err);
     const selectedOption = user_location.options[user_location.selectedIndex];
-    return selectedOption.value;
+    if(selectedOption.value == "None"){
+          user_location_err.style.display = "block"
+        user_location_err.textContent = "Please select the loaction";
+      
+    }
+    else{
+        user_location_err.style.display = "none"
+      return selectedOption.value;
+    }
+    
 }
 function from_validate(event) {
     event.preventDefault();
@@ -115,7 +126,7 @@ function from_validate(event) {
     let user_subject_value = user_subject_validate(user_subject);
     let user_dob_value = user_dob_validate(user_DOB);
     let user_location_value = user_location_validate(user_location);
-    console.log(2);
+    
     if (user_name_value && user_age_value && user_phone_num_value && user_gender_value && user_subject_value && user_dob_value && user_location_value) {
         let user_details = [user_name_value, user_age_value, user_phone_num_value, user_gender_value, user_subject_value, user_dob_value, user_location_value]
         user_obj[no_user] = user_details;
