@@ -204,13 +204,12 @@ function edit_form(e) {
     });
     let btn = document.getElementById("update");
     let btn_submit = document.getElementById("submit")
-    btn_submit.style.display = 'none';
+    
     btn.style.display = "block";
-   
+    btn_submit.style.display = 'none';
     if(btn_click){
-        
-
     btn.addEventListener('click',(event)=>{
+        
         event.preventDefault();
         console.log(btn_click)
     let user_name_value = user_name_validate(user_name);
@@ -232,13 +231,15 @@ function edit_form(e) {
         parent[5].textContent = user_dob_value;
         parent[6].textContent = user_location_value;
         e.textContent = "Updated";
-        
+        btn_submit.style.display = 'block';
+        btn.style.display = "none";
+        form_clear.reset();
         
     }
-    btn_submit.style.display = 'block';
     btn_click = false;
-    btn.style.display = "none";
-    form_clear.reset();
+ 
+   
     })
+   
     }
 }
