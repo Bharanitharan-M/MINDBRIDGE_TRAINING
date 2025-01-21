@@ -237,9 +237,6 @@ function edit_form(e) {
         
     }
     btn_click = false;
- 
-   
     })
-   
     }
 }
