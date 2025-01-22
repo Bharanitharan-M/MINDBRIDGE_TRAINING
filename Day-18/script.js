@@ -1,18 +1,13 @@
 const table_append = document.getElementById("append_element")
 const form_clear = document.getElementById('form_clear');
 let check = 1;
-let user_details = [{name: "Bharanitharan", 
-    age: 21, 
-    phone_number: 9677323935, 
-    gender: "Male",
-    subjects: ["English", "Maths"],
-    DOB: "15/03/2004",
-    location: "Tiruppur"}]
-if(!localStorage.getItem("User_details"))
-   localStorage.setItem("User_details", JSON.stringify(user_details));
-if(localStorage.getItem("User_details")){
+let user_details = []
+if (!localStorage.getItem("User_details"))
+    localStorage.setItem("User_details", JSON.stringify(user_details));    
+if (localStorage.getItem("User_details")) {
+    console.log(12)
     let get_user = JSON.parse(localStorage.getItem("User_details"));
-    for(let i = 0;i<get_user.length;i++){
+    for (let i = 0; i < get_user.length; i++) {
         const table_row = document.createElement('tr');
         table_row.innerHTML = `<td>${get_user[i].name}</td>
             <td>${get_user[i].age}</td>
@@ -29,6 +24,8 @@ if(localStorage.getItem("User_details")){
         table_append.appendChild(table_row);
     }
 }
+
+
 function user_name_validate(user_name) {
     let num_regx = /([0-9])/
     let user_name_err = user_name.nextElementSibling;
@@ -50,7 +47,7 @@ function user_name_validate(user_name) {
     }
 }
 function user_age_validate(user_age) {
-   let  user_age_err = user_age.nextElementSibling;
+    let user_age_err = user_age.nextElementSibling;
     if (user_age.value < 1) {
         user_age_err.textContent = "Age should More than 0";
         user_age_err.style.display = "block";
@@ -180,7 +177,7 @@ function from_validate(event) {
         table_append.appendChild(table_row);
         let get_user_details = JSON.parse(localStorage.getItem("User_details"));
         get_user_details.push(user_access);
-        localStorage.setItem("User_details",JSON.stringify(get_user_details));
+        localStorage.setItem("User_details", JSON.stringify(get_user_details));
         form_clear.reset();
         var btn = document.getElementById('btn1').textContent = "Check All";
     }
@@ -206,8 +203,16 @@ function check_all(event, e) {
 }
 
 function delete_form(e) {
+    let chid = e.parentNode.parentNode.children;
     let parent = e.parentNode.parentNode;
-    parent.remove();
+    let user_name = chid[0].textContent;
+    get_info(user_name).then((details)=>{
+        let [user_details, index] = details;
+        user_details.splice(index,1);
+        localStorage.setItem("User_details",JSON.stringify(user_details));
+        parent.remove();
+    })
+
 }
 let btn_click = true;
 function edit_form(e) {
@@ -249,7 +254,6 @@ function edit_form(e) {
     btn_submit.style.display = 'none';
     if (btn_click) {
         btn.addEventListener('click', (event) => {
-
             event.preventDefault();
             console.log(btn_click)
             let user_name_value = user_name_validate(user_name);
@@ -268,15 +272,47 @@ function edit_form(e) {
                 for (let j = 0; j < user_subject_value.length; j++) {
                     parent[4].innerHTML += user_subject_value[j] + "<br>";
                 }
+                console.log(user_gender_value)
                 parent[5].textContent = user_dob_value;
                 parent[6].textContent = user_location_value;
                 e.textContent = "Updated";
                 btn_submit.style.display = 'block';
                 btn.style.display = "none";
-                form_clear.reset();
+                get_info(user_name_value).then((details) => {
+                    let [user_details,index] = details;
+                    user_details[index].name = user_name_value;
+                    user_details[index].age = user_age_value;
+                    user_details[index].phone_number = user_phone_num_value;
+                    user_details[index].gender = user_gender_value;
+                    user_details[index].subjects = user_subject_value;
+                    user_details[index].DOB = user_dob_value;
+                    user_details[index].location = user_location_value;
+                    localStorage.setItem("User_details",JSON.stringify(user_details));
+                })
 
+                form_clear.reset();
             }
+
             btn_click = false;
         })
     }
+}
+
+function get_info(user_name) {
+    let index = 0;
+    let update_details = new Promise((resolve, reject) => {
+
+        let update_details = JSON.parse(localStorage.getItem("User_details"));
+        let user_info = update_details.find((details, indexs) => {
+            if (details.name == user_name) {
+                index = indexs;
+                return true;
+            }
+        })
+        if (user_info)
+            resolve([update_details, index]);
+        else
+            reject(new Error("Data Not Found"))
+    })
+    return update_details;
 }
