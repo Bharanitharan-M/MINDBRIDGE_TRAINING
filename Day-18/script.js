@@ -12,7 +12,7 @@ if(!localStorage.getItem("User_details"))
    localStorage.setItem("User_details", JSON.stringify(user_details));
 function user_name_validate(user_name) {
     let num_regx = /([0-9])/
-    user_name_err = user_name.nextElementSibling;
+    let user_name_err = user_name.nextElementSibling;
     if (user_name.value.length < 3 || user_name.value.length > 17) {
         user_name_err.style.display = "block";
         user_name_err.textContent = "Name Should conatins atleast 3 to 17 letters"
@@ -31,7 +31,7 @@ function user_name_validate(user_name) {
     }
 }
 function user_age_validate(user_age) {
-    user_age_err = user_age.nextElementSibling;
+   let  user_age_err = user_age.nextElementSibling;
     if (user_age.value < 1) {
         user_age_err.textContent = "Age should More than 0";
         user_age_err.style.display = "block";
@@ -42,7 +42,7 @@ function user_age_validate(user_age) {
     }
 }
 function user_phone_num_validate(user_phone) {
-    user_phone_err = user_phone.nextElementSibling;
+    let user_phone_err = user_phone.nextElementSibling;
     let num_regx = /^\d{10}$/
     if (user_phone.value.length == 0) {
         user_phone_err.textContent = "Enter the Phone number";
