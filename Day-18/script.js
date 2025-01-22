@@ -1,7 +1,15 @@
 const table_append = document.getElementById("append_element")
 const form_clear = document.getElementById('form_clear');
-let no_user = 1;
-let user_obj = new Object;
+let check = 1;
+let user_details = [{name: "Bharanitharan", 
+    age: 21, 
+    phone_number: 9677323935, 
+    gender: "Male",
+    subjects: ["English", "Maths"],
+    DOB: "15/03/2004",
+    location: "Tiruppur"}]
+if(!localStorage.getItem("User_details"))
+   localStorage.setItem("User_details", JSON.stringify(user_details));
 function user_name_validate(user_name) {
     let num_regx = /([0-9])/
     user_name_err = user_name.nextElementSibling;
@@ -99,16 +107,16 @@ function user_location_validate(user_location) {
     let user_location_err = user_location.parentNode.lastElementChild;
     console.log(user_location_err);
     const selectedOption = user_location.options[user_location.selectedIndex];
-    if(selectedOption.value == "None"){
-          user_location_err.style.display = "block"
+    if (selectedOption.value == "None") {
+        user_location_err.style.display = "block"
         user_location_err.textContent = "Please select the loaction";
-      
+
     }
-    else{
+    else {
         user_location_err.style.display = "none"
-      return selectedOption.value;
+        return selectedOption.value;
     }
-    
+
 }
 function from_validate(event) {
     event.preventDefault();
@@ -126,37 +134,39 @@ function from_validate(event) {
     let user_subject_value = user_subject_validate(user_subject);
     let user_dob_value = user_dob_validate(user_DOB);
     let user_location_value = user_location_validate(user_location);
-    
+
     if (user_name_value && user_age_value && user_phone_num_value && user_gender_value && user_subject_value && user_dob_value && user_location_value) {
-        let user_details = [user_name_value, user_age_value, user_phone_num_value, user_gender_value, user_subject_value, user_dob_value, user_location_value]
-        user_obj[no_user] = user_details;
-        localStorage.setItem(no_user, JSON.stringify(user_obj[1]))
-        no_user++;
-        const table_row = document.createElement('tr');
-        for (let i = 0; i < 8; i++) {
-            const table_data = document.createElement('td');
-            if (i == 4) {
-
-                for (let j = 0; j < user_subject_value.length; j++) {
-                    table_data.innerHTML += user_subject_value[j] + "<br>";
-                }
-            }
-            else if (i == 7) {
-                table_data.innerHTML = "<button onclick='edit_form(this)'>Edit</button>" + "<br>" + "<button onclick='delete_form(this)'>Delete</button>"
-            }
-            else {
-                table_data.textContent = user_details[i];
-            }
-            table_row.appendChild(table_data);
+        let user_access = {
+            name: user_name_value,
+            age: user_age_value,
+            phone_number: user_phone_num_value,
+            gender: user_gender_value,
+            subjects: user_subject_value,
+            DOB: user_dob_value,
+            location: user_location_value
         }
+        const table_row = document.createElement('tr');
+        table_row.innerHTML = `<td>${user_access.name}</td>
+            <td>${user_access.age}</td>
+            <td>${user_access.phone_number}</td>
+            <td>${user_access.gender}</td>`;
+        const table_data = document.createElement('td');
+        for (let j = 0; j < user_subject_value.length; j++) {
+            table_data.innerHTML += user_subject_value[j] + "<br>";
+        }
+        table_row.appendChild(table_data);
+        table_row.innerHTML += `<td>${user_access.DOB}</td>
+        <td>${user_access.location}</td>
+        <td><button onclick='edit_form(this)'>Edit</button><br><button onclick='delete_form(this)'>Delete</button></td>`
         table_append.appendChild(table_row);
+        let get_user_details = JSON.parse(localStorage.getItem("User_details"));
+        get_user_details.push(user_access);
+        localStorage.setItem("User_details",JSON.stringify(get_user_details));
         form_clear.reset();
-
-
+        var btn = document.getElementById('btn1').textContent = "Check All";
     }
-
 }
-let check = 1;
+
 function check_all(event, e) {
     event.preventDefault();
     let user_subject = document.querySelectorAll("#Subject");
@@ -204,7 +214,7 @@ function edit_form(e) {
     Array.from(user_subject).forEach(element => {
         if (subjects.some(item => item == element.value)) {
             element.checked = true;
-          
+
         }
     });
     let location_value = parent[6].textContent.trim();
@@ -215,39 +225,39 @@ function edit_form(e) {
     });
     let btn = document.getElementById("update");
     let btn_submit = document.getElementById("submit")
-    
+
     btn.style.display = "block";
     btn_submit.style.display = 'none';
-    if(btn_click){
-    btn.addEventListener('click',(event)=>{
-        
-        event.preventDefault();
-        console.log(btn_click)
-    let user_name_value = user_name_validate(user_name);
-    let user_age_value = user_age_validate(user_age);
-    let user_phone_num_value = user_phone_num_validate(user_phone_num);
-    let user_gender_value = user_gender_validate(user_gender);
-    let user_subject_value = user_subject_validate(user_subject);
-    let user_dob_value = user_dob_validate(user_DOB);
-    let user_location_value = user_location_validate(user_location);
-    if (user_name_value && user_age_value && user_phone_num_value && user_gender_value && user_subject_value && user_dob_value && user_location_value) {
-        parent[0].textContent = user_name_value;
-        parent[1].textContent = user_age_value;
-        parent[2].textContent = user_phone_num.value;
-        parent[3].textContent = user_gender_value;
-        parent[4].textContent = "";
-        for (let j = 0; j < user_subject_value.length; j++) {
-            parent[4].innerHTML += user_subject_value[j] + "<br>";
-        }
-        parent[5].textContent = user_dob_value;
-        parent[6].textContent = user_location_value;
-        e.textContent = "Updated";
-        btn_submit.style.display = 'block';
-        btn.style.display = "none";
-        form_clear.reset();
-        
-    }
-    btn_click = false;
-    })
+    if (btn_click) {
+        btn.addEventListener('click', (event) => {
+
+            event.preventDefault();
+            console.log(btn_click)
+            let user_name_value = user_name_validate(user_name);
+            let user_age_value = user_age_validate(user_age);
+            let user_phone_num_value = user_phone_num_validate(user_phone_num);
+            let user_gender_value = user_gender_validate(user_gender);
+            let user_subject_value = user_subject_validate(user_subject);
+            let user_dob_value = user_dob_validate(user_DOB);
+            let user_location_value = user_location_validate(user_location);
+            if (user_name_value && user_age_value && user_phone_num_value && user_gender_value && user_subject_value && user_dob_value && user_location_value) {
+                parent[0].textContent = user_name_value;
+                parent[1].textContent = user_age_value;
+                parent[2].textContent = user_phone_num.value;
+                parent[3].textContent = user_gender_value;
+                parent[4].textContent = "";
+                for (let j = 0; j < user_subject_value.length; j++) {
+                    parent[4].innerHTML += user_subject_value[j] + "<br>";
+                }
+                parent[5].textContent = user_dob_value;
+                parent[6].textContent = user_location_value;
+                e.textContent = "Updated";
+                btn_submit.style.display = 'block';
+                btn.style.display = "none";
+                form_clear.reset();
+
+            }
+            btn_click = false;
+        })
     }
 }
