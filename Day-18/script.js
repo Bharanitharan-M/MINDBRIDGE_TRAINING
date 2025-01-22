@@ -10,6 +10,25 @@ let user_details = [{name: "Bharanitharan",
     location: "Tiruppur"}]
 if(!localStorage.getItem("User_details"))
    localStorage.setItem("User_details", JSON.stringify(user_details));
+if(localStorage.getItem("User_details")){
+    let get_user = JSON.parse(localStorage.getItem("User_details"));
+    for(let i = 0;i<get_user.length;i++){
+        const table_row = document.createElement('tr');
+        table_row.innerHTML = `<td>${get_user[i].name}</td>
+            <td>${get_user[i].age}</td>
+            <td>${get_user[i].phone_number}</td>
+            <td>${get_user[i].gender}</td>`;
+        const table_data = document.createElement('td');
+        for (let j = 0; j < get_user[i].subjects.length; j++) {
+            table_data.innerHTML += get_user[i].subjects[j] + "<br>";
+        }
+        table_row.appendChild(table_data);
+        table_row.innerHTML += `<td>${get_user[i].DOB}</td>
+        <td>${get_user[i].location}</td>
+        <td><button onclick='edit_form(this)'>Edit</button><br><button onclick='delete_form(this)'>Delete</button></td>`
+        table_append.appendChild(table_row);
+    }
+}
 function user_name_validate(user_name) {
     let num_regx = /([0-9])/
     let user_name_err = user_name.nextElementSibling;
