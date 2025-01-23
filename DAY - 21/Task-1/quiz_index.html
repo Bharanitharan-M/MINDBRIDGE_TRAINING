@@ -17,33 +17,40 @@
       rel="stylesheet"
     />
     <style>
+        body{
+            font-family: "Roboto Condensed", serif;
+        }
       #quiz {
         margin: 15% 25%;
+        display: none;
 
       }
-      .
+      .quiz_question{
+        padding: 30px;
+        border-radius: 30px;
+      }
       .timer {
+        padding: 10px 30px;
+        margin: 10px;
         text-align: end;
+      }
+      
+      .question button{
+        float: right;
       }
     </style>
   </head>
   <body>
     <div id="quiz">
       <div class="quiz_page">
-        <div class="timer">0:0:0</div>
+        <div class="timer"><h4 id="timer">30:00</h4></div>
         <div class="quiz_question shadow bg-White">
-            <label for="">What is JS</label><br />
-            <input type="radio" name="option" id="option" />
-            <label for="">Js</label><br />
-            <input type="radio" name="option" id="option" />
-            <label for="">Js</label><br />
-            <input type="radio" name="option" id="option" />
-            <label for="">Js</label><br />
-            <input type="radio" name="option" id="option" />
-            <label for="">Js</label><br />
+            <div class="question">
+        
+        </div>
         </div>
       </div>
     </div>
   </body>
-  <script src="./Login_script.js"></script>
+  <script src="./quiz_script.js"></script>
 </html>
