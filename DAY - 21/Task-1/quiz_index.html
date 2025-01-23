@@ -19,37 +19,98 @@
     <style>
         body{
             font-family: "Roboto Condensed", serif;
+            
         }
       #quiz {
         margin: 15% 25%;
-        display: none;
-
       }
       .quiz_question{
         padding: 30px;
+        padding-bottom: 40px;
         border-radius: 30px;
       }
-      .timer {
+      .question{
+        display: none;
+      }
+      .question input{
+        font-size: larger;
+        font-weight: 100;
+      }
+      .timer{
         padding: 10px 30px;
         margin: 10px;
         text-align: end;
       }
-      
-      .question button{
+      .button{
+        display: inline;
+      }
+      .next{
+        background-color: black;
+        color: whitesmoke;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: large;
         float: right;
+      }
+      .prev{
+        border: none;
+        background-color:crimson;
+        color: whitesmoke;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: large;
+        float: left;
+      }
+      #result{
+        display: none;
+      }
+      .result_page .question{
+        display: block;
+      }
+      .result_page button{
+        display: none ;
+      }
+      .result_page input{
+
+        pointer-events: none;
+      }
+      .quiz_question small{
+        float: right;
+        font-size: large;
+      }
+      .question .option{
+        font-size: large;
+        font-weight: 500;
+        font-style: italic;
+      }
+      .ques{
+        font-size: x-large;
+        font-weight: bold;
+      }
+      .result_page .marks{
+        float: right;
+        padding: 20px;
       }
     </style>
   </head>
   <body>
     <div id="quiz">
       <div class="quiz_page">
-        <div class="timer"><h4 id="timer">30:00</h4></div>
+        <div class="timer"><h4 id="timer">10:00</h4></div>
         <div class="quiz_question shadow bg-White">
-            <div class="question">
-        
-        </div>
+            
         </div>
       </div>
+    </div>
+
+
+    <div id="result">
+        <div class="result_page">
+            <div class="timer"><h4 id="timetaken">10:00</h4></div>
+            <div class="quiz_question shadow bg-White">
+
+            </div>
+          </div>
     </div>
   </body>
   <script src="./quiz_script.js"></script>
