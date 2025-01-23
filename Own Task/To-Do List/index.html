@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List with Timer Running Until the Finishing the Task</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;1,100&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div>
+        <div id="menu">
+            <div id="list_created">
+                <h1 style="text-align: center">Created Your list here!</h1>
+                <form action="">
+                    <div class="filed">
+                        <label for="title">Task Title</label><br />
+                        <input type="text" id="title" name="title" placeholder="Maths homework" />
+                        <small></small>
+                        <label for="description">Task Description (Optional)</label><br />
+                        <textarea type="text" id="description" name="description"
+                            placeholder="Complete the Excersie 1 to 2"></textarea>
+                        <label for="estimate">Task Estimate Time</label><br />
+                        <input type="datetime-local" name="estimate" id="estimate" />
+                        <small></small>
+                        <button id="click_btn">Add Task</button>
+                    </div>
+                </form>
+            </div>
+            <div id="user_details">
+                <div id="task_summary">
+                    <h3>Total Task: <span>0</span></h3>
+                    <h3>Total Task Duration: <span>0</span></h3>
+                    <h3>Avg Complete task per day: <span>0</span></h3>
+                    <h3>Avg Complete task time per day: <span>0</span></h3>
+                </div>
+                <div id="image">
+                    <button><img src="./OIP.jpg" alt="" /></button>
+                    <h3>Points: <span>0</span></h3>
+                </div>
+            </div>
+        </div>
+        <div id="task_details">
+            <div class="task">
+                <div class="content">
+                <h1>homework</h1>
+                <p>This is example for task</p>
+                <h5>Estimate Time: 2025/01/22 23:10</h5>
+                </div>
+                <div class="action">
+                    <h4>12:12:12</h4>                        
+                    <div>
+                        <button>Completed</button>
+                        <button>Edit</button>
+                        <button>Dlete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

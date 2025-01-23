@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+button{
+    cursor: pointer;
+}
+#menu{
+    display: flex;
+    justify-content: space-around;
+}
+#list_created{
+    border-radius: 30px;
+    margin: 10px ;
+    padding: 50px;
+    background-color:#008080;
+    color: whitesmoke;
+    
+}
+.filed{
+    padding-top: 20px;
+    display: flex;
+   flex-wrap: nowrap;
+   flex-direction: column;
+   justify-content: center;
+}
+.filed small{
+    display: none;
+    color: red;
+     margin-bottom: 20px;
+     padding-left: 10px;
+}
+.filed label{
+    font-size: larger;
+    font-weight: 500;
+}
+.filed input, .filed textarea, .filed button{
+    margin-bottom: 10px;
+    height: 2%;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+
+}
+.filed input::placeholder,textarea::placeholder{
+    color: black;
+}
+.filed button{
+    color: whitesmoke;
+    font-weight: 700;
+    background-color: #8B4513;
+    text-align: center;
+    align-self: center;
+}
+#user_details{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+#user_details #image button{
+    border-radius: 50%; 
+    width: 100%;
+    height: 20%;
+    border: none;
+}
+#user_details #image img{
+    border-radius: 50%; 
+    width: 100%;
+    height: 100%;
+}
+#user_details #image h3{
+    color:#002F6C;
+    text-align: center;
+}
+#user_details #task_summary h3{
+    color: #2C2C2C;
+    padding: 20px;
+}
+#user_details #task_summary span{
+    color: #CC5500;
+}
+#task_details{
+    margin: 80px;
+}
+.task{
+    background-color: whitesmoke;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.task .content h1{
+    text-transform: capitalize;
+    padding: 10px;
+}
+.task .content h5{
+    text-transform: capitalize;
+    padding: 10px;
+}
+.task .content p{
+    text-transform:capitalize;
+    padding: 10px;
+}
+.task .action h4{
+    padding: 20px;
+    text-align: center;
+}
+.task .action button{
+    padding: 10px;
+    border: none;
+    background-color: #008080;
+    color: whitesmoke;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 30px;
+    font-size: medium;
+    font-weight: 700;
+
+}

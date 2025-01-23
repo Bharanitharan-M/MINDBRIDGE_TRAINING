@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+        body{
+            background-image: url(./assests/Image/login_image.jpg);
+            font-family: "Roboto Condensed", serif;
+            background-size:cover;
+        }
+        #Login_page{
+            position: fixed;
+            top: 25%;
+            left: 2%;
+            right: 0;
+            display: flex;
+          
+        }
+        .form_template{
+            text-align: center;
+            width: 50%;
+            align-self: center;
+          padding: 50px;
+          border-radius: 30px;
+
+        }
+        .field{
+          margin-bottom: 30px;
+        }
+        .field label{
+            color: whitesmoke;
+            font-size: larger;
+            font-weight: 500;
+        }
+        .field input{
+            width: 50%;
+            border-radius: 20px;
+            border: none;
+            background-color: whitesmoke;
+            padding: 10px;
+        }
+        .field input::placeholder{
+            opacity: 0.7;
+        }
+        .field center button{
+            border: none;
+            background-color: black;
+            color: whitesmoke;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        a{
+            color: whitesmoke;
+        }
+        small{
+            font-size: large;
+            text-align: center;
+            display: none;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="Login_page">
+        <div class="form_template shadow bg-Blue ">
+            <form id="form">
+                <div class="field">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="User Name"><br>
+                    <small></small>
+                </div>
+                <div class="field">
+                    <label for="mail">Email address</label><br>
+                    <input type="email" id="mail" name="mail" placeholder="user@gamil.com"><br>
+                    <small></small>
+                </div>
+                
+                <div class="field">
+                    <center><button id="btn" type="submit">Start Quiz</button></center>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+   <script src="./Login_script.js"></script>
+</html>
