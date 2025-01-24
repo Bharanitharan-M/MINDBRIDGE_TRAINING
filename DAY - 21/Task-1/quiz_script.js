@@ -33,6 +33,9 @@ function user_answer_check(answer_final, i) {
     }
     if (element.value == correct_answer[i]) {
       element.nextElementSibling.style.color = "green";
+      let create = document.createElement("small");
+      create.textContent = "0";
+      element.previousElementSibling.previousElementSibling.after(create);
     }
   });
 }
@@ -130,8 +133,8 @@ function submit() {
 }
 let timer = document.getElementById("timer");
 let time = timer.textContent.split(":");
-let minutes = 2;
-let seconds = 0;
+let minutes = 0;
+let seconds = 10;
 let interval = setInterval(() => {
   if (minutes == 0 && seconds == 0) {
     clearInterval(interval);
@@ -141,7 +144,7 @@ let interval = setInterval(() => {
     seconds = 60;
     minutes--;
   }
-  if (minutes < 1) timer.style.color = "#FF0000";
+  if (minutes < 1) timer.style.color = "#FF1493";
   seconds--;
   if (minutes < 10) timer.textContent = "0" + minutes + ":" + seconds;
   if (minutes < 10 && seconds < 10)
@@ -183,6 +186,8 @@ question_display[0].style.display = "block";
 function result_page(display_result) {
   minutes = 2 - minutes;
   seconds = 60 - seconds;
+  if(seconds == 60)
+    seconds = 0;
   if (minutes < 10) minutes = "0" + minutes;
   if (seconds < 10) seconds = "0" + seconds;
   document.getElementById("timetaken").textContent =
