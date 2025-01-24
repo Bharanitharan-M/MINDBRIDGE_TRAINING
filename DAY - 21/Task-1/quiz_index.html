@@ -19,15 +19,19 @@
     <style>
         body{
             font-family: "Roboto Condensed", serif;
+            background-color: #2193b0;
             
         }
       #quiz {
         margin: 15% 25%;
       }
       .quiz_question{
+        background-color: whitesmoke;
         padding: 30px;
         padding-bottom: 40px;
         border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px ;
+       
       }
       .question{
         display: none;
@@ -37,6 +41,7 @@
         font-weight: 100;
       }
       .timer{
+        color: #FFFF00;
         padding: 10px 30px;
         margin: 10px;
         text-align: end;
@@ -91,12 +96,15 @@
         float: right;
         padding: 20px;
       }
+      #result{
+        margin: 10px;
+      }
     </style>
   </head>
   <body>
     <div id="quiz">
       <div class="quiz_page">
-        <div class="timer"><h4 id="timer">10:00</h4></div>
+        <div class="timer"><h4 id="timer">02:00</h4></div>
         <div class="quiz_question shadow bg-White">
             
         </div>
@@ -106,7 +114,7 @@
 
     <div id="result">
         <div class="result_page">
-            <div class="timer"><h4 id="timetaken">10:00</h4></div>
+            <div class="timer"><h4 id="timetaken">00:00</h4></div>
             <div class="quiz_question shadow bg-White">
 
             </div>

@@ -8,7 +8,7 @@ function answer_validate(check_option) {
   });
   let option_err = check_option[0].parentNode.parentNode;
   if (!return_ans) {
-    option_err.style.border = "1px solid red";
+    option_err.style.border = "3px solid red";
     return false;
   } else {
     answer[question_no] = return_ans.value;
@@ -16,27 +16,25 @@ function answer_validate(check_option) {
     return true;
   }
 }
-function user_answer_check(answer_final,i){
-    
-    answer_final.forEach(element =>{
-        if(element.value == answer[i] && element.value == correct_answer[i]){
-            let create = document.createElement('small');
-            create.textContent = "+1";
-            quiz_mark++;
-            element.previousElementSibling.previousElementSibling.after(create);
-        element.nextElementSibling.style.color = "green";
-        }
-        if(element.value == answer[i] && element.value != correct_answer[i]){
-            let create = document.createElement('small');
-            create.textContent = "0";
-            element.previousElementSibling.previousElementSibling.after(create);
-            element.nextElementSibling.style.color = "red";
-        }
-        if(element.value == correct_answer[i])
-        {
-            element.nextElementSibling.style.color = "green";
-        }
-    })
+function user_answer_check(answer_final, i) {
+  answer_final.forEach((element) => {
+    if (element.value == answer[i] && element.value == correct_answer[i]) {
+      let create = document.createElement("small");
+      create.textContent = "+1";
+      quiz_mark++;
+      element.previousElementSibling.previousElementSibling.after(create);
+      element.nextElementSibling.style.color = "green";
+    }
+    if (element.value == answer[i] && element.value != correct_answer[i]) {
+      let create = document.createElement("small");
+      create.textContent = "0";
+      element.previousElementSibling.previousElementSibling.after(create);
+      element.nextElementSibling.style.color = "red";
+    }
+    if (element.value == correct_answer[i]) {
+      element.nextElementSibling.style.color = "green";
+    }
+  });
 }
 
 const questions = [
@@ -92,7 +90,7 @@ let question_display;
 let question_no = 0;
 let quiz_mark = 0;
 let user_answers = [];
-let correct_answer = ["pop()","join()",'filter()',"Float","33"];
+let correct_answer = ["pop()", "join()", "filter()", "Float", "33"];
 function next() {
   let check_option = document.querySelectorAll(
     `input[name = 'option-${question_no + 1}']`
@@ -125,16 +123,14 @@ function submit() {
   );
   let call = answer_validate(check_option);
   clearInterval(interval);
-  let display_result = document.getElementsByClassName('quiz_question')
+  let display_result = document.getElementsByClassName("quiz_question");
   result_page(display_result);
-  document.getElementById('quiz').style.display = 'none';
-  document.getElementById('result').style.display = 'block';
-  
-  
+  document.getElementById("quiz").style.display = "none";
+  document.getElementById("result").style.display = "block";
 }
 let timer = document.getElementById("timer");
 let time = timer.textContent.split(":");
-let minutes = 10;
+let minutes = 2;
 let seconds = 0;
 let interval = setInterval(() => {
   if (minutes == 0 && seconds == 0) {
@@ -145,6 +141,7 @@ let interval = setInterval(() => {
     seconds = 60;
     minutes--;
   }
+  if (minutes < 1) timer.style.color = "#FF0000";
   seconds--;
   if (minutes < 10) timer.textContent = "0" + minutes + ":" + seconds;
   if (minutes < 10 && seconds < 10)
@@ -182,35 +179,32 @@ questions.forEach((Element) => {
 question_display = document.getElementsByClassName("question");
 question_display[0].style.display = "block";
 
-
-
-
-
 // result_page
-function result_page(display_result){
-    if(minutes < 10)
-        minutes = "0"+9 - minutes;
-    if(seconds < 10)
-        seconds = "0"+60 - seconds;
-    document.getElementById('timetaken').textContent = "Total time taken: "+minutes+":"+seconds;
-   
-    let append = document.getElementsByClassName('quiz_question')[1];
-    let toatal_mark = document.getElementsByClassName('result_page')[0];
-    display_result = display_result[0].children;
-    let i = 0;
-    Array.from(display_result).forEach(element=>{
-        element.style.display = "block";
-        let answer_final = document.querySelectorAll(`input[name = 'option-${i+1}']`);
-        user_answer_check(answer_final,i);
-        i++;
-        append.appendChild(element);
-    })
-    let create_mark = document.createElement('div');
-    create_mark.className = "marks";
-    let create_h3 = document.createElement('h3')
-    create_h3.textContent = `🏆Total Mark: ${quiz_mark}/5`;
-    create_mark.appendChild(create_h3);
-    toatal_mark.appendChild(create_mark); 
-    
+function result_page(display_result) {
+  minutes = 2 - minutes;
+  seconds = 60 - seconds;
+  if (minutes < 10) minutes = "0" + minutes;
+  if (seconds < 10) seconds = "0" + seconds;
+  document.getElementById("timetaken").textContent =
+    "Total time taken: " + minutes + ":" + seconds;
 
+  let append = document.getElementsByClassName("quiz_question")[1];
+  let toatal_mark = document.getElementsByClassName("result_page")[0];
+  display_result = display_result[0].children;
+  let i = 0;
+  Array.from(display_result).forEach((element) => {
+    element.style.display = "block";
+    let answer_final = document.querySelectorAll(
+      `input[name = 'option-${i + 1}']`
+    );
+    user_answer_check(answer_final, i);
+    i++;
+    append.appendChild(element);
+  });
+  let create_mark = document.createElement("div");
+  create_mark.className = "marks";
+  let create_h3 = document.createElement("h3");
+  create_h3.textContent = `🏆Total Mark: ${quiz_mark}/5`;
+  create_mark.appendChild(create_h3);
+  toatal_mark.appendChild(create_mark);
 }
