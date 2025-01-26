@@ -1,0 +1,305 @@
+body {
+    font-family: "Roboto Condensed", serif;
+    background-size: cover;
+}
+
+#admin_pannels {
+    display: none;
+}
+
+#admin_pannel {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Login_page {
+    background-color: transparent;
+    padding: 100px 50px;
+    position: absolute;
+    top: 12%;
+    left: 3%;
+    width: 90%;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    ;
+    border-radius: 50px;
+}
+
+.form_template {
+    text-align: center;
+    width: 50%;
+    align-self: center;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.field {
+    margin-bottom: 30px;
+}
+
+.field label {
+    color: black;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.field input {
+    width: 50%;
+    border-radius: 20px;
+    border: none;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+.field input::placeholder {
+    opacity: 0.7;
+}
+
+.field center button {
+    border: none;
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+a {
+    color: whitesmoke;
+}
+
+.filed small {
+    font-size: large;
+    text-align: center;
+    display: none;
+    color: red;
+}
+
+#h3 {
+    position: absolute;
+    left: 50%;
+    top: 1%;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+#main {
+    text-align: center;
+    padding: 30px;
+}
+
+#main h2 {
+    font-family: "Arial", sans-serif;
+    font-size: 36px;
+    color: indianred;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#main img {
+    height: 350px;
+}
+
+.slide-show {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.filter {
+    height: fit-content;
+    width: 15%;
+    padding: 30px;
+    padding-left: 20px;
+}
+
+.filter button {
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.car-type {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.car_list {
+    display: grid;
+    column-gap: 80px;
+    row-gap: 50px;
+    grid-template-columns: 300px 300px 300px 300px;
+}
+
+.car_list img {
+    padding: 10px;
+    width: 200px;
+
+    align-self: center;
+}
+
+.card h5 {
+    text-align: center;
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-position: outside;
+}
+
+.card small {
+    text-transform: capitalize;
+    color: red;
+    display: inline;
+    font-size: medium;
+}
+
+.card strong {
+    font-size: large;
+}
+
+#content {
+    margin: 30px;
+}
+
+#content h3 {
+    padding-bottom: 20px;
+    color: tomato;
+    font-size: x-large;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #343a40;
+    color: whitesmoke;
+}
+
+#booking {
+    display: none;
+}
+
+#booking_form {
+    margin: 30px 25%;
+}
+
+form small {
+    color: red;
+}
+
+.navbar button {
+    background-color: black;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+#admin_pannel_details {
+    display: none;
+}
+#form_layout {
+    height: fit-content;
+    background-color: lightblue;
+    width: 40%;
+    padding: 60px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#form_layout .field input{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+#form_layout  label {
+    text-align: center;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#form_layout  .labels label {
+    padding-right: 20px;
+
+}
+
+#form_layout  .field select {
+    padding: 5px;
+    width: 180px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+#form_layout  .field button {
+    border-radius: 20px;
+    margin: 10px 25%;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: whitesmoke;
+}
+
+#form_layout small {
+    display: none;
+    color: red;
+    margin-bottom: 5px;
+    font-size: large;
+    font-weight: 500;
+}
+#table_template{
+    width: 100%;
+}
+table th {
+    border: 1px solid black;
+    padding: 40px 90px;
+}
+
+table td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+table button {
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: whitesmoke;
+    width: 80%;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+table button:nth-child(1) {
+    background-color: green;
+    color: white;
+}
+
+#update {
+    display: none;
+}
