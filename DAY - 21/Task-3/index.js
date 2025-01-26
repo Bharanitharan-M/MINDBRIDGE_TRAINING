@@ -82,6 +82,14 @@ document.getElementById('btn').addEventListener("click", (event) => {
         actions.appendChild(button1);
         actions.appendChild(button2);
         task.appendChild(actions);
+        let filter_button = document.getElementById(taskStatus);
+        let show_button = document.getElementById('show');
+        if(filter_button.classList.contains('active') || show_button.classList.contains('active')){
+           console.log(1)
+        }
+        else{
+            task.style.display = "none";
+        }
         document.getElementsByClassName('needs-validation')[0].reset();
     }
 })
@@ -125,7 +133,11 @@ function edit(e) {
         parent.children[1].lastElementChild.textContent = taskStatus;
     }
 }
-function past() {
+function past(e) {
+    Array.from(document.getElementById('buttons').children).forEach(element=>{
+        element.classList.remove('active');
+    })
+    e.className = "active";
     let task = document.querySelectorAll('.task');
     if (task) {
         task.forEach(element => {
@@ -138,7 +150,11 @@ function past() {
         });
     }
 }
-function present() {
+function present(e) {
+    Array.from(document.getElementById('buttons').children).forEach(element=>{
+        element.classList.remove('active');
+    })
+    e.className = "active";
     let task = document.querySelectorAll('.task');
     if (task) {
         task.forEach(element => {
@@ -151,7 +167,11 @@ function present() {
         });
     }
 }
-function future() {
+function future(e) {
+    Array.from(document.getElementById('buttons').children).forEach(element=>{
+        element.classList.remove('active');
+    })
+    e.className = "active";
     let task = document.querySelectorAll('.task');
     if (task) {
         task.forEach(element => {
@@ -164,7 +184,11 @@ function future() {
         });
     }
 }
-function show() {
+function show(e) {
+    Array.from(document.getElementById('buttons').children).forEach(element=>{
+        element.classList.remove('active');
+    })
+    e.className = "active";
     let task = document.querySelectorAll('.task');
     task.forEach(element => {
         element.style.display = "grid";
