@@ -57,7 +57,6 @@ function name_validate(user_name) {
   }
 }
 function mail_validate(user_mail) {
-  console.log(1);
   const user_mail_err = user_mail.nextElementSibling;
   let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/;
   if (!regex.test(user_mail.value)) {
@@ -103,14 +102,14 @@ function zip_validate(user_zip) {
     return user_zip.value;
   }
 }
-function address_validate(address){
+function address_validate(address) {
   let address_err = address.nextElementSibling;
-  if(address.value.length == 0){
+  if (address.value.length == 0) {
     address_err.textContent = "Fill the data";
     address_err.style.display = "block";
     address.style.border = "1px solid red";
   }
-  else{
+  else {
     address_err.style.display = "none";
     address.style.border = "1px solid #ced4da";
     return address.value;
@@ -152,53 +151,23 @@ function endDate(startdate, enddate) {
   let date_err = enddate.nextElementSibling;
   let startdate_string = startdate.value.split("-");
   let enddate_string = enddate.value.split("-");
-  let calculate_start_date = 0;
-  let calculate_end_date = 0;
-  if (enddate_string[0] >= startdate_string[0] && enddate_string[1] >= startdate_string[1]) {
-    if(startdate_string[1] % 2 == 0)
-    {
-      if(startdate_string[1] == 2){
-        if(startdate_string[0] % 100 === 0 ? startdate_string[0] % 400 === 0 : startdate_string[0] % 4 === 0)
-            calculate_start_date = startdate_string[2] - 29;
-        else
-        calculate_start_date = startdate_string[2] - 28;
-      }
-      else
-        calculate_start_date = startdate_string[2] - 30
-    }
-    else{
-      calculate_start_date = startdate_string[2] - 31;
-    }
+  let start_date = Number(startdate_string[2]);
+  let start_month = Number(startdate_string[1]);
+  let start_year = Number(startdate_string[0]);
+  let end_date = Number(enddate_string[2]);
+  let end_month = Number(enddate_string[1]);
+  let end_year = Number(enddate_string[0]);
 
-    
-    if(Number(enddate_string[1]) - Number(startdate_string[1]) > 1){
-      while(enddate_string[1] != 1){
-        enddate_string--;
-        if(enddate_string[1] % 2 == 0){
-        if(enddate_string[1] == 2){
-          if(enddate_string[0] % 100 === 0 ? enddate_string[0] % 400 === 0 : enddate_string[0] % 4 === 0)
-              calculate_start_date += 29;
-          else
-          calculate_start_date += 28;
-        }
-        else
-          calculate_start_date +=  30;
-      }
-      else
-         calculate_start_date += 31;
-      enddate_string[1]--;
-
+  let year = end_year - start_year;
+  year = year*12;
+  let days = year*31;
+  if(end_year != start_year){
+    end_month--;
+    while(end_month != 0){
+      if(end_month % 2){
+        
       }
     }
-    console.log("date"+calculate_start_date);
-    date_err.style.display = "none";
-    enddate.style.border = "1px solid #ced4da";
-    return enddate.value;
-  }
-  else {
-    date_err.textContent = "Invalid Date";
-    date_err.style.display = "block";
-    enddate.style.border = "1px solid red";
   }
 }
 function check_validate(event) {
@@ -212,9 +181,9 @@ function check_validate(event) {
   let district = option_validate(document.getElementsByClassName('custom-select')[1]);
   let zip = zip_validate(document.querySelector("input[name = 'zip']"));
   let startDate = startdate(document.querySelector("input[name = 'startdate']"));
-  let enddate = endDate(document.querySelector("input[name = 'startdate']"),document.querySelector("input[name = 'enddate']"));
+  let enddate = endDate(document.querySelector("input[name = 'startdate']"), document.querySelector("input[name = 'enddate']"));
   let toatl = document.querySelector("input[name = 'totalamount']");
-  if(fname && lname && mail && phone_num && address && state && district && zip && startDate && enddate){
+  if (fname && lname && mail && phone_num && address && state && district && zip && startDate && enddate) {
     console.log(1);
   }
 }
@@ -224,7 +193,6 @@ function home_page() {
 
   setInterval(() => {
     if (image_no > slide_show.length - 1) image_no = 0;
-    console.log(image_no);
     if (image_no != 0) slide_show[image_no - 1].classList.toggle("show");
     if (image_no == 0)
       slide_show[slide_show.length - 1].classList.toggle("show");
@@ -236,7 +204,6 @@ function home_page() {
   const x = new XMLHttpRequest();
   x.open("GET", "car_list.json", false);
   x.send();
-  console.log(x.readyState);
   if (x.readyState == 4 && x.status == 200) {
     let car_lists = JSON.parse(x.responseText);
     car_lists.car_type.sort((a, b) => a.Price - b.Price);
@@ -310,7 +277,6 @@ function book_now(e) {
       disrtict.innerHTML = "";
       if (x.readyState == 4 && x.status == 200) {
         let car_lists = JSON.parse(x.responseText);
-        console.log(car_lists.indiaDistrict[state_select])
         car_lists.indiaDistrict[state_select].forEach(element => {
           let create_district_option = document.createElement("option");
           create_district_option.setAttribute("value", element);
