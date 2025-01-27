@@ -184,7 +184,8 @@ function formatDate(date) {
     let month = (date.getMonth() + 1).toString().padStart(2, '0');
     let day = date.getDate().toString().padStart(2, '0');
     let hour = date.getHours();
-    return `${year}-${month}-${day} `;
+    let minutes = date.getMinutes();
+    return `${year}-${month}-${day} ${hour}:${minutes}`;
 }
 let find_info = JSON.parse(localStorage.getItem('Task_list'));
 // Edit function
@@ -204,7 +205,8 @@ function edit(e){
     if(find_info[indexs].task_description)
         task_description.value = find_info[indexs].task_description;
     let formatdate_string = find_info[indexs].estimate_time[0]+"-"+find_info[indexs].estimate_time[1]+"-"+find_info[indexs].estimate_time[2]+" "+find_info[indexs].estimate_time[3]+":"+find_info[indexs].estimate_time[4]
-    formatDate(new Date(formatdate_string))
+    task_duration.value = formatDate(new Date(formatdate_string));
+    
 
 }
 function deletes(e){
