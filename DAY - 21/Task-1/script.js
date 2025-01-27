@@ -103,7 +103,7 @@ function user_mail_validate(user_mail) {
       user_details.push(user_data);
       console.log(user_details)
       quiz_page();
-      
+
       document.getElementById("form").reset();
     }
   });
