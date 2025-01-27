@@ -137,6 +137,7 @@ function name_validate(user_name) {
   }
 }
 function mail_validate(user_mail) {
+  
   const user_mail_err = user_mail.nextElementSibling;
   let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/;
   if (!regex.test(user_mail.value)) {
@@ -150,6 +151,7 @@ function mail_validate(user_mail) {
   }
 }
 function phone_num_validate(user_phone) {
+  console.log(user_phone)
   let user_phone_err = user_phone.nextElementSibling;
   let num_regx = /^\d{10}$/;
   if (user_phone.value.length == 0) {
@@ -193,6 +195,7 @@ function address_validate(address) {
     address_err.style.display = "none";
     address.style.border = "1px solid #ced4da";
     return address.value;
+  
   }
 }
 function option_validate(user_location) {
@@ -239,8 +242,6 @@ calculated_days = time_diff / (1000 * 3600 * 24);
 if (calculated_days > 0) {
   date_err.style.display = "none";
   enddate.style.border = "1px solid #ced4da";
-  
-  
   return [enddate.value,calculated_days];
 
 } else {
@@ -270,8 +271,8 @@ function check_validate(event) {
   event.preventDefault();
   let fname = name_validate(document.querySelector("input[name = 'fname']"));
   let lname = name_validate(document.querySelector("input[name = 'lname']"));
-  let mail = mail_validate(document.querySelector("input[name = 'mail']"));
-  let phone_num = phone_num_validate(document.querySelector("input[name= 'phnum']"));
+  let mail = mail_validate(document.querySelector("input[name = 'mails']"));
+  let phone_num = phone_num_validate(document.querySelector("input[name= 'phnums']"));
   let address = address_validate(document.querySelector("input[name='address']"));
   let state = option_validate(document.getElementsByClassName('custom-select')[0]);
   let district = option_validate(document.getElementsByClassName('custom-select')[1]);
@@ -280,7 +281,9 @@ function check_validate(event) {
   let enddate = endDate(document.querySelector("input[name = 'startdate']"), document.querySelector("input[name = 'enddate']"));
   let agree = agree_validate(document.querySelector('.form-check-input'));
   let perday = Number(document.querySelector("input[name = 'price']").value.split("₹")[1]);
+  console.log(phone_num)
   if (fname && lname && mail && phone_num && address && state && district && zip && startDate && enddate && agree) {
+    console.log(1)
     const confirmationMessage = `You are about to submit the following details:\n
     - Car Type: ${document.querySelector("input[name = 'model']").value}\n
     - Rental Dates: ${startDate} to ${enddate[0]}\n
@@ -292,16 +295,16 @@ function check_validate(event) {
       form.submit();
     }
   }
+  
 }
-
+let image_no = 1;
 function home_page() {
   document.getElementById('home').style.display = "block";
   document.getElementById('admin_pannel_details').style.display = "none";
   let slide_show = document.getElementsByClassName("slide-show");
   console.log(slide_show)
-  let image_no = 1;
-  setInterval(() => {
-    console.log(image_no)
+  
+  interval =  setInterval(() => {
     if (image_no > slide_show.length - 1) image_no = 0;
     if (image_no != 0) slide_show[image_no - 1].classList.toggle("show");
     if (image_no == 0)
@@ -358,6 +361,7 @@ home_page();
 
 // book page
 function book_now(e) {
+  clearInterval(interval);
   document.querySelector(".show").classList.toggle = 'show';
   document.getElementById("home").style.display = "none";
   document.getElementById("booking").style.display = "block";
@@ -395,6 +399,7 @@ function book_now(e) {
 }
 
 function admin(){
+  clearInterval(interval);
   document.querySelector(".show").classList.toggle = 'show';
    document.getElementById('home').style.display = "none"
    document.getElementById('admin_pannels').style.display = "block";
