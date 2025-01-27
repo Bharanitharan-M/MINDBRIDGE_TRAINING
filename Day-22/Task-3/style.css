@@ -8,9 +8,6 @@ body{
   font-optical-sizing: auto;
   font-style: normal;
 }
-button{
-    cursor: pointer;
-}
 #menu{
     display: flex;
     justify-content: space-around;
@@ -51,6 +48,9 @@ button{
 }
 .filed input::placeholder,textarea::placeholder{
     color: black;
+}
+#update_btn{
+    display: none;
 }
 .filed button{
     color: whitesmoke;
@@ -96,9 +96,13 @@ button{
     padding: 30px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     display: grid;
-    grid-template-columns: 600px 500px auto;
+    grid-template-columns: 600px 450px auto auto;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
+}
+.final{
+    float: right;
 }
 .task .content h1{
     text-transform: capitalize;
