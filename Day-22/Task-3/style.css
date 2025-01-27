@@ -95,8 +95,8 @@ button{
     border-radius: 30px;
     padding: 30px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 600px 500px auto;
     align-items: center;
     margin-bottom: 30px;
 }
@@ -126,5 +126,28 @@ button{
     border-radius: 30px;
     font-size: medium;
     font-weight: 700;
-
+}
+.task .pre_action{
+    align-self: flex-end;
+   
+}
+.task .pre_action button:first-child{
+    padding: 10px;
+    background-color: green;
+    color: whitesmoke;
+    margin-right: 20px;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+}
+.task .pre_action button:last-child{
+    padding: 10px;
+    background-color:red;
+    color: whitesmoke;
+    margin-right: 20px;
+    font-size: medium;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
 }

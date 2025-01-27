@@ -1,3 +1,5 @@
+let task_list = [];
+
 const task_append = document.getElementById('task_details')
 function title(task_title){
     let task_title_err = task_title.nextElementSibling;
@@ -57,6 +59,18 @@ document.getElementById('click_btn').addEventListener('click',(event)=>{
         task_content.appendChild(content_h5)
         create_task.append(task_content);
 
+        const pre_action = document.createElement('div');
+        pre_action.className = 'pre_action';
+
+        const pre_action_button1 = document.createElement('button');
+        pre_action_button1.textContent = "Start Now";
+        pre_action.appendChild(pre_action_button1);
+
+        const pre_action_button2 = document.createElement('button');
+        pre_action_button2.textContent = "End Now";
+        pre_action.appendChild(pre_action_button2);
+        create_task.appendChild(pre_action);
+
         const create_action = document.createElement('div');
         create_action.className = 'action';
 
@@ -64,7 +78,6 @@ document.getElementById('click_btn').addEventListener('click',(event)=>{
         const dates = new Date();    
         action_h4.textContent = dates.getDate()+"/"+dates.getMonth()+1+"/"+dates.getFullYear()+" "+dates.getHours()+":"+dates.getMinutes();
         create_action.appendChild(action_h4);
-
         const action_div = document.createElement('div');
        
         const comp_button = document.createElement('button');
@@ -79,6 +92,7 @@ document.getElementById('click_btn').addEventListener('click',(event)=>{
         delete_button.textContent = "Delete";
         action_div.appendChild(delete_button);
         create_action.appendChild(action_div);
+        
         create_task.appendChild(create_action);
         
     }
