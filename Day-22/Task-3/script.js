@@ -1,4 +1,4 @@
-let task_list = [{ id: 0, title: "Final Project", task_description: "Complete the Final Project Module 1", estimate_time: ['2025', '01', '30', '14', '19'], start_now: [] }];
+let task_list = [{ id: 0, title: "Final Project", task_description: "Complete the Final Project Module 1", estimate_time: ['2025', '01', '30', '14', '19'], start_now: [] ,completed: false, in_time:false}];
 let id;
 let today = new Date();
 if (!localStorage.getItem('Task_list')) {
@@ -7,7 +7,6 @@ if (!localStorage.getItem('Task_list')) {
 if (!localStorage.getItem('points')) {
     localStorage.setItem('points', JSON.stringify(1));
 }
-let find_info = JSON.parse(localStorage.getItem('Task_list'));
 const task_append = document.getElementById('task_details')
 function display_local_stroage() {
     let get_points = JSON.parse(localStorage.getItem('points'))
@@ -37,7 +36,7 @@ function display_local_stroage() {
 
         task_content.appendChild(content_h5)
         create_task.append(task_content);
-
+        if(!element.completed){
         const pre_action = document.createElement('div');
         pre_action.className = 'pre_action';
 
@@ -76,15 +75,21 @@ function display_local_stroage() {
         delete_button.setAttribute('onclick', 'deletes(this)')
         action_div.appendChild(delete_button);
         create_action.appendChild(action_div);
-
+        create_task.appendChild(create_action);
+        }
+        else{
         const final_div = document.createElement('div');
         final_div.className = 'final';
         const final_h4 = document.createElement('h4');
+        if(element.in_time)
+        final_h4.textContent = "Completed in Time";
+        else
+        final_h4.textContent = "Completed after estimate time";
         final_div.appendChild(final_h4);
-
-        create_task.appendChild(create_action);
-
         create_task.appendChild(final_div);
+
+        }
+    
     });
 }
 display_local_stroage();
@@ -197,24 +202,23 @@ document.getElementById('click_btn').addEventListener('click', (event) => {
         action_div.appendChild(delete_button);
         create_action.appendChild(action_div);
 
-        const final_div = document.createElement('div');
-        final_div.className('final');
-        const final_h4 = document.createElement('h4');
-        final_div.appendChild(final_h4);
-
         create_task.appendChild(create_action);
 
-        create_task.appendChild(final_div);
+     
 
+        const final_div = document.createElement('div');
+        final_div.className = 'final';
+        const final_h4 = document.createElement('h4');
+        create_task.appendChild(final_div)
 
         let points = (findpoints(taskDate));
         let get_points = JSON.parse(localStorage.getItem('points')) + points;
         localStorage.setItem('points', JSON.stringify(get_points));
         document.getElementById('points').textContent = get_points;
         if (task_description.value.length != 0)
-            get_task_list.push({ id: id + 1, title: task_title_value, task_description: task_description.value, estimate_time: task_duration_v.split(/[-T:]/), start_now: [] })
+            get_task_list.push({ id: id + 1, title: task_title_value, task_description: task_description.value, estimate_time: task_duration_v.split(/[-T:]/), start_now: [], completed: false, in_time:false})
         else
-            get_task_list.push({ id: id + 1, title: task_title_value, estimate_time: task_duration_v.split(/[-T:]/), start_now: [] })
+            get_task_list.push({ id: id + 1, title: task_title_value, estimate_time: task_duration_v.split(/[-T:]/), start_now: [],completed: false, in_time:false })
         localStorage.setItem("Task_list", JSON.stringify(get_task_list));
     }
 })
@@ -228,8 +232,10 @@ let start_hour;
 let start_minutes;
 // start now button
 function start_now(e) {
+    let find_info = JSON.parse(localStorage.getItem('Task_list'));
+    let today = new Date();
     let time_h4 = e.parentNode.nextElementSibling.firstElementChild
-    let parent = e.parentNode.parentNode.parentNode;
+    let parent = e.parentNode.parentNode;
     let get_info_id;
     let user_est = e.parentNode.previousElementSibling.lastElementChild.textContent.split(" ")
     let user_estdate = user_est[2].split("/");
@@ -240,21 +246,16 @@ function start_now(e) {
         if (!isNaN(element))
             get_info_id = element;
     })
-   
+
     let indexs = getinfo(get_info_id, find_info);
-    if (find_info[indexs]) {
-        find_info[indexs].start_now = [today.getDate(), today.getMonth() + 1, today.getFullYear(), today.getHours(), today.getMinutes(), today.getSeconds()]
-    }
-    let check_estimate = new Date(find_info[indexs].start_now[2], find_info[indexs].start_now[1] - 1, find_info[indexs].start_now[0], find_info[indexs].start_now[3], find_info[indexs].start_now[4]);
-    console.log(find_info[indexs].start_now)
-    if (estimate - check_estimate != 0) {
-        second = find_info[indexs].start_now[5];
-        console.log(second)
-        start_date = find_info[indexs].start_now[0];
-        start_month = find_info[indexs].start_now[1];
-        start_year = find_info[indexs].start_now[2];
-        start_hour = find_info[indexs].start_now[3];
-        start_minutes = find_info[indexs].start_now[4];
+    let check_estimate = new Date(today.getFullYear(), today.getMonth(), today.getDate(), today.getHours(), today.getMinutes());
+    if (estimate > check_estimate) {
+        second = today.getSeconds();
+        start_date = today.getDate();
+        start_month = today.getMonth()+1;
+        start_year = today.getFullYear();
+        start_hour = today.getHours();
+        start_minutes = today.getMinutes();
         time_h4.textContent = today.getDate() + "/" + today.getMonth() + 1 + "/" + today.getFullYear() + " " + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
         interval = setInterval(() => {
             if (second == 60 && start_hour == 24 && start_minutes == 60 && start_month == 12 && start_date == 31 && start_year == 2025) {
@@ -320,12 +321,21 @@ function start_now(e) {
             time_h4.textContent = start_date + "/" + start_month + "/" + start_year + " " + start_hour + ":" + start_minutes + ":" + second;
         }, 1000)
     }
+    
     else {
         alert("This task estimate time exprie");
+        find_info[indexs].in_time = false;
+        find_info[indexs].completed = true;
+        console.log(find_info);
+        localStorage.setItem('Task_list',JSON.stringify(find_info))
+        e.parentNode.display.style = "None";
+        e.parentNode.nextElementSibling.style.display = "None"
     }
+
 }
 // end now
 function end_now(e) {
+   let find_info = JSON.parse(localStorage.getItem('Task_list'));
     clearInterval(interval);
     let parent = e.parentNode.parentNode.parentNode;
     let get_info_id;
@@ -337,7 +347,6 @@ function end_now(e) {
     let indexs = getinfo(get_info_id, find_info);
     find_info[indexs].start_now = [start_date, start_month, start_year, start_hour, start_minutes, second]
     localStorage.setItem('Task_list', JSON.stringify(find_info));
-    console.log(find_info[indexs].start_now)
 }
 
 function findpoints(taskDate) {
@@ -364,6 +373,7 @@ function formatDate(date) {
 
 // Edit function
 function edit(e) {
+     let find_info = JSON.parse(localStorage.getItem('Task_list'));
     document.getElementById('click_btn').style.display = 'none';
     document.getElementById('update_btn').style.display = 'block';
     let parent = e.parentNode.parentNode.parentNode;
@@ -408,13 +418,14 @@ function edit(e) {
                 parent.firstElementChild.firstElementChild.nextElementSibling.textContent = "";
                 find_info[indexs].task_description = undefined;
             }
-            localStorage.setItem('Task_list', JSON.stringify(find_info))
+            localStorage.setItem('Task_list', JSON.stringify(find_info));
         }
     })
 
 
 }
 function deletes(e) {
+    let find_info = JSON.parse(localStorage.getItem('Task_list'));
     let parent = e.parentNode.parentNode.parentNode;
     let get_info_id;
     parent.className.split(" ").forEach(element => {
@@ -444,6 +455,7 @@ function getinfo(task_id, find_info) {
 
 // completed
 function completed(e){
+let find_info = JSON.parse(localStorage.getItem('Task_list'));
     let parent = e.parentNode.parentNode.parentNode;
     let get_info_id;
 
@@ -459,25 +471,25 @@ function completed(e){
     })
 
     let indexs = getinfo(get_info_id, find_info);
-    if (find_info[indexs].start_now) {
-        find_info[indexs].start_now = [today.getDate(), today.getMonth() + 1, today.getFullYear(), today.getHours(), today.getMinutes(), today.getSeconds()]
-    }
+    find_info[indexs].start_now = [today.getDate(), today.getMonth() + 1, today.getFullYear(), today.getHours(), today.getMinutes(), today.getSeconds()]
+    find_info[indexs].completed = true;
+    console.log(find_info[indexs].start_now)
     let check_estimate = new Date(find_info[indexs].start_now[2], find_info[indexs].start_now[1] - 1, find_info[indexs].start_now[0], find_info[indexs].start_now[3], find_info[indexs].start_now[4]);
-    console.log(estimate - check_estimate);
     let get_points;
-    if(estimate - check_estimate >= 1){
-       parent.lastElementChild.firstElementChild.textContent = "Completed in time";
+   console.log(check_estimate)
+    if(estimate - check_estimate >= 0){
+      e.parentNode.innerHTML = "<h4>Completed in time</h4>";
         get_points = JSON.parse(localStorage.getItem('points')) + 1;
     localStorage.setItem('points', JSON.stringify(get_points));
+    find_info[indexs].in_time = true;
     }
     else{
-        parent.lastElementChild.firstElementChild.textContent = "Not Completed in time";
+        e.parentNode.innerHTML = "<h4>Not Completed in time</h4>";
         get_points = JSON.parse(localStorage.getItem('points')) - 1;
-        localStorage.setItem('points', JSON.stringify(get_points)); 
+        localStorage.setItem('points', JSON.stringify(get_points));
+        find_info[indexs].in_time = false; 
     }
     document.getElementById('points').textContent = get_points;
-    parent.style.cursor  = "none"
-    e.parentNode.parentNode.style.display = "None";
-    console.log( e.parentNode);
-    e.parentNode.parentNode.previousElementSibling.style.display = "none"
+    parent.firstElementChild.nextElementSibling.style.display = "None"
+    localStorage.setItem('Task_list',JSON.stringify(find_info));
 }

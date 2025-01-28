@@ -90,6 +90,9 @@ body{
 #task_details{
     margin: 80px;
 }
+button{
+    cursor: pointer;
+}
 .task{
     background-color: whitesmoke;
     border-radius: 30px;
@@ -103,6 +106,14 @@ body{
 }
 .final{
     float: right;
+}
+h4{
+    color: red;
+    text-transform: uppercase;
+}
+.final h4{
+    color: red;
+    text-transform: uppercase;
 }
 .task .content h1{
     text-transform: capitalize;
