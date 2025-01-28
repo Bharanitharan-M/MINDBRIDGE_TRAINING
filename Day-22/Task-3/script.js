@@ -493,3 +493,4 @@ let find_info = JSON.parse(localStorage.getItem('Task_list'));
     parent.firstElementChild.nextElementSibling.style.display = "None"
     localStorage.setItem('Task_list',JSON.stringify(find_info));
 }
+
