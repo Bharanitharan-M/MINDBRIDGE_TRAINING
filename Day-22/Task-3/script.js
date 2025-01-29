@@ -494,3 +494,6 @@ let find_info = JSON.parse(localStorage.getItem('Task_list'));
     localStorage.setItem('Task_list',JSON.stringify(find_info));
 }
 
+window.addEventListener("beforeunload", (event) => {
+    event.returnValue = "Are you sure you want to leave?";
+});
