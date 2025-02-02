@@ -14,7 +14,7 @@ function email_validate(email){
 }
 function password_validate(password){
     let password_err = password.nextElementSibling;
-    let regex = /[(A-Z)(a-z)(0-9)]/
+    let regex = /[A-Z]{1,}[a-z]{1,}[0-9]{1,}/
     if(!regex.test(password.value)){
         password.style.border = "1px solid red";
         password_err.style.display = "block";
@@ -26,8 +26,13 @@ function password_validate(password){
         return password.value;
     }
 
+
 }
+document.querySelector("input[name = 'email']").addEventListener('keypress',()=>{
+    let email = email_validate(document.querySelector("input[name = 'email']"));
+})
 document.getElementById('sign_button').addEventListener('click',(event)=>{
+    
     event.preventDefault();
     let email = email_validate(document.querySelector("input[name = 'email']"));
     let password = password_validate(document.querySelector("input[name = 'password']"));

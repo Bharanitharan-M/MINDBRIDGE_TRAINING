@@ -11,7 +11,10 @@ async function wait_for_data() {
     arr.forEach(element => {
         if (categories != element.category) {
             row = document.createElement('div');
+            row.className = `${element.category}`
             row.classList.add('row');
+            row.classList.add(element.rating.rate)
+           
             console.log(row);
             append_product.appendChild(row);
             let h4 = document.createElement('h4');
@@ -19,7 +22,7 @@ async function wait_for_data() {
             row.before(h4)
             categories = element.category;
         }
-        let child_product = `<div class="col-sm-3 ${element.category} ${element.price}">
+        let child_product = `<div class="col-sm-3  ${element.price}">
                 <a href="product_details.html?id=${element.id}">
                 <div class="card">
                     <div class="d-flex flex-column  align-items-center ">
@@ -64,4 +67,34 @@ function butt(e,event){
     console.log(e)
 }
 
+document.getElementById('filter_btn').addEventListener('click',()=>{
+   
+    let category = document.querySelectorAll("input[name = 'cat']");
+    category.forEach(element=>{
+        if(element.checked){
+            category = element.value;
+            element.nextElementSibling.lastElementChild.style.display = "block"
+        }
+    })
 
+    console.log(category)
+    let all_row = document.getElementsByClassName('row');
+    Array.from(all_row).forEach(element=>{
+        element.style.display = "none"
+        element.previousElementSibling.style.display = "none";
+        if(element.classList.contains(category.split(" ")[0])){
+            element.style.display = "flex";
+            element.previousElementSibling.style.display = "block";
+        }
+    })
+})
+
+function close_filter(e){
+    e.parentNode.previousElementSibling.checked = false;
+    e.style.display= "none"
+    let all_row = document.getElementsByClassName('row');
+    Array.from(all_row).forEach(element=>{
+        element.style.display = "flex"
+        element.previousElementSibling.style.display = "block";
+    })
+}

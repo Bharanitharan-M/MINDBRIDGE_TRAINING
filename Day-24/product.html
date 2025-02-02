@@ -95,7 +95,7 @@
         }
         #product_show{
             display: grid;
-            grid-template-columns: 200px auto;
+            grid-template-columns: 220px auto;
         }
         
        h4{
@@ -148,26 +148,7 @@
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
-                <!-- <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li> -->
-                <!-- <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li> -->
+              
               </ul>
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -182,19 +163,31 @@
             <h6 style="margin-top: 20px;">Sort with Category</h6>
             <div class="">
                 <input type="radio" aria-label="Radio button for following text input" id="men" value="men's clothing" name="cat">
+                <div style="display: inline;">
                 <label for="Men_Shopping">Men's Shopping</label>
+                <button style="border: none; background-color: transparent;float: right; display: none;" id="men's" onclick="close_filter(this)">X</button>
+              </div>
               </div>
               <div class="">
                 <input type="radio" aria-label="Radio button for following text input" id="jwel" name="cat" value="jewelery">
+                <div style="display: inline;">
                 <label for="Men_Shopping">Jewelery</label>
+                <button style="border: none; background-color: transparent;float: right; display: none;" id="jewelery" onclick="close_filter(this)">X</button>
+              </div>
               </div>
               <div class="">
                 <input type="radio" aria-label="Radio button for following text input" id="elec" name="cat" value="electronics">
+                <div style="display: inline;">
                 <label for="Men_Shopping">Electronics</label>
+                <button style="border: none; background-color: transparent;float: right; display: none;" id="electronics" onclick="close_filter(this)">X</button>
+              </div>
               </div>
               <div class="">
                 <input type="radio" aria-label="Radio button for following text input" id="women" name="cat" value="women's clothing">
+                <div style="display: inline;">
                 <label for="Men_Shopping">Women's Shopping</label>
+                <button style="border: none; background-color: transparent;float: right; display: none;" id="women's" onclick="close_filter(this)">X</button>
+                </div>
               </div>
             </div>
 
@@ -240,7 +233,8 @@
                 </div>
 
                 <div id="btns">
-                    <center><button>Filter</button></center>
+                    <center><button id="filter_btn">Filter</button></center>
+                    <center><button id="clear_filter" style="display: none;">Clear Filter</button></center>
                 </div>
         </div>
         <div id="product_list">

@@ -1,0 +1,51 @@
+.form_layout{
+ padding: 30px;
+  margin: 20px 40%;
+  border-radius: 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.form_layout input{
+  margin-bottom: 10px;
+}
+.form_layout label{
+  font-size: large;
+  font-weight: 500;
+}
+.form_layout input{
+  border: 1px solid black;
+}
+.form_layout small{
+  display: none;
+  color: red;
+  font-size: medium;
+}
+.table_layout{
+  text-align: center;
+}
+#update{
+  display: none;
+}
+#submit{
+  background-color:chocolate;
+  border: none;
+  padding: 10px 20px;
+  color: whitesmoke;
+  font-weight: bold;
+  border-radius: 20px;
+}
+#edit_btn{
+  background-color: green;
+  color: whitesmoke;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+#del_btn{
+  background-color: red;
+  color: whitesmoke;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
