@@ -5,7 +5,9 @@ import { Productscontext } from './WebSite_layout';
 
 export const Product = () => {
     const handleCart = useContext(Productscontext);
-    const product = handleCart.Buy_item;
+    const product = handleCart.state.Buy_items;
+    const cart = handleCart.state.cart_product;
+    const remove_cart = handleCart.remove_cart;
     return (
         <div className="row">
             <div className="col-sm-4">
@@ -26,7 +28,7 @@ export const Product = () => {
                     </div>
                 </div>
                 <div className="button">
-                    <button onClick={()=> handleCart.handleAddCart(product)}>Add Cart</button>
+                    {(cart.some(ele => ele.id === product.id)) ? <button onClick={()=> remove_cart(product.id)}>Remove</button> : <button onClick={()=> handleCart.handleAddCart(product)}>Add Cart</button> }
                 </div>
             </div>
         </div>

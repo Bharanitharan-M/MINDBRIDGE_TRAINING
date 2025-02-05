@@ -10,16 +10,25 @@ import { WebLayout } from './WebLayout'
 export const Productscontext = createContext();
 
 export const WebSite_layout = () => {
-    const [product_store, dispatch] = useState([]);
-    const [Buy_item, setBuy_item] = useState();
+    const reducer = (state,action)=>{
+        switch(action.type){
+            case "Buy_item":
+                return {...state, Buy_items: action.buyItem};
+            case "Add_cart":
+                return{...state, cart_product:[...state.cart_product, action.addCart]};
+            case "Remove_cart":
+                return{...state, cart_product: state.cart_product.filter((ele => ele.id != action.id))}
+        }
+    }
+    const [state, dispatch] = useReducer(reducer, {cart_product: [], Buy_items: null}) 
     const handleAddCart = (item)=>{
-        dispatch([...product_store,item]);
+        dispatch({type: "Add_cart", addCart: item})
     }
     const handleBuy = (item) =>{
-        setBuy_item(item);
+        dispatch({type: "Buy_item", buyItem: item});
     }
     const remove_cart = (id) =>{
-        dispatch(product_store.filter((ele)=> ele.id != id));
+        dispatch({type: "Remove_cart", id: id});
     }
     const route = createBrowserRouter(createRoutesFromElements(
         <Route path='/' element={<WebLayout />}>
@@ -30,7 +39,7 @@ export const WebSite_layout = () => {
     ))
 
     return (
-        <Productscontext.Provider value={{handleAddCart, product_store, handleBuy, Buy_item, remove_cart}}>
+        <Productscontext.Provider value={{handleAddCart, state, handleBuy, remove_cart}}>
         <RouterProvider router={route} />
         </Productscontext.Provider>
     )

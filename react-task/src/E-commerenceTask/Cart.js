@@ -6,15 +6,15 @@ import './Cart.css'
 import Button from '../Components/Button';
 export const Cart = () => {
   const handleCart = useContext(Productscontext);
-  const cartProduct = handleCart.product_store;
+  const cartProduct = handleCart.state.cart_product;
   const remove_cart = handleCart.remove_cart;
   return (
-    <div classNameName='cart_display'>
+    <div className='cart_display'>
       <div className='cart_title'>
         <h4>Your Cart List</h4>
       </div>
       <div className='cart_body'>
-        {cartProduct.map(items => (
+        {cartProduct.length ?   cartProduct.map(items => (
           <div className='card_layout'>
             <div className='cart_image'>
               <img src={items.image} alt="" style={{ width: "150px" }} />
@@ -30,7 +30,8 @@ export const Cart = () => {
             </div>
            
           </div>
-        ))}
+        )) : <h5>Your Cart is Empty</h5>}
+      
       </div>
     </div>
 

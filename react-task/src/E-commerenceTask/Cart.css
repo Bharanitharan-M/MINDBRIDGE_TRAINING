@@ -28,5 +28,8 @@
 button{
     float: right;
     background-color: black;
-
+}
+.cart_body h5{
+    text-align: center;
+    color: red;
 }
