@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav img{
+    width: 100px;
+    height: 100px;
+}
+.nav_style{
+    display: flex;
+    align-items: center;
+}
+.nav_style ul{
+    
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+.nav_style li{
+    font-size: large;
+    font-weight: 500;
+}

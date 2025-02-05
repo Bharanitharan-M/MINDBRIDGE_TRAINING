@@ -10,58 +10,55 @@ function App() {
   ];
   const [user_data, setUser_data] = useState([]);
   const [edit_user, setEdit_user] = useState(null);
+  const [user_input, setUser_input] = useState([]);
+  const [input_err, Setinput_err] = useState([{ fname: "", age: "", mail: "" }]);
   function validate_name(user_name) {
-
     let regex = /[0-9]/
-    if (regex.test(user_name.value)) {
-      user_name.nextElementSibling.style.display = "block";
-      user_name.nextElementSibling.textContent = "Name should contain digit";
+    if (!user_name) {
+      return "Filed is required"
     }
-    else if (user_name.value.length < 4) {
-      user_name.nextElementSibling.style.display = "block";
-      user_name.nextElementSibling.textContent = "Name contains more than 3 letter";
+    if (regex.test(user_name)) {
+      return "Name Should Not contain Number"
     }
-    else {
-      user_name.nextElementSibling.style.display = "none";
-      return user_name.value;
+    else if (user_name.length < 4) {
+      return "Name contains more than 3 letter";
     }
+
   }
   function validate_age(user_age) {
-    if (user_age.value.length > 3 || user_age.value.length == 0) {
-      user_age.nextElementSibling.textContent = "Invalid age! Enter valid age";
-      user_age.nextElementSibling.style.display = "block";
+    if (!user_age) {
+      return "Field is required"
     }
-    else {
-      user_age.nextElementSibling.style.display = "none";
-      return user_age.value;
+    if (user_age.length > 3 || user_age.length == 0) {
+      return "Invalid age! Enter valid age";
     }
+
 
   }
   function validate_mail(user_mail) {
     let regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-    if (!regex.test(user_mail.value)) {
-      user_mail.nextElementSibling.textContent = "Enter Valid Mail";
-      user_mail.nextElementSibling.style.display = "Block";
+    if (!regex.test(user_mail)) {
+      return "Enter Valid Mail";
     }
-    else {
-      user_mail.nextElementSibling.style.display = "none";
-      return user_mail.value;
-    }
+
   }
   const sumbit_form = (e) => {
     e.preventDefault();
-    let user_name = validate_name(document.querySelector("input[name = 'fname']"));
-    let user_age = validate_age(document.querySelector("input[name = 'age']"));
-    let user_mail = validate_mail(document.querySelector("input[name = 'mail']"));
-    if (user_name && user_age && user_mail) {
-      setUser_data([...user_data, { id: user_data.length + 1, fname: user_name, age: user_age, mail: user_mail }]);
-      document.getElementsByClassName('form_layout')[0].reset()
+    let user_name = validate_name(user_input.fname);
+    let user_age = validate_age(user_input.age);
+    let user_mail = validate_mail(user_input.mail);
+    if (user_name || user_age || user_mail) {
+      Setinput_err({ fname: user_name, age: user_age, mail: user_mail });
+      return;
     }
+    setUser_data([...user_data, { id: user_data.length + 1, ...user_input }]);
+    setUser_input({ fname: "", age: "", mail: "" });
+    Setinput_err({ fname: null, age: null, mail: null })
   }
   const deletes = (id) => {
-    setUser_data(user_data.filter((element) =>{
-      if(element.id !== id ){
-        if(element.id > id){
+    setUser_data(user_data.filter((element) => {
+      if (element.id !== id) {
+        if (element.id > id) {
           element.id--;
         }
         return element;
@@ -69,32 +66,39 @@ function App() {
 
     }))
   }
-  const edits = (id) =>{
+  const edits = (id) => {
     const edit = user_data.find(element => element.id == id)
     setEdit_user(edit)
-    document.querySelector("input[name = 'fname']").value = edit.fname;
-    document.querySelector("input[name = 'age']").value = edit.age;
-    document.querySelector("input[name = 'mail']").value = edit.mail;
+    setUser_input({ fname: edit.fname, age: edit.age, mail: edit.mail })
     document.getElementById('update').style.display = "block";
     document.getElementById('submit').style.display = "none"
 
   }
-  const update = (event) =>{
+  const update = (event) => {
     event.preventDefault();
-    let user_name = validate_name(document.querySelector("input[name = 'fname']"));
-    let user_age = validate_age(document.querySelector("input[name = 'age']"));
-    let user_mail = validate_mail(document.querySelector("input[name = 'mail']"));
-    if (user_name && user_age && user_mail) {
-      setUser_data(user_data.map((data) =>(data.id === edit_user.id ? {...data, fname:user_name, age:user_age, mail: user_mail} : data))); 
-      document.getElementsByClassName('form_layout')[0].reset();
-          document.getElementById('update').style.display = "none";
-    document.getElementById('submit').style.display = "block"
+    let user_name = validate_name(user_input.fname);
+    let user_age = validate_age(user_input.age);
+    let user_mail = validate_mail(user_input.mail);
+    if (user_name || user_age || user_mail) {
+      Setinput_err({ fname: user_name, age: user_age, mail: user_mail });
+      return;
     }
+    setUser_data(user_data.map((data) => (data.id === edit_user.id ? { ...data, ...user_input } : data)));
+    setUser_input({ fname: "", age: "", mail: "" })
+    document.getElementById('update').style.display = "none";
+    document.getElementById('submit').style.display = "block"
   }
+  const change_input = (e) => {
+    console.log(user_input)
+    setUser_input((prev) => (
+      { ...prev, [e.target.name]: e?.target.value }
+    ))
+  }
+
   return (
     <div id='content'>
-      <Form filed_attribute={filed_attribute} click={sumbit_form} btn_name={"Submit"} update_btn={update} btn_upname={"Update"}/>
-      <Table table_data={user_data} del_btn={deletes} edit_btn={edits}/>
+      <Form filed_attribute={filed_attribute} click={sumbit_form} btn_name={"Submit"} update_btn={update} btn_upname={"Update"} change={change_input} value={user_input} err={input_err} />
+      <Table table_data={user_data} del_btn={deletes} edit_btn={edits} />
     </div>
   )
 }

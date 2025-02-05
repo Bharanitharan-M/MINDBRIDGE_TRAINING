@@ -1,0 +1,58 @@
+.row {
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 3px solid rgba(0, 0, 0, 0.32);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+
+.row img {
+    width: 200px;
+    border-radius: 30px;
+    margin-top: 0px;
+}
+
+.details {
+    /* margin: 100px 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.description {
+    width: 100%;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.button button {
+    width: 100%;
+    background-color: #ff784b;
+    border: none;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px;
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.price_rating p:first-child, .price_rating p:last-child  {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.price_rating small {
+    font-size: 16px;
+    color: #979797;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+}

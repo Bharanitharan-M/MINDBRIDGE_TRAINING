@@ -15,7 +15,6 @@
   border: 1px solid black;
 }
 .form_layout small{
-  display: none;
   color: red;
   font-size: medium;
 }

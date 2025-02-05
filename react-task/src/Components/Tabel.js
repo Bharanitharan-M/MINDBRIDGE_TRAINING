@@ -12,7 +12,7 @@ function Table(props) {
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody key={"table_body"}>
                    {props.table_data.map(element=> <Tablerow table_data={element} del_btn={props.del_btn} edit_btn={props.edit_btn}/>)}
                 </tbody>
             </table>
