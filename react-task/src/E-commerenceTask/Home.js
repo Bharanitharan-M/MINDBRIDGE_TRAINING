@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import './Home.css'
-import { Link, Outlet, useLoaderData, useNavigate } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
 import { Productscontext } from './WebSite_layout';
 export const Home = () => {
     const fetched_data = useLoaderData();

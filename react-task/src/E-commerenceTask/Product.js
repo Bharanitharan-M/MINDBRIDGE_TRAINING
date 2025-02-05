@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { Outlet, useLoaderData } from 'react-router-dom'
 import './product.css'
 import { Productscontext } from './WebSite_layout';
 

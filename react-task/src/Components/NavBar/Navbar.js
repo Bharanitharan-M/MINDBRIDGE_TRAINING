@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Outlet, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logo from '../../E-commerenceTask/Assests/Images/E-commerece_logo.jpg'
 import './Navbar.css'
 import { Productscontext } from '../../E-commerenceTask/WebSite_layout'

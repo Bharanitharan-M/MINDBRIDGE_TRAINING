@@ -1,10 +1,8 @@
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom'
-import { Navbar } from '../Components/NavBar/Navbar'
-import App from '../App'
 import { Home } from './Home'
 import { Product } from './Product'
 import { Cart } from './Cart'
-import { createContext, useEffect, useReducer, useState } from 'react'
+import { createContext,  useReducer } from 'react'
 import { fetch_details } from './loader'
 import { WebLayout } from './WebLayout'
 export const Productscontext = createContext();
@@ -17,7 +15,9 @@ export const WebSite_layout = () => {
             case "Add_cart":
                 return{...state, cart_product:[...state.cart_product, action.addCart]};
             case "Remove_cart":
-                return{...state, cart_product: state.cart_product.filter((ele => ele.id != action.id))}
+                return{...state, cart_product: state.cart_product.filter((ele => ele.id !== action.id))}
+            default:
+                return {state};
         }
     }
     const [state, dispatch] = useReducer(reducer, {cart_product: [], Buy_items: null}) 

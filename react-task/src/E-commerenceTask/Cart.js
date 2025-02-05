@@ -1,9 +1,7 @@
 import React from 'react';
 import { useContext } from 'react'
-import { Outlet } from 'react-router-dom'
 import { Productscontext } from './WebSite_layout';
 import './Cart.css'
-import Button from '../Components/Button';
 export const Cart = () => {
   const handleCart = useContext(Productscontext);
   const cartProduct = handleCart.state.cart_product;
