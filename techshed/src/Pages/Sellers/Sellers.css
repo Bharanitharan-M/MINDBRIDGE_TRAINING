@@ -1,0 +1,24 @@
+.bestsellerpage{
+    background-color: #e8e8e8;
+}
+.sidenave{
+    width: 200px;
+    /* padding: 10px; */
+}
+ul li{
+    /* list-style-type:none; */
+    list-style: none;
+}
+.cards{
+    width:335px;
+}
+.card img{
+    width: 100%;
+}
+.price{
+    font-size: 17px;
+    color:blueviolet;
+}
+.card-body{
+    background-color: #e8e8e8;
+}

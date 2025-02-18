@@ -1,0 +1,14 @@
+:root{
+    --primary-btn-color : #751fff;
+    --primary-text-color : white;
+    --secondar-btn-color : white;
+    --third-btn-color : black;
+}
+
+
+.bg-app {
+    background-color: var(--primary-btn-color);
+}
+.text-app {
+    color: var(--primary-btn-color);
+}

@@ -1,0 +1,48 @@
+
+.nav-1{
+    background-color: black;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.nav-2 input{
+    outline: none;
+    width: 400px;
+    border: none;
+    padding: 16px;
+    background-color: #e8e8e8;
+}
+.nav-2 .nav-2 i{
+    background-color: #751fff;
+    padding: 17px 40px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    position: absolute;
+    right: 10px;
+    color: whitesmoke;
+}
+.nav-2 .nav-2 i:hover{
+    background-color: black;
+}
+.nav-2 input:hover{
+    background-color: white;
+    border: 1px solid black;
+}
+.px-5{
+    padding-left: 2.5rem !important;
+}
+.nav-3 ul li{
+    padding-right: 35px;
+    font-size: 16px;
+    color: rgba(0,0,0 );
+}
+.nav-3{
+    background-color:  #e8e8e8;
+}
+.py-3{
+    padding: 2.5rem 0px;
+}
+.product_nav li a:hover{
+    color: var(--primary-btn-color) !important;
+}

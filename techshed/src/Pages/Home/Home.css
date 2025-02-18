@@ -1,0 +1,124 @@
+*{
+    line-height: normal !important;
+}
+.fs-6{
+    font-size: 17px !important;
+}
+.product_des{
+    top: 20%;
+    left: 15%
+}
+body{
+    background-color: whitesmoke;
+}
+.offer{
+    background-color: var(--primary-btn-color);
+    color: var(--primary-text-color);
+    border: none;
+    padding: 15px 80px;
+    border-radius: 30px;
+}
+.offer:hover{
+    background-color:  var(--primary-text-color);
+    color: var(--primary-btn-color);
+    border: 1px solid var(--primary-btn-color);
+}
+.deals{
+    top: 15%;
+    left: 10%;
+}
+.deal{
+    background-color: var(--secondar-btn-color);
+    border: none;
+    padding: 10px 60px;
+    border-radius: 40px;
+}
+.deal:hover{
+    background-color: transparent;
+    border: 1px solid var(--primary-text-color);
+    color: var(--primary-text-color);
+}
+.move{
+    border: none;
+    background-color: transparent;
+}
+.seller_card .card:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+.seller_all{
+    background-color: var(--primary-btn-color);
+    color: var(--primary-text-color);
+    padding: 10px 20px;
+    width: 268px;
+    border: none;
+    border-radius: 40px;
+    font-size: 17px;
+    height: 50px;
+}
+.seller_all:hover{
+    background-color:  var(--primary-text-color);
+    color: var(--primary-btn-color);
+    border: 1px solid var(--primary-btn-color);
+}
+.shop_cat .offer_image img{
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+}
+.offer_image img { 
+  width: 100%;
+  height: 600px;
+  object-position: 50% 50%;
+  }
+.offer_image .offers{
+    top: 25%; 
+    right: 0;
+    transform: translate(0%, -50%) rotate(20deg);
+}
+.offer_details .fs-1{
+    font-size: 90px !important;
+}
+.offer_details .ps-5{
+    padding-left: 50px !important;
+}
+.today .offer_image img{
+    clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 0% 100%);
+    object-fit: cover;
+    object-position: right;
+}
+.subscribe_btn{
+    background-color: var(--third-btn-color);
+    color: var(--primary-text-color);
+    width: 186.5px;
+    height: 42px;
+    border-radius: 20px;
+    border: none;
+}
+.newsletter input{
+    accent-color: black;
+}
+.newsletter button:hover{
+    background-color: rgb(209, 180, 255);
+}
+.newsletter #subcribe_mail:hover{
+    
+}
+.help_btn{
+    background-color: var(--secondar-btn-color);
+    border: 1px solid var(--primary-btn-color);
+    color: var(--primary-btn-color);
+    width: 186px;
+    height: 50px;
+    border-radius: 40px;
+}
+.help_btn:hover{
+    background-color: var(--primary-btn-color);
+    border: 1px solid var(--secondary-btn-color);
+    color: var(--secondary-btn-color);
+}
+.category_list:hover img{
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+   
+  
+
