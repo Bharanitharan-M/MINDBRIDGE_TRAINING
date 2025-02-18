@@ -1,0 +1,20 @@
+.menu_page{
+    margin: 30px 10%;
+}
+.show_categorie{
+    margin-top: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px 200px 200px 200px 200px;
+}
+.show_categories h4{
+    color: orangered;
+    font-weight: bold;
+}
+.cat_image img{
+    border-radius: 50%;
+    margin-bottom: 50px;
+    width: 100px;
+    height: 100px;
+}

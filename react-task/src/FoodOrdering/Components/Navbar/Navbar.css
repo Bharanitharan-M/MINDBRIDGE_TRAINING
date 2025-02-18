@@ -1,0 +1,36 @@
+nav{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid whitesmoke;
+}
+.webLogo{
+    align-items: center;
+    display: inline-flex;
+    color: Orange;
+}
+.webLogo h3{
+   font-size: xx-large;
+   font-weight: bold;
+}
+
+.webLink ul{
+    padding-top: 15px;
+    display: inline-flex;
+    list-style-type: none;
+}
+.webLink li{
+    padding-right: 150px;
+    font-size: large;
+    font-weight: 600;
+}
+.login_section button{
+    padding: 10px 20px;
+}
+.webLink a .active{
+    color: black;
+}
+.success_login h4{
+    color: #E63946;
+    font-weight: 600;
+}

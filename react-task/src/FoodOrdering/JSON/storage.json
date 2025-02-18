@@ -1,0 +1,2316 @@
+{
+    "categories": [
+        {
+            "cat_name": "biryani",
+            "img": "https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Chicken-Biryani-Recipe.jpg"
+        },
+        {
+            "cat_name": "curry",
+            "img": "https://www.licious.in/blog/wp-content/uploads/2020/12/Chicken-Curry-recipe.jpg"
+        },
+        {
+            "cat_name": "snack",
+            "img": "https://th.bing.com/th/id/R.90bfffd7aeef675fe05d35168d28f5d0?rik=oZNnDtr3Ebrz6g&riu=http%3a%2f%2fwww.livewellmagazine.org%2fwp-content%2fuploads%2f2013%2f06%2fhealthy-snacks.jpg&ehk=X%2fG95THXsDRaHV3%2b%2bMgzsYY6qeNsSlrMTUNGeya5SkI%3d&risl=&pid=ImgRaw&r=0"
+        },
+        {
+            "cat_name": "bread",
+            "img": "https://images.pexels.com/photos/209206/pexels-photo-209206.jpeg?cs=srgb&dl=baked-bread-breakfast-209206.jpg&fm=jpg"
+        },
+        {
+            "cat_name": "beverage",
+            "img": "https://image.shutterstock.com/image-photo/latte-americano-orange-juice-lime-260nw-2122885682.jpg"
+        },
+        {
+            "cat_name": "dessert",
+            "img": "https://th.bing.com/th/id/OIP.21XG1xTLOPD5KUE5jbEtUQHaGU?rs=1&pid=ImgDetMain"
+        },
+        {
+            "cat_name": "south_indian",
+            "img": "https://imgmedia.lbb.in/media/2019/08/5d662c8ea84656a7661be92a_1566977166741.jpg"
+        },
+        {
+            "cat_name": "fried_rice",
+            "img": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FSeries%2F2020-04-snapshot-cooking-5-recipes-to-make-with-2-cups-of-rice%2Fthekitchn-pork-fried-rice-beauty"
+        },
+        {
+            "cat_name": "noodle",
+            "img": "https://i1.wp.com/modernmealmakeover.com/wp-content/uploads/2020/05/thai-noodles-11-3.jpg?fit=1200,1200&ssl=1"
+        },
+        {
+            "cat_name": "soup",
+            "img": "https://valentinascorner.com/wp-content/uploads/2020/03/Vegetable-Soup-1.jpg"
+        },
+        {
+            "cat_name": "dimsum",
+            "img": "https://th.bing.com/th/id/OIP.2MsCWYC8k71VPoVybQsgrwHaFj?rs=1&pid=ImgDetMain"
+        },
+        {
+            "cat_name": "grill",
+            "img": "https://www.simplyrecipes.com/thmb/nHwZk5pKaCOn591969BaF36eHJc=/5184x3456/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Grilling-Chicken-Guide-LEAD-5-8f4cf34238fd44db87e181192f19990b.jpg"
+        },
+        {
+            "cat_name": "kebab",
+            "img": "https://www.licious.in/blog/wp-content/uploads/2020/12/Chicken-Kebab.jpg"
+        },
+        {
+            "cat_name": "salad",
+            "img": "https://www.wellseasonedstudio.com/wp-content/uploads/2023/04/Grilled-chicken-salad-with-cucumbers-and-creamy-garlic-dressing-on-a-plate.jpg"
+        },
+        {
+            "cat_name": "pizza",
+            "img": "https://th.bing.com/th/id/OIP.MfhIfzrC6x6T1-szQkjtCgHaEo?rs=1&pid=ImgDetMain"
+        },
+        {
+            "cat_name": "pasta",
+            "img": "https://rainbowplantlife.com/wp-content/uploads/2021/06/sausage-pasta-lazy-meals-1-of-3-scaled.jpg"
+        },
+        {
+            "cat_name": "seafood",
+            "img": "https://th.bing.com/th/id/OIP.IAL0Nbq4IwuCgsPQrOfnUQHaEw?rs=1&pid=ImgDetMain"
+        },
+        {
+            "cat_name": "sandwich",
+            "img": "https://th.bing.com/th/id/OIP.k4JMO5bD97BK3hxEHefrmAHaFP?rs=1&pid=ImgDetMain"
+        },
+        {
+            "cat_name": "wrap",
+            "img": "https://images.indianexpress.com/2018/07/wrap1.jpg"
+        },
+        {
+            "cat_name": "juice",
+            "img": "https://th.bing.com/th/id/OIP.WuhAhWN9HAN29ER7Z5O0-gHaJo?rs=1&pid=ImgDetMain"
+        }
+    ],
+    "restaurants": [
+        {
+            "name": "Spicy Biryani House",
+            "img": "./Gobal_assests/Images/hotel-1.webp",
+            "rating": "4.3",
+            "foods": [
+                {
+                    "name": "Hyderabadi Dum Biryani",
+                    "category": "biryani",
+                    "icon": "fas fa-bowl-food",
+                    "rating": "4.1"
+                },
+                {
+                    "name": "Awadhi Gosht Biryani",
+                    "category": "biryani",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Malabar Prawn Biryani",
+                    "category": "biryani",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Kolkata Egg Biryani",
+                    "category": "biryani",
+                    "icon": "fas fa-egg"
+                },
+                {
+                    "name": "Mughlai Butter Chicken",
+                    "category": "curry",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Paneer Tikka Masala",
+                    "category": "curry",
+                    "icon": "fas fa-cheese"
+                },
+                {
+                    "name": "Goan Fish Curry",
+                    "category": "curry",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Spicy Egg Masala",
+                    "category": "curry",
+                    "icon": "fas fa-egg"
+                },
+                {
+                    "name": "Crispy Punjabi Samosa",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Kolhapuri Misal Pav",
+                    "category": "snack",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Tandoori Garlic Naan",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Amritsari Kulcha",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Refreshing Mango Lassi",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Kashmiri Kahwa",
+                    "category": "beverage",
+                    "icon": "fas fa-mug-hot"
+                },
+                {
+                    "name": "Bengali Roshogolla",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Lucknowi Shahi Tukda",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Tandoori Chicken",
+                    "category": "grill",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Seekh Kebab",
+                    "category": "kebab",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Greek Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Fresh Watermelon Juice",
+                    "category": "juice",
+                    "icon": "fas fa-glass-whiskey"
+                }
+            ]
+        },
+        {
+            "name": "Tandoori Delights",
+            "rating": "4.0",
+            "img": "./Gobal_assests/Images/hotel-2.webp",
+            "foods": [
+                {
+                    "name": "Afghani Chicken",
+                    "category": "grill",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Spicy Tandoori Prawns",
+                    "category": "grill",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Butter Roti",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Dal Makhani",
+                    "category": "curry",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Shahi Paneer",
+                    "category": "curry",
+                    "icon": "fas fa-cheese"
+                },
+                {
+                    "name": "Lucknowi Mutton Biryani",
+                    "category": "biryani",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Schezwan Chicken Noodles",
+                    "category": "noodle",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Egg Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-egg"
+                },
+                {
+                    "name": "Tandoori Paneer Pizza",
+                    "category": "pizza",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Spaghetti Carbonara",
+                    "category": "pasta",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Garlic Butter Naan",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Chicken Tikka Masala",
+                    "category": "curry",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Vegetable Biryani",
+                    "category": "biryani",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Paneer Butter Masala",
+                    "category": "curry",
+                    "icon": "fas fa-cheese"
+                },
+                {
+                    "name": "Chole Bhature",
+                    "category": "curry",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Prawn Masala",
+                    "category": "curry",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Vegetable Spring Rolls",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Mango Lassi",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Gajar Halwa",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Masala Chai",
+                    "category": "beverage",
+                    "icon": "fas fa-mug-hot"
+                }
+            ]
+        },
+        {
+            "name": "South Indian Delight",
+            "img": "./Gobal_assests/Images/hotel-3.webp",
+            "rating": 3.5,
+            "foods": [
+                {
+                    "name": "Masala Dosa",
+                    "category": "south_indian",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Idli Sambar",
+                    "category": "south_indian",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Medu Vada",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Coconut Chutney",
+                    "category": "snack",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Pongal",
+                    "category": "south_indian",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Rava Uttapam",
+                    "category": "south_indian",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Filter Coffee",
+                    "category": "beverage",
+                    "icon": "fas fa-mug-hot"
+                },
+                {
+                    "name": "Bisi Bele Bath",
+                    "category": "south_indian",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Upma",
+                    "category": "south_indian",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Rasam",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Kerala Parotta",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Avial",
+                    "category": "curry",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Mango Lassi",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Payasam",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Veg Biryani",
+                    "category": "biryani",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Chicken 65",
+                    "category": "snack",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Curd Rice",
+                    "category": "south_indian",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Pesarattu",
+                    "category": "south_indian",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Tomato Rasam",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Jalebi",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                }
+            ]
+        },
+        {
+            "name": "Noodle Nation",
+            "img": "./Gobal_assests/Images/hotel-4.webp",
+            "rating": 3.9,
+            "foods": [
+                {
+                    "name": "Hakka Noodles",
+                    "category": "noodle",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Vegetable Chow Mein",
+                    "category": "noodle",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Pad Thai",
+                    "category": "noodle",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Ramen",
+                    "category": "noodle",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Udon Noodles",
+                    "category": "noodle",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Soba Noodles",
+                    "category": "noodle",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Singapore Noodles",
+                    "category": "noodle",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Drunken Noodles",
+                    "category": "noodle",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Chicken Teriyaki Noodles",
+                    "category": "noodle",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Seafood Noodles",
+                    "category": "noodle",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Kimchi Noodles",
+                    "category": "noodle",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Garlic Butter Noodles",
+                    "category": "noodle",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Thai Basil Noodles",
+                    "category": "noodle",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Cold Noodle Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Miso Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Spring Rolls",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Green Tea",
+                    "category": "beverage",
+                    "icon": "fas fa-mug-hot"
+                },
+                {
+                    "name": "Mango Sticky Rice",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Dumplings",
+                    "category": "dimsum",
+                    "icon": "fas fa-dumpling"
+                },
+                {
+                    "name": "Lychee Juice",
+                    "category": "juice",
+                    "icon": "fas fa-glass-whiskey"
+                }
+            ]
+        },
+        {
+            "name": "Pizza Palace",
+            "rating": 4.5,
+            "img": "./Gobal_assests/Images/hotel-5.webp",
+            "foods": [
+                {
+                    "name": "Margherita Pizza",
+                    "category": "pizza",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Pepperoni Pizza",
+                    "category": "pizza",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "BBQ Chicken Pizza",
+                    "category": "pizza",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Hawaiian Pizza",
+                    "category": "pizza",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Veggie Supreme Pizza",
+                    "category": "pizza",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Meat Lovers Pizza",
+                    "category": "pizza",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Pesto Chicken Pizza",
+                    "category": "pizza",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Buffalo Chicken Pizza",
+                    "category": "pizza",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Four Cheese Pizza",
+                    "category": "pizza",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Spinach and Feta Pizza",
+                    "category": "pizza",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Mediterranean Pizza",
+                    "category": "pizza",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "White Pizza",
+                    "category": "pizza",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Taco Pizza",
+                    "category": "pizza",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Taco Pizza",
+                    "category": "pizza",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Cheesy Garlic Bread",
+                    "category": "snack",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Caesar Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Pasta Primavera",
+                    "category": "pasta",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Fettuccine Alfredo",
+                    "category": "pasta",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Minestrone Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Italian Soda",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Tiramisu",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                }
+            ]
+        },
+        {
+            "name": "Seafood Shack",
+            "rating": 3.8,
+            "img": "./Gobal_assests/Images/hotel-6.webp",
+            "foods": [
+                {
+                    "name": "Grilled Salmon",
+                    "category": "seafood",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Shrimp Scampi",
+                    "category": "seafood",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Fish Tacos",
+                    "category": "seafood",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Crab Cakes",
+                    "category": "seafood",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Lobster Roll",
+                    "category": "seafood",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Clam Chowder",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Seafood Paella",
+                    "category": "seafood",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Coconut Shrimp",
+                    "category": "seafood",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Tuna Poke Bowl",
+                    "category": "seafood",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Octopus Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Mussels in Garlic Sauce",
+                    "category": "seafood",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Seafood Linguine",
+                    "category": "pasta",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Fish and Chips",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Seafood Gumbo",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Lemonade",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Key Lime Pie",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Shrimp Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-egg"
+                },
+                {
+                    "name": "Crab Rangoon",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Mango Salsa",
+                    "category": "snack",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Pineapple Juice",
+                    "category": "juice",
+                    "icon": "fas fa-glass-whiskey"
+                }
+            ]
+        },
+        {
+            "name": "Wrap & Roll",
+            "rating": 3.0,
+            "img": "./Gobal_assests/Images/hotel-7.webp",
+            "foods": [
+                {
+                    "name": "Chicken Caesar Wrap",
+                    "category": "wrap",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Falafel Wrap",
+                    "category": "wrap",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Veggie Wrap",
+                    "category": "wrap",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Buffalo Chicken Wrap",
+                    "category": "wrap",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Steak Wrap",
+                    "category": "wrap",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Greek Salad Wrap",
+                    "category": "wrap",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Greek Salad Wrap",
+                    "category": "wrap",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "BBQ Chicken Wrap",
+                    "category": "wrap",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Spicy Tuna Wrap",
+                    "category": "wrap",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Caprese Wrap",
+                    "category": "wrap",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Egg Salad Wrap",
+                    "category": "wrap",
+                    "icon": "fas fa-egg"
+                },
+                {
+                    "name": "Roasted Veggie Wrap",
+                    "category": "wrap",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Chicken Fajita Wrap",
+                    "category": "wrap",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Pesto Chicken Wrap",
+                    "category": "wrap",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Hummus and Veggie Wrap",
+                    "category": "wrap",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Fruit Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Chips and Salsa",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Lemonade",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Chocolate Chip Cookie",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Iced Tea",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Caesar Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Potato Wedges",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Fruit Smoothie",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Pasta Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Guacamole and Chips",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                }
+            ]
+        },
+        {
+            "name": "Dessert Heaven",
+            "rating": 4.9,
+            "img": "./Gobal_assests/Images/hotel-8.webp",
+            "foods": [
+                {
+                    "name": "Chocolate Lava Cake",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Cheesecake",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Tiramisu",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Panna Cotta",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Fruit Tart",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Brownies",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Macarons",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Ice Cream Sundae",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Apple Pie",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Banoffee Pie",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Pavlova",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Gelato",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Cupcakes",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Chocolate Mousse",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Rice Pudding",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Lemon Tart",
+                    "category": "dessert",
+                    "icon": " fas fa-ice-cream"
+                },
+                {
+                    "name": "Lemon Tart",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Pistachio Baklava",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Churros",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Fruit Salad",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Milkshake",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                }
+            ]
+        },
+        {
+            "name": "Grill Masters",
+            "rating": 3.9,
+            "img": "./Gobal_assests/Images/hotel-9.webp",
+            "foods": [
+                {
+                    "name": "Grilled Chicken",
+                    "category": "grill",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Beef Steak",
+                    "category": "grill",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Grilled Vegetables",
+                    "category": "grill",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Pork Ribs",
+                    "category": "grill",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Shrimp Skewers",
+                    "category": "grill",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Grilled Salmon",
+                    "category": "seafood",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Chicken Kebab",
+                    "category": "kebab",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Veggie Kebab",
+                    "category": "kebab",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Tandoori Chicken",
+                    "category": "grill",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Grilled Corn",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Garlic Bread",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Caesar Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Coleslaw",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "BBQ Sauce",
+                    "category": "sauce",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Potato Wedges",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Fruit Punch",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Chocolate Cake",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Lemonade",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Pasta Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Nachos",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                }
+            ]
+        },
+        {
+            "name": "Curry Express",
+            "rating": 4.3,
+            "img": "./Gobal_assests/Images/hotel-10.webp",
+            "foods": [
+                {
+                    "name": "Chicken Curry",
+                    "category": "curry",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Paneer Butter Masala",
+                    "category": "curry",
+                    "icon": "fas fa-cheese"
+                },
+                {
+                    "name": "Dal Tadka",
+                    "category": "curry",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Fish Curry",
+                    "category": "curry",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Vegetable Korma",
+                    "category": "curry",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Mutton Rogan Josh",
+                    "category": "curry",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Chana Masala",
+                    "category": "curry",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Butter Chicken",
+                    "category": "curry",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Paneer Tikka",
+                    "category": "snack",
+                    "icon": "fas fa-cheese"
+                },
+                {
+                    "name": "Paneer Tikka",
+                    "category": "snack",
+                    "icon": "fas fa-cheese"
+                },
+                {
+                    "name": "Aloo Gobi",
+                    "category": "curry",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Vegetable Biryani",
+                    "category": "biryani",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Raita",
+                    "category": "side",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Naan",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Garlic Naan",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Mango Lassi",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Masala Chai",
+                    "category": "beverage",
+                    "icon": "fas fa-mug-hot"
+                },
+                {
+                    "name": "Gulab Jamun",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Jalebi",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                }
+            ]
+        },
+        {
+            "name": "Juice Junction",
+            "img": "./Gobal_assests/Images/hotel-11.webp",
+            "rating": 4.3,
+            "foods": [
+                {
+                    "name": "Orange Juice",
+                    "category": "juice",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Apple Juice",
+                    "category": "juice",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Mango Juice",
+                    "category": "juice",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Pineapple Juice",
+                    "category": "juice",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Carrot Juice",
+                    "category": "juice",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Beetroot Juice",
+                    "category": "juice",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Mixed Fruit Juice",
+                    "category": "juice",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Watermelon Juice",
+                    "category": "juice",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Lemonade",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Coconut Water",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Smoothie Bowl",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Fruit Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Chia Seed Pudding",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Avocado Toast",
+                    "category": "snack",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Granola Bar",
+                    "category": "snack",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Yogurt Parfait",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Iced Tea",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Herbal Tea",
+                    "category": "beverage",
+                    "icon": "fas fa-mug-hot"
+                },
+                {
+                    "name": "Fruit Smoothie",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Berry Blast Smoothie",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                }
+            ]
+        },
+        {
+            "name": "Dim Sum Delight",
+            "img": "./Gobal_assests/Images/hotel-12.webp",
+            "rating": 4.8,
+            "foods": [
+                {
+                    "name": "Pork Dumplings",
+                    "category": "dimsum",
+                    "icon": "fas fa-dumpling"
+                },
+                {
+                    "name": "Shrimp Dumplings",
+                    "category": "dimsum",
+                    "icon": "fas fa-dumpling"
+                },
+                {
+                    "name": "Vegetable Dumplings",
+                    "category": "dimsum",
+                    "icon": "fas fa-dumpling"
+                },
+                {
+                    "name": "Peking Duck Buns",
+                    "category": "dimsum",
+                    "icon": "fas fa-dumpling"
+                },
+                {
+                    "name": "Peking Duck Buns",
+                    "category": "dimsum",
+                    "icon": "fas fa-dumpling"
+                },
+                {
+                    "name": "Char Siu Bao",
+                    "category": "dimsum",
+                    "icon": "fas fa-dumpling"
+                },
+                {
+                    "name": "Spring Rolls",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Steamed Buns",
+                    "category": "dimsum",
+                    "icon": "fas fa-dumpling"
+                },
+                {
+                    "name": "Sesame Balls",
+                    "category": "dimsum",
+                    "icon": "fas fa-dumpling"
+                },
+                {
+                    "name": "Egg Tarts",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Wontons",
+                    "category": "dimsum",
+                    "icon": "fas fa-dumpling"
+                },
+                {
+                    "name": "Hot and Sour Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Chili Oil Noodles",
+                    "category": "noodle",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Mango Pudding",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Jasmine Tea",
+                    "category": "beverage",
+                    "icon": "fas fa-mug-hot"
+                },
+                {
+                    "name": "Coconut Milk Pudding",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Pork Belly Buns",
+                    "category": "dimsum",
+                    "icon": "fas fa-dumpling"
+                },
+                {
+                    "name": "Szechuan Noodles",
+                    "category": "noodle",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Vegetable Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Lychee Drink",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Fruit Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Chili Crab",
+                    "category": "seafood",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Prawn Crackers",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                }
+            ]
+        },
+        {
+            "name": "Kebab Corner",
+            "img": "./Gobal_assests/Images/hotel-13.webp",
+            "rating": "3.9",
+            "foods": [
+                {
+                    "name": "Seekh Kebab",
+                    "category": "kebab",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Shish Kebab",
+                    "category": "kebab",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Chicken Tikka",
+                    "category": "kebab",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Paneer Tikka",
+                    "category": "kebab",
+                    "icon": "fas fa-cheese"
+                },
+                {
+                    "name": "Tandoori Chicken",
+                    "category": "kebab",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Lamb Kofta",
+                    "category": "kebab",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Veg Kebab",
+                    "category": "kebab",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Falafel",
+                    "category": "snack",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Hummus",
+                    "category": "snack",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Pita Bread",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Tabbouleh Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Baba Ganoush",
+                    "category": "snack",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Mint Yogurt Sauce",
+                    "category": "sauce",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Baklava",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                
+                {
+                    "name": "Pineapple Juice",
+                    "category": "juice",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Mint Lemonade",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Fattoush Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Stuffed Grape Leaves",
+                    "category": "snack",
+                    "icon": "fas fa-bowl-food"
+                }
+            ]
+        },
+        {
+            "name": "Salad Studio",
+            "img": "./Gobal_assests/Images/hotel-14.webp",
+            "rating": 3.8,
+            "foods": [
+                {
+                    "name": "Caesar Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Greek Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Quinoa Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Cobb Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Caprese Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Fruit Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Asian Noodle Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Pasta Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Chickpea Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Spinach Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Kale Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Roasted Beet Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Avocado Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Tuna Salad",
+                    "category": "salad",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Chicken Salad",
+                    "category": "salad",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Lentil Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Cucumber Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Mango Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Balsamic Vinaigrette",
+                    "category": "sauce",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Lemonade",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                }
+            ]
+        },
+        {
+            "name": "Bread Basket",
+            "img": "./Gobal_assests/Images/hotel-15.webp",
+            "rating": 3.9,
+            "foods": [
+                {
+                    "name": "Garlic Bread",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Focaccia",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Baguette",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Ciabatta",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Pita Bread",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Naan",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Sourdough",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Rye Bread",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Whole Wheat Bread",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Cornbread",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Cornbread",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Challah",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Bagel",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Brioche",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Pumpernickel",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Lavash",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Tortilla",
+                    "category": "bread",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Breadsticks",
+                    "category": "snack",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Bruschetta",
+                    "category": "snack",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Garlic Knots",
+                    "category": "snack",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Hummus",
+                    "category": "snack",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Olive Tapenade",
+                    "category": "snack",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Caprese Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Pasta Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Fruit Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Lemonade",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Iced Tea",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Coffee",
+                    "category": "beverage",
+                    "icon": "fas fa-mug-hot"
+                },
+                {
+                    "name": "Tea",
+                    "category": "beverage",
+                    "icon": "fas fa-mug-hot"
+                }
+            ]
+        },
+        {
+            "name": "Snack Attack",
+            "img": "./Gobal_assests/Images/hotel-16.webp",
+            "rating": 4.3,
+            "foods": [
+                {
+                    "name": "Nachos",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Potato Chips",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Popcorn",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Cheese Platter",
+                    "category": "snack",
+                    "icon": "fas fa-cheese"
+                },
+                {
+                    "name": "Veggie Sticks",
+                    "category": "snack",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Fruit Skewers",
+                    "category": "snack",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Spring Rolls",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Samosas",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Onion Rings",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Chicken Wings",
+                    "category": "snack",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Garlic Bread",
+                    "category": "snack",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Bruschetta",
+                    "category": "snack",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Cheese Nachos",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Fruit Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Chips and Salsa",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Chocolate Chip Cookies",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Brownies",
+                    " category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Ice Cream Sandwich",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Milkshake",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Lemonade",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                }
+            ]
+        },
+        {
+            "name": "Pasta Paradise",
+            "img": "./Gobal_assests/Images/hotel-17.webp",
+            "rating": 4.0,
+            "foods": [
+                {
+                    "name": "Spaghetti Bolognese",
+                    "category": "pasta",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Penne Arrabbiata",
+                    "category": "pasta",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Fettuccine Alfredo",
+                    "category": "pasta",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Lasagna",
+                    "category": "pasta",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Pasta Primavera",
+                    "category": "pasta",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Macaroni and Cheese",
+                    "category": "pasta",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Pesto Pasta",
+                    "category": "pasta",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Seafood Pasta",
+                    "category": "pasta",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Ravioli",
+                    "category": "pasta",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Pasta Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Garlic Bread",
+                    "category": "snack",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Caesar Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Tiramisu",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Italian Soda",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Bruschetta",
+                    "category": "snack",
+                    "icon": "fas fa-bread-slice"
+                },
+                {
+                    "name": "Fruit Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Chocolate Cake",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Lemonade",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Iced Tea",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Coffee",
+                    "category": "beverage",
+                    "icon": "fas fa-mug-hot"
+                }
+            ]
+        },
+        {
+            "name": "Fried Rice Factory",
+            "img": "./Gobal_assests/Images/hotel-18.webp",
+            "foods": [
+                {
+                    "name": "Chicken Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Vegetable Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Shrimp Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Egg Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-egg"
+                },
+                {
+                    "name": "Pineapple Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Yangzhou Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Thai Basil Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Beef Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Seafood Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Kimchi Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa -bowl-food"
+                },
+                {
+                    "name": "Curry Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Mushroom Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Spicy Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Vegetable Biryani",
+                    "category": "biryani",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Fried Rice with Tofu",
+                    "category": "fried_rice",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Egg and Veggie Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-egg"
+                },
+                {
+                    "name": "Coconut Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Lemon Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Chili Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Garlic Fried Rice",
+                    "category": "fried_rice",
+                    "icon": "fas fa-bowl-food"
+                }
+            ]
+        },
+        {
+            "name": "Soup Sanctuary",
+            "img": "./Gobal_assests/Images/hotel-19.webp",
+            "rating": 4.3,
+            "foods": [
+                {
+                    "name": "Tomato Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Chicken Noodle Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Minestrone Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Lentil Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Mushroom Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Butternut Squash Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "French Onion Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Clam Chowder",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Vegetable Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Pea Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Chicken Tortilla Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Split Pea Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Broccoli Cheddar Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Ramen Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Egg Drop Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Hot and Sour Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Sichuan Spicy Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Coconut Curry Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Chili Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Vegetable Barley Soup",
+                    "category": "soup",
+                    "icon": "fas fa-bowl-food"
+                }
+            ]
+        },
+        {
+            "name": "Burger Barn",
+            "img": "./Gobal_assests/Images/hotel-20.webp",
+            "foods": [
+                {
+                    "name": "Classic Cheeseburger",
+                    "category": "sandwich",
+                    "icon": "fas fa-burger"
+                },
+                {
+                    "name": "Bacon Burger",
+                    "category": "sandwich",
+                    "icon": "fas fa-burger"
+                },
+                {
+                    "name": "Veggie Burger",
+                    "category": "sandwich",
+                    "icon": "fas fa-burger"
+                },
+                {
+                    "name": "BBQ Burger",
+                    "category": "sandwich",
+                    "icon": "fas fa-burger"
+                },
+                {
+                    "name": "Mushroom Swiss Burger",
+                    "category": "sandwich",
+                    "icon": "fas fa-burger"
+                },
+                {
+                    "name": "Spicy Jalapeno Burger",
+                    "category": "sandwich",
+                    "icon": "fas fa-burger"
+                },
+                {
+                    "name": "Chicken Burger",
+                    "category": "sandwich",
+                    "icon": "fas fa-drumstick-bite"
+                },
+                {
+                    "name": "Fish Burger",
+                    "category": "sandwich",
+                    "icon": "fas fa-fish"
+                },
+                {
+                    "name": "Falafel Burger",
+                    "category": "sandwich",
+                    "icon": "fas fa-bowl-food"
+                },
+                {
+                    "name": "Sliders",
+                    "category": "sandwich",
+                    "icon": "fas fa-burger"
+                },
+                {
+                    "name": "Sweet Potato Fries",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Onion Rings",
+                    "category": "snack",
+                    "icon": "fas fa-pizza-slice"
+                },
+                {
+                    "name": "Caesar Salad",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Coleslaw",
+                    "category": "salad",
+                    "icon": "fas fa-leaf"
+                },
+                {
+                    "name": "Milkshake",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Soda",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Lemonade",
+                    "category": "beverage",
+                    "icon": "fas fa-glass-whiskey"
+                },
+                {
+                    "name": "Chocolate Cake",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Apple Pie",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Brownies",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                },
+                {
+                    "name": "Ice Cream Sundae",
+                    "category": "dessert",
+                    "icon": "fas fa-ice-cream"
+                }
+            ]
+        }
+    ]
+}

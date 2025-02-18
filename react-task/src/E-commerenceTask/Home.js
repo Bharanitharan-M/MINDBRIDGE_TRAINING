@@ -5,7 +5,7 @@ import { Productscontext } from './WebSite_layout';
 export const Home = () => {
     const fetched_data = useLoaderData();
     const get_context = useContext(Productscontext);
-    const buy_product = get_context.handleBuy;
+    const handleBuy = get_context.handleBuy;
     const navigate = useNavigate();
     return (
         <div className="product_show">
@@ -26,7 +26,7 @@ export const Home = () => {
                                 <small>{element.price}</small>
                             </div>
                             <div className='btn'>
-                                <button onClick={()=>{navigate("/product"); buy_product(element) }}>View Details</button>
+                                <button onClick={()=>{navigate("/product"); handleBuy(element) }}>View Details</button>
                             </div>
                         </div>
                     </div>

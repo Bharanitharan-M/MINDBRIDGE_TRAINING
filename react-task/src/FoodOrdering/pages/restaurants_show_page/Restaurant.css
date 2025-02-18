@@ -1,0 +1,91 @@
+.restaurant{
+    margin: 30px 10%;
+}
+.restaurant_title{
+    position: relative;
+}
+.restaurant img{
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+}
+.restaurant .rating{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1000;
+    color: whitesmoke;
+}
+.restaurant h2{
+    font-weight: 800;
+}
+.restaurant .menu_text p{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(174, 173, 173);
+}
+.restaurant hr{
+    border: 3px solid whitesmoke;
+}
+
+.restaurant .food{
+    margin-bottom: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 50px;
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.restaurant .food_icon i{
+    font-size: 50px;
+}
+.restaurant .food .food_icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.restaurant .food .cart_style{
+    margin-top: 20px;
+     display: inline-flex;  
+     align-items: center; 
+}
+.restaurant .food button{
+    margin: 0px 10px;
+    padding: 0px;
+    color: black;
+    background-color: transparent;
+    font-size: large;
+}
+.restaurant .food .cart_style>p{
+    color: orange;
+    font-size: large;
+}
+.restaurant .food .cart_style button>p{
+
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.restaurant .food h5{
+    font-weight: 600;
+    font-size: x-large;
+}
+.restaurant .food small{
+    font-size: x-large;
+}
+.restaurant .food p{
+    font-size: x-large;
+}
+.restaurant button{
+    outline: none;
+    padding: none;
+}
+.order_now_btn{
+    position: sticky;
+    bottom: 0;
+    float: right;
+    margin-right: 20px;
+}

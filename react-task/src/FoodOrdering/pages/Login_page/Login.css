@@ -1,0 +1,29 @@
+.login_form{
+   margin: auto 40%;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   padding: 20px 30px;
+   border-radius: 30px;
+}
+.login_form .form-control{
+    display: inline;
+}
+.login_form button{
+    margin: auto 35%;
+}
+.new_user_style{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.login_form h4{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+.login_form small{
+    font-size: large;
+}
+.login_form .new_user_style h6{
+    font-size: large;
+}

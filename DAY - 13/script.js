@@ -30,9 +30,7 @@ console.log(result);
 const arr_3 = [1,2,2,3,3,3];
 const find_freq = arr_3.reduce((item, value) => {
     item[value] = (item[value] || 0) + 1;
-    console.log(item);
     return item;
-  
 },{});
 console.log(find_freq);
 const freq_arr = Object.entries(find_freq);

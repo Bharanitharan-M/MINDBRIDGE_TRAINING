@@ -1,0 +1,106 @@
+.heading_home{
+    margin-top: 10px;
+}
+.heading_home img{
+    width: 99.9%;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.heading_home .image_style{
+    position: relative;
+}
+
+.search_section{
+    margin: auto 25%;
+}
+.search_section input{
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    background-color: whitesmoke;
+    height: 60px;
+    padding-left: 10px;
+}
+.search_section input::placeholder{
+    text-transform: capitalize;
+}
+.search_section input::-webkit-search-cancel-button{
+    padding-right: 10px;
+    font-size: large;
+}
+.our_service{
+    margin-top: 50px;
+    border-bottom: 5px solid whitesmoke;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.our_service .service{
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.our_service .service i{
+    font-size: xx-large;
+}
+.our_service .service h4{
+    margin: 10px 0px;
+    font-weight: 600;
+}
+.our_service .service p{
+    font-weight: 500;
+}
+
+.cuisines_list{
+    margin: 40px 100px;
+}
+.cuisines_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cuisines_head h4{
+    font-weight: bold;
+}
+.cuisines_head button{
+    border-radius: 10px;
+    margin-right: 30px;
+}
+.cuisines{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.cusisine{
+    margin-bottom: 50px;
+    margin-right: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+    border-radius: 20px;
+}
+.cusisine .cuisine_button{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.cusisine .card{
+    border: none;
+}
+.cusisine .cuisine_button button{
+    padding: 10px;
+    font-size: small;
+    border-radius: 5px;
+}
+.cusisine .cuisine_type{
+    text-align: center;
+    margin-top: 40px;
+}
+.cusisine .cuisine_type i{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.cusisine .cuisine_type p{
+    font-size: x-large;
+}

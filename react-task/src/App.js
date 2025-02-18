@@ -72,7 +72,6 @@ function App() {
     setUser_input({ fname: edit.fname, age: edit.age, mail: edit.mail })
     document.getElementById('update').style.display = "block";
     document.getElementById('submit').style.display = "none"
-
   }
   const update = (event) => {
     event.preventDefault();
